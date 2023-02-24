@@ -9,4 +9,20 @@ Prepare input files to MD simulations:
 - Define Cortisol (Col) and Aldosterone (Aldo) PDB and mol files
 - 'Install' LiBELa and its requirments
 
+
+Some usefull commands:
+
+Being at /Users/sebas/Documents/Github/MD-SCIP/trunk/bin
+
+```
+iMcLiBELa.app/Contents/MacOS/iMcLiBELa 
+```
+
+On server
+
+```
+antechamber -i TPP.mol2 -fi mol2 -o tpp.com -fo gcrt -gv 1 -ge TPP.gesp -gn 16
+antechamber -i TPP.mol2 -fi mol2 -o tpp.com -fo gcrt -gv 1 -ge TPP.gesp
+```
+
 ## Week 2
