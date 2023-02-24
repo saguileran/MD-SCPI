@@ -1,6 +1,12 @@
 # Molecular Dynamics - Sao Carlos Physics Institute (MD-SCPI)
 
+Evaluation of the unbinding kinetics of Mineralocorticoid (MR) receptor steroid agoinst Cortisol and Aldosterone ligands
 
+## Objectives
+
+- Prepare the input files: PDB files of the ligands and receptor
+- Create a Molecular Dynamics simulation
+- Create a Monte Carlo simulation
 
 ## Links of interest:
 
