@@ -1,6 +1,6 @@
 # Molecular Dynamics - Sao Carlos Physics Institute (MD-SCPI)
 
-Evaluation of the unbinding kinetics of Mineralocorticoid (MR) receptor steroid agoinst Cortisol and Aldosterone ligands
+Evaluation of the unbinding kinetics of Mineralocorticoid (MR) receptor steroid agonist Cortisol and Aldosterone ligands
 
 ## Objectives
 
