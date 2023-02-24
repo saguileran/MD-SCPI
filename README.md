@@ -1,6 +1,8 @@
-# MD-SCIP
+# Molecular Dynamics - Sao Carlos Physics Institute (MD-SCPI)
 
-Links of interest:
+
+
+## Links of interest:
 
 - [making-it-rain](https://github.com/pablo-arantes/making-it-rain)
 - [GaMD](http://miaolab.org/GaMD/)
