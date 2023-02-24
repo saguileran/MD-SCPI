@@ -16,6 +16,7 @@ Evaluation of the unbinding kinetics of Mineralocorticoid (MR) receptor steroid 
 - [GamD](https://github.com/MiaoLab20/GaMD-OpenMM)
 - [OpenMM](https://github.com/openmm/openmm)
 - [LiBELa](https://github.com/alessandronascimento/LiBELa)
+- [Amber Manuals](http://ambermd.org/doc12/Amber22.pdf)
 
 
 ## References
