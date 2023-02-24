@@ -4,7 +4,7 @@ Evaluation of the unbinding kinetics of Mineralocorticoid (MR) receptor steroid 
 
 ## Objectives
 
-- Prepare the input files: PDB files of the ligands and receptor
+- Prepare the input files: PDB and mol files of the ligands and receptor
 - Create a Molecular Dynamics simulation
 - Create a Monte Carlo simulation
 
