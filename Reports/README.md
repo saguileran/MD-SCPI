@@ -27,11 +27,12 @@ source /usr/local/amber20/amber.sh
 antechamber -i as4.gesp -fi gesp -o as4_resp.mol2 -fo mol2 -c resp -eq 2
 #antechamber -i TPP.mol2 -fi mol2 -o tpp.com -fo gcrt -gv 1 -ge TPP.gesp -gn 16
 ```
+Where:
 
-gesp: gaussian ESP, file format
-RESP: charge method
--eq: equalize aomic charge, using 2 by atomic paths and geometry
-GAFF: General Amber Force Field
+- **gesp**: gaussian ESP, file format
+- **RESP**: charge method
+- **-eq**: equalize aomic charge, using 2 by atomic paths and geometry
+- **GAFF**: General Amber Force Field
 
 Another mid step is to select the CPUs to quantum calculatios, this is done in the server terminal.
 
@@ -39,14 +40,32 @@ Another mid step is to select the CPUs to quantum calculatios, this is done in t
 
 Merge protein and ligand PDBs and added solvent (water)
 
-- Join and check MR and aldosterone (AS4) PDBs files with tleap. The output file is a complex PDB file.
-- Create the input files for MD using complex.pdb file: .prmtio, .inpcrd
+- align protein and receptor using amber
 - Define Amber force field parameters
+- Join and check MR and aldosterone (AS4) PDBs files with tleap. The output file is a complex PDB file.
+- Create the input files for MD using complex.pdb file: .prmtop, .inpcrd
 - Equilibrium system with amber [Build the starting structure and run a simulation to obtain an equilibrated system.](http://ambermd.org/tutorials/advanced/tutorial3/section1.php) by adding Na and Cl to the solvent
 
-- Summitd jobs to server, commands line qsub and qstat
-- Watch simulations running on sever [Gangalia](http://nascimento.ifsc.usp.br/ganglia)
-- Closter orders at [Nascimento Lab - Cluster](http://nascimento.ifsc.usp.br/wordpress/?page_id=53)
+```
+source /usr/local/amber20/amber.sh # execute amber
+tleap
+```
+
+- Summitd jobs to server, commands line ```qsub``` and ```qstat```
+- To watch the current running simulations on sever [Gangalia](http://nascimento.ifsc.usp.br/ganglia)
+- Closter command lines [Nascimento Lab - Cluster](http://nascimento.ifsc.usp.br/wordpress/?page_id=53)
+
+```
+qsub
+```
+
+- Copy output elements (.nc files) to the local machine
+- Display .nc files with chimera, Tools/MD/Ensemble Analysis/MD Movie
+
+```
+scp sebas@nascimento:path_to_MD_folder/*.nc ./
+```
 
 
-- Use making-it-rain, Amber notebook, with the complex input files
+
+- Use making-it-rain, Amber notebook, with the complex output (input for the notebook) files: .prmtop, .inpcrd, and .pdb

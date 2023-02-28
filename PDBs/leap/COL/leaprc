@@ -1,0 +1,23 @@
+source leaprc.protein.ff14SB
+source leaprc.gaff2
+source leaprc.water.tip3p
+
+mr = loadpdb ../../leap/MR.pdb
+col = loadmol2 ../../AC/COL/col_resp_rename_aligned.mol2
+
+check mr
+check col
+
+complex = combine { col mr }
+check complex
+
+solvatebox complex TIP3PBOX 12.0
+charge complex
+addionsRand complex Na+ 41 Cl- 40
+charge complex
+
+saveamberparm complex MR-COL.prmtop MR-COL.inpcrd
+saveamberparm mr MR.prmtop MR.inpcrd
+saveamberparm col COL.prmtop COL.inpcrd
+quit 
+
