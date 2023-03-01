@@ -3,7 +3,7 @@ source leaprc.gaff2
 source leaprc.water.tip3p
 
 mr = loadpdb ../../leap/MR.pdb
-col = loadmol2 ../../AC/COL/col_resp_rename_aligned.mol2
+col = loadmol2 ../../AC/COL/col_resp_rename_aligned_2.mol2
 
 check mr
 check col
@@ -19,5 +19,7 @@ charge complex
 saveamberparm complex MR-COL.prmtop MR-COL.inpcrd
 saveamberparm mr MR.prmtop MR.inpcrd
 saveamberparm col COL.prmtop COL.inpcrd
+
+
 quit 
 

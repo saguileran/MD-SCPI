@@ -1,4 +1,4 @@
-%VERSION  VERSION_STAMP = V0001.000  DATE = 02/28/23  13:02:33                  
+%VERSION  VERSION_STAMP = V0001.000  DATE = 02/28/23  16:45:02                  
 %FLAG TITLE                                                                     
 %FORMAT(20a4)                                                                   
 MOL                                                                             
@@ -10,9 +10,9 @@ MOL
        0
 %FLAG ATOM_NAME                                                                 
 %FORMAT(20a4)                                                                   
-C1  C2  C3  C4  C5  C6  C7  C8  C9  C10 C11 C12 C13 C14 C15 C16 C17 C18 C19 C20 
-C21 O1  O3  O4  O5  H1  H2  H3  H4  H5  H6  H7  H8  H9  H10 H11 H12 H13 H14 H15 
-H16 H17 H18 H19 H20 H21 H22 H23 H24 H25 H26 H27 H28 O2  H29 H30 
+C12 C11 C10 C9  C8  C13 C14 C2  C3  C7  C4  C5  C   C1  C20 C16 C17 C6  C15 C18 
+C19 O2  O4  O3  O1  H1  H2  H3  H4  H5  H6  H7  H8  H9  H10 H11 H12 H13 H14 H15 
+H16 H17 H18 H19 H20 H21 H22 H23 H24 H25 H26 H27 H28 O   H29 H30 
 %FLAG CHARGE                                                                    
 %FORMAT(5E16.8)                                                                 
   3.79023840E-01 -6.56185023E+00  1.40329932E+01 -9.40452903E+00  4.24579590E-01

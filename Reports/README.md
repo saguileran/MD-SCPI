@@ -10,9 +10,9 @@ Prepare input files to MD and MC simulations:
 - Relabaling COL and AS4
 - 'Install' LiBELa and its requirments
 
-Reference used [2].
+Reference [2] used to create and label aldosteron and cortisol.
 
-Some usefull commands:
+Some usefull commands ot run LiBELa:
 
 Being at LiBELa_path/trunk/bin
 
@@ -36,36 +36,76 @@ Where:
 
 Another mid step is to select the CPUs to quantum calculatios, this is done in the server terminal.
 
+Useful commands in chimera:
+
+```
+disp (display atoms)
+distance sel
+sel :AS4/MOl (select AS4/COl atoms)
+color green #1/:MOL (change color)
+label @C= (label all Carbon atoms)
+~label (remove all labels)
+color C/#1
+transp 75,r (made ribon transparent)
+match #1 #2 (move one to where is two)
+sel :MOL za <5 (select atoms close to MOl at 5 amstrong of distance)
+```
+
+All commands and documentation, [Chimera User Guide - commands](https://www.cgl.ucsf.edu/chimera/docs/UsersGuide/framecommand.html)
+
+
 ## Week 2
 
 Merge protein and ligand PDBs and added solvent (water)
 
-- align protein and receptor using amber
+- Align protein and receptor using amber
 - Define Amber force field parameters
 - Join and check MR and aldosterone (AS4) PDBs files with tleap. The output file is a complex PDB file.
 - Create the input files for MD using complex.pdb file: .prmtop, .inpcrd
+- Convert prmtop file to PDB
 - Equilibrium system with amber [Build the starting structure and run a simulation to obtain an equilibrated system.](http://ambermd.org/tutorials/advanced/tutorial3/section1.php) by adding Na and Cl to the solvent
 
 ```
 source /usr/local/amber20/amber.sh # execute amber
-tleap
+tleap 
+ambpdb -p file.prmtop < file.inpcrd > file_leap.pdb # conver tleap outputs to pdb
 ```
 
 - Summitd jobs to server, commands line ```qsub``` and ```qstat```
-- To watch the current running simulations on sever [Gangalia](http://nascimento.ifsc.usp.br/ganglia)
+- To watch the current status of simulations on sever visit [Ganglia](http://nascimento.ifsc.usp.br/ganglia)
 - Closter command lines [Nascimento Lab - Cluster](http://nascimento.ifsc.usp.br/wordpress/?page_id=53)
 
 ```
-qsub
+qsub amber.sub
+qstat
 ```
 
 - Copy output elements (.nc files) to the local machine
-- Display .nc files with chimera, Tools/MD/Ensemble Analysis/MD Movie
+- Display .nc files with chimera, Tools/MD/Ensemble Analysis/MD Movie, it generates a movie of the system
 
 ```
 scp sebas@nascimento:path_to_MD_folder/*.nc ./
 ```
 
+<video width="320" height="240" controls>
+  <source src="../MR-AS4.mp4" type="video/mp4">
+  <source src="../MR-AS4.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video> 
+
+- Run equilibrium process with amber (equil.in)
+- Define and run the production process (prod.in), adapat parameter to get the best performance in GPU  
 
 
-- Use making-it-rain, Amber notebook, with the complex output (input for the notebook) files: .prmtop, .inpcrd, and .pdb
+
+The molecular dynamics simulations can be divide in two steps:
+
+1. Minimize and equilibrate
+2. Equilibrate and production 
+
+
+Since the systems (MR-COL and MR-AS4) are already defined and compiled, tleap and MD process, the following step is to made mutations to MR
+
+
+
+- Use **making-it-rain**, Amber_inputs.ipynb, with the complex output generated in the closter (input for the notebook) files: .prmtop, .inpcrd, and .pdb

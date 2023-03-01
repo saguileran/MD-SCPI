@@ -2,7 +2,7 @@
 
 Evaluation of the unbinding kinetics of Mineralocorticoid (MR) receptor steroid agonist Cortisol (COL) and Aldosterone (AS4) ligands.
 
-The collab notebooks used here are taken and adapted from the [making-it-rain](https://github.com/pablo-arantes/making-it-rain) project.
+The collab notebooks used here are taken and adapted from the [making-it-rain](https://github.com/pablo-arantes/making-it-rain) project. The input and generated files are stored in google drive [USP - files](https://drive.google.com/drive/folders/15Y47kHxs4rIxJ09D5U_knSuA4c3D5IR3?usp=share_link)
 
 
 ## Objectives
@@ -33,7 +33,7 @@ The collab notebooks used here are taken and adapted from the [making-it-rain](h
 
 ### Proteins and Ligands
 
-[1] [Mechanistic aspects of mineralocorticoid receptor activation](https://reader.elsevier.com/reader/sd/pii/S0085253815468644?token=C396771FBCF80CA64F0C163C698A9BE801846E86EAE7DA74516010A051E1280D3570D5EB77909C1C45B2D45A055A746E&originRegion=us-east-1&originCreation=20230228133600)
+[1] [Mechanistic aspects of mineralocorticoid receptor activation](https://reader.elsevier.com/reader/sd/pii/S0085253815468644?token=DD3F83E8E16FA5690227FDF101F9E90AE9B71E9354A0C682904FE8E2C2A683B22EB819B6DF7372B86DDB5F00FBB62164&originRegion=us-east-1&originCreation=20230228185341)
 
 [2] [The Severe Form of Hypertension Caused by the Activating S810L Mutation in the Mineralocorticoid Receptor Is Cortisone Related](https://watermark.silverchair.com/endo0528.pdf?token=AQECAHi208BE49Ooan9kkhW_Ercy7Dm3ZL_9Cf3qfKAc485ysgAAAu4wggLqBgkqhkiG9w0BBwagggLbMIIC1wIBADCCAtAGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMK5v2TP0Y-8SUBpIfAgEQgIICodyth2S6gBlqVOWW0CtAnSbB78OWCQMRvV7KaKSBbCBvNsiPZMpiVNESTRnrfepOFdX4ayeCV_t85cCUUqCJXYRkPZ-F0liM3EULkwsOaJA0qapMtbzT5la8A4Y6O3bEJlS_4yQ0zhl4LhHQ0vUoK-5He8J8VQXTYtpn2dX456xl5A5fHpkNYvzUmmP2VC3e51jYvWKuHjO60S21RWdYklQkjNAbtIcXxmqU4jZC_pnV7hEPawaETmTKMz5wp4KSMxuiH2jlA5bLP6vEkmJjwUlpQZkkpGxLdJegPkQ-xgqoeYDIwQkzCxNCKA30DazfkX6T2NqgjkMBjykCnEjThBAyznlKQc2-88ZVb80MB6u4Jq47cmhdapxjbfEZ0TWpDlmFobydg6MuVdUXcfFMfNlX6WNZUmE99HTpsVKykciHCyV4jYdzdJaXlzdZaX0r8dK1mQOn_Ya9Kgo3cepjoNEnv0pZ4L7XxwjKyW6hq8__-crepJRQRS67oCYh2nt-KF3XO0sUXG1LwEuUkGx_FEljaJct-iI2-Whm2J7LraJRUnt1MFaf-R3iCY9JgOJUQ9SyD-M2Nfmk0VVcCoR0grtE3AGOF6CMguzQ4S8Ms98736ark-2wZNM_UmMFCl3V84WLqq6XRQ7MA5-qbvx54OXTNXscSPzbw74rY0TMBFYPwNZycvHrpcM33i33cLvOJmQ6M_pX0etmoiv1un9dN-hji_DYu6vhKm__YzsfSZJM5nKNsIle7_PZS5p9-nv-LQIAvg7-w4gV4jQb6JHIfOhI_bmzOmL62Mi1JJ8jSN1JOE2DTUA8PiV1bRawB3AjZdzVBoT6Zrr7mS2Shf0BPJIs0PBRa_yCC9y1II81s_---m2dLbrwEgL7qIZDA3QWtwg)
 
