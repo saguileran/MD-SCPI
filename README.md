@@ -41,7 +41,8 @@ Evaluation of the unbinding kinetics of Mineralocorticoid (MR) receptor steroid 
 
 [3] [Comparative Analysis of Electrostatic Models for Ligand Docking](https://www.frontiersin.org/articles/10.3389/fmolb.2019.00052/full)
 
-[4] [Ligand Gaussian accelerated molecular dynamics (LiGaMD): Characterization of ligand binding thermodynamics and kinetics](https://www.biorxiv.org/content/10.1101/2020.04.20.051979v1)
+[4] [Ligand Gaussian accelerated molecular dynamics (LiGaMD):
+Characterization of ligand binding thermodynamics and kinetics](https://www.biorxiv.org/content/10.1101/2020.04.20.051979v1.full.pdf)
 
 [5] [Gaussian accelerated molecular dynamics: principles and applications](http://miaolab.org/library/documents/2021-WIREs_GaMD.pdf)
 

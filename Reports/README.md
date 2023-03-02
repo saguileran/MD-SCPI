@@ -99,7 +99,29 @@ Your browser does not support the video tag.
 - Run equilibrium process with amber (equil.in)
 - Define and run the production process (prod.in), adapat parameter to get the best performance in GPU  
 
+- Remove system translation with cpptraj (pytraj for python)
 
+```
+source /usr/local/amber20/amber.sh
+cpptraj .path/.prmtop << eof
+trajin prod.nc 
+rms first out rms.dat @CA,C,N
+trajout prod_rms.nc
+eof
+```
+
+It generates one file where all the frame are matchet to the first one, prod-rms.out file.
+
+- Calculate potential energies of the system, for ligand, protein, environment and interaction between them and residues
+
+```
+/Users/asn/workspace/AmberEnergy++2/bin/AmberEnergy++ path_to/.prmtop prod.nc |tee out.dat
+3        # select NETCDF FORMAT FILE
+1/2/3/4  # select energy calculations and enter number of ligand and residue of interes
+xmgrace -nxy out.dat  # visualize potential energies wih xmgrace: ligand, protein and sum
+```
+
+- Use [Chimera](https://www.cgl.ucsf.edu/chimera/) or [VMD](https://www.ks.uiuc.edu/Research/vmd/) to visualize the system trajectory, .prmtop and .nc files are necessary
 
 The molecular dynamics simulations can be divide in two steps:
 
@@ -109,6 +131,17 @@ The molecular dynamics simulations can be divide in two steps:
 
 Since the systems (MR-COL and MR-AS4) are already defined and compiled, tleap and MD process, the following step is to made mutations to MR
 
+Some useful file extension meanings:
 
+- **prmtop**: parameters and topology
+- **crd**: coordinates
+- **pdb**: protein data base
+- **nc**: trajectory file
+
+For the 3th step
+
+- [LiGaMD - tutorial](http://miaolab.org/GaMD/tutorial.html)
+- [GaMD - manual](http://miaolab.org/GaMD/manual.html) used to define steps and parameters to MD simulation
+- [GaMD_Amber-Tutorial](http://miaolab.org/GaMD/lib/GaMD_Amber-Tutorial.pdf) to define and tune LiGaMD parameters (sigma0/V)
 
 - Use **making-it-rain**, Amber_inputs.ipynb, with the complex output generated in the closter (input for the notebook) files: .prmtop, .inpcrd, and .pdb
