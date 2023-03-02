@@ -2,8 +2,6 @@
 
 Evaluation of the unbinding kinetics of Mineralocorticoid (MR) receptor steroid agonist Cortisol (COL) and Aldosterone (AS4) ligands.
 
-The collab notebooks used here are taken and adapted from the [making-it-rain](https://github.com/pablo-arantes/making-it-rain) project. The input and generated files are stored in google drive [USP - files](https://drive.google.com/drive/folders/15Y47kHxs4rIxJ09D5U_knSuA4c3D5IR3?usp=share_link)
-
 
 ## Objectives
 
@@ -11,6 +9,7 @@ The collab notebooks used here are taken and adapted from the [making-it-rain](h
 - Create a Molecular Dynamics (MD) simulation for the MR aldosterone/cortisol system
 - Create a Monte Carlo (MC) simulation for the MR aldosterone/cortisol system
 - Compare MD and MC simulations, are the results comparable to experiments?
+- Use MD-analysis
 
 ## Links of interest:
 

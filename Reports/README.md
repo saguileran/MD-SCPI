@@ -78,7 +78,10 @@ ambpdb -p file.prmtop < file.inpcrd > file_leap.pdb # conver tleap outputs to pd
 ```
 qsub amber.sub
 qstat
+qdel ##procees
 ```
+
+Note: the heat, equil, and density files are running using CPU (amber.cpu.sub) while the equil and prod process are assign to GPU (amber.cpu).
 
 - Copy output elements (.nc files) to the local machine
 - Display .nc files with chimera, Tools/MD/Ensemble Analysis/MD Movie, it generates a movie of the system
@@ -102,7 +105,7 @@ The molecular dynamics simulations can be divide in two steps:
 
 1. Minimize and equilibrate
 2. Equilibrate and production 
-
+3. Use LigaMD
 
 Since the systems (MR-COL and MR-AS4) are already defined and compiled, tleap and MD process, the following step is to made mutations to MR
 
