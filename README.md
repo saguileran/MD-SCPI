@@ -25,7 +25,7 @@ Evaluation of the unbinding kinetics of Mineralocorticoid (MR) receptor steroid 
 
 ## Reports
 
-[Weekly reports](https://github.com/saguileran/MD-SCPI/tree/main/Reports)
+[Weekly reports](https://saguileran.github.io/MD-SCPI/Reports/)
 
 
 ## References

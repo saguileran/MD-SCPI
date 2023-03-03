@@ -90,11 +90,20 @@ Note: the heat, equil, and density files are running using CPU (amber.cpu.sub) w
 scp sebas@nascimento:path_to_MD_folder/*.nc ./
 ```
 
-<video width="320" height="240" controls>
+<center>
+<video width="500" height="500" controls>
   <source src="../MR-AS4.mp4" type="video/mp4">
-  <source src="../MR-AS4.ogg" type="video/ogg">
 Your browser does not support the video tag.
 </video> 
+</center>
+
+
+<center>
+<video width="500" height="500" controls>
+  <source src="../MR-COL.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video> 
+</center>
 
 - Run equilibrium process with amber (equil.in)
 - Define and run the production process (prod.in), adapat parameter to get the best performance in GPU  
