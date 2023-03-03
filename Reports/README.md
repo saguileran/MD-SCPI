@@ -148,7 +148,7 @@ For the 3th step
 
 ### Output Files
 
-**MR-AS4**
+<h3 align="center">MR-AS4</h3>
 
 <center>
 <video width="500" height="500" controls>
@@ -158,8 +158,6 @@ Your browser does not support the video tag.
 </center>
 
 
-**MR-COL**
-
 <h3 align="center">MR-COL </h3>
 
 <center>
@@ -168,3 +166,15 @@ Your browser does not support the video tag.
 Your browser does not support the video tag.
 </video> 
 </center>
+
+
+
+<div class="container">
+    <video id="video" width="770" height="882" onclick="play();">
+        <source src="../MR-COL.mp4" type="video/mp4">
+    </video>
+    <div class="overlay">
+        <p>Mineracorticoid (MR) protein interaction with Cortisol (COL) ligand</p>
+    </div>
+</div>
+
