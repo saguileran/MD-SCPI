@@ -1,4 +1,4 @@
-# Weekly Reports
+# **Weekly Reports**
 
 ## Week 1
 
@@ -148,6 +148,8 @@ For the 3th step
 
 ### Output Files
 
+**MR-AS4**
+
 <center>
 <video width="500" height="500" controls>
   <source src="../MR-AS4.mp4" type="video/mp4">
@@ -155,6 +157,10 @@ Your browser does not support the video tag.
 </video> 
 </center>
 
+
+**MR-COL**
+
+<h3 align="center">MR-COL </h3>
 
 <center>
 <video width="500" height="500" controls>
