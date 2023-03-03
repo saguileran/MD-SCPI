@@ -1,3 +1,5 @@
+# Weekly Reports
+
 ## Week 1
 
 Prepare input files to MD and MC simulations:
@@ -90,20 +92,6 @@ Note: the heat, equil, and density files are running using CPU (amber.cpu.sub) w
 scp sebas@nascimento:path_to_MD_folder/*.nc ./
 ```
 
-<center>
-<video width="500" height="500" controls>
-  <source src="../MR-AS4.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video> 
-</center>
-
-
-<center>
-<video width="500" height="500" controls>
-  <source src="../MR-COL.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video> 
-</center>
 
 - Run equilibrium process with amber (equil.in)
 - Define and run the production process (prod.in), adapat parameter to get the best performance in GPU  
@@ -134,9 +122,9 @@ xmgrace -nxy out.dat  # visualize potential energies wih xmgrace: ligand, protei
 
 The molecular dynamics simulations can be divide in two steps:
 
-1. Minimize and equilibrate
-2. Equilibrate and production 
-3. Use LigaMD
+**1.** Minimize and equilibrate
+**2.** Equilibrate and production 
+**3.** Use LigaMD
 
 Since the systems (MR-COL and MR-AS4) are already defined and compiled, tleap and MD process, the following step is to made mutations to MR
 
@@ -154,3 +142,23 @@ For the 3th step
 - [GaMD_Amber-Tutorial](http://miaolab.org/GaMD/lib/GaMD_Amber-Tutorial.pdf) to define and tune LiGaMD parameters (sigma0/V)
 
 - Use **making-it-rain**, Amber_inputs.ipynb, with the complex output generated in the closter (input for the notebook) files: .prmtop, .inpcrd, and .pdb
+
+
+
+
+### Output Files
+
+<center>
+<video width="500" height="500" controls>
+  <source src="../MR-AS4.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video> 
+</center>
+
+
+<center>
+<video width="500" height="500" controls>
+  <source src="../MR-COL.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video> 
+</center>
