@@ -6,7 +6,5 @@ author: Sebastian Aguilera Novoa
 show_downloads: true
 theme: jekyll-theme-leap-day
 
-markdown: kramdown
+markdown: markdown
 
-plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
