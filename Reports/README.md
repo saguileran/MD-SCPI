@@ -141,6 +141,15 @@ For the 3th step
 - [GaMD - manual](http://miaolab.org/GaMD/manual.html) used to define steps and parameters to MD simulation
 - [GaMD_Amber-Tutorial](http://miaolab.org/GaMD/lib/GaMD_Amber-Tutorial.pdf) to define and tune LiGaMD parameters (sigma0/V)
 
+Prepare LiGaMD
+
+- Input files examples in [Amber tutorials](http://miaolab.org/GaMD/lib/GaMD_Amber-Tutorial.pdf) page 5
+- Script to plot ouput files with python [PyReweighting](http://miaolab.org/PyReweighting/)
+- [Mioa Lab - resources](http://miaolab.org/resources.html)
+- Check meanning of LiGAMD input parameters [amber manual](http://ambermd.org/doc12/Amber22.pdf) page 499
+
+
+
 - Use **making-it-rain**, Amber_inputs.ipynb, with the complex output generated in the closter (input for the notebook) files: .prmtop, .inpcrd, and .pdb
 
 
@@ -162,7 +171,7 @@ For the 3th step
 </div>
 
 
-<h3 align="center;" margin-bottom="0">MR-COL</h3>
+<h3 align="center" margin-bottom="-10">MR-COL</h3>
 
 <div class="container">
   <center>

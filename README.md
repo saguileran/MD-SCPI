@@ -23,9 +23,7 @@ Evaluation of the unbinding kinetics of Mineralocorticoid (MR) receptor steroid 
 - [Chimera User Guide - commands](https://www.cgl.ucsf.edu/chimera/docs/UsersGuide/framecommand.html)
 
 
-## Reports
-
-[Weekly reports](https://saguileran.github.io/MD-SCPI/Reports/)
+## [Weekly Reports](https://saguileran.github.io/MD-SCPI/Reports/)
 
 
 ## References
@@ -43,6 +41,9 @@ Evaluation of the unbinding kinetics of Mineralocorticoid (MR) receptor steroid 
 
 [4] [Ligand Gaussian accelerated molecular dynamics (LiGaMD):
 Characterization of ligand binding thermodynamics and kinetics](https://www.biorxiv.org/content/10.1101/2020.04.20.051979v1.full.pdf)
+
+[] [Ligand Gaussian Accelerated Molecular Dynamics (LiGaMD):
+Characterization of Ligand Binding Thermodynamics and Kinetics](https://pubs.acs.org/doi/pdf/10.1021/acs.jctc.0c00395)
 
 [5] [Gaussian accelerated molecular dynamics: principles and applications](http://miaolab.org/library/documents/2021-WIREs_GaMD.pdf)
 
