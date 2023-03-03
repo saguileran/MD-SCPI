@@ -151,7 +151,7 @@ For the 3th step
 <h3 align="center">MR-AS4</h3>
 
 <div class="container">
-    <video id="video" width="500" height="500" onclick="play();">
+    <video id="video" width="500" height="500" controls>
         <source src="../MR-AS4.mp4" type="video/mp4">
     </video>
     <div class="overlay">
@@ -163,7 +163,7 @@ For the 3th step
 <h3 align="center">MR-COL </h3>
 
 <div class="container">
-    <video id="video" width="500" height="500" onclick="play();">
+    <video id="video" width="500" height="500" controls>
         <source src="../MR-COL.mp4" type="video/mp4">
     </video>
     <div class="overlay">
