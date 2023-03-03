@@ -1,4 +1,1 @@
-density.nc
-heat.nc
-equil.nc
-prod.nc
+*.nc
