@@ -150,31 +150,24 @@ For the 3th step
 
 <h3 align="center">MR-AS4</h3>
 
-<center>
-<video width="500" height="500" controls>
-  <source src="../MR-AS4.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video> 
-</center>
+<div class="container">
+    <video id="video" width="500" height="500" onclick="play();">
+        <source src="../MR-AS4.mp4" type="video/mp4">
+    </video>
+    <div class="overlay">
+        <p>Mineralocorticoid (MR) protein interaction with aldosteron (AS4) ligand</p>
+    </div>
+</div>
 
 
 <h3 align="center">MR-COL </h3>
 
-<center>
-<video width="500" height="500" controls>
-  <source src="../MR-COL.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video> 
-</center>
-
-
-
 <div class="container">
-    <video id="video" width="770" height="882" onclick="play();">
+    <video id="video" width="500" height="500" onclick="play();">
         <source src="../MR-COL.mp4" type="video/mp4">
     </video>
     <div class="overlay">
-        <p>Mineracorticoid (MR) protein interaction with Cortisol (COL) ligand</p>
+        <p>Mineralocorticoid (MR) protein interaction with cortisol (COL) ligand</p>
     </div>
 </div>
 
