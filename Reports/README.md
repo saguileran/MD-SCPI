@@ -95,8 +95,19 @@ scp sebas@nascimento:path_to_MD_folder/*.nc ./
 
 - Run equilibrium process with amber (equil.in)
 - Define and run the production process (prod.in), adapat parameter to get the best performance in GPU  
+- automaging process
+
+```
+source /usr/local/amber20/amber.sh
+cpptraj path_to/.prmtop << eof
+trajin prod.nc 
+autoimage
+trajout prod_img.nc
+eof
+```
 
 - Remove system translation with cpptraj (pytraj for python)
+
 
 ```
 source /usr/local/amber20/amber.sh
