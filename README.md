@@ -25,6 +25,46 @@ Evaluation of the unbinding kinetics of Mineralocorticoid (MR) receptor steroid 
 
 ## [Weekly Reports](https://saguileran.github.io/MD-SCPI/Reports/)
 
+Report of weekly updates
+
+## Output Files
+
+
+<h3 align="center" margin-bottom=0>MR-AS4</h3>
+
+<div class="container">
+  <center>
+    <video id="video" width="500" height="500" controls>
+        <source src="./MR-AS4.mp4" type="video/mp4">
+    </video>
+  </center>
+    <div class="overlay">
+        <p align="center">Mineralocorticoid (MR) protein interaction with aldosteron (AS4) ligand</p>
+    </div>
+</div>
+
+
+<h3 align="center" margin-bottom="-10">MR-COL</h3>
+
+<div class="container">
+  <center>
+    <video id="video" width="500" height="500" controls>
+        <source src="./MR-COL.mp4" type="video/mp4">
+    </video>
+  </center>
+    <div class="overlay">
+        <p align="center">Mineralocorticoid (MR) protein interaction with cortisol (COL) ligand</p>
+    </div>
+</div>
+
+
+<h3 align="center" margin-bottom="-10">Energies</h3>
+
+
+<img src="./Energies.png" alt="Energies of MR-AS4/COL system" class="center" width="600" height="400">
+
+This image is obtained using the [PlotEnergies.ipynb](./NoteBooks/PlotEnergies.ipynb) notebook.
+
 
 ## References
 
