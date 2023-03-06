@@ -234,4 +234,16 @@ where:
     </div>
 </div>
 
+
+<h3 align="center" margin-bottom="-10">Energies</h3>
+
+
+<img src="../Energies.png" alt="Energies of MR-AS4/COL system" class="center" width="600" height="400"> 
+
+This image is obtained using the [PlotEnergies.ipynb](../NoteBooks/PlotEnergies.ipynb) notebook.
+
+
 # [MD-SCPI project](https://saguileran.github.io/MD-SCPI/)
+
+
+ <img src="wrongname.gif" alt="Flowers in Chania"> 
