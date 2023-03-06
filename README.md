@@ -60,8 +60,9 @@ Report of weekly updates
 
 <h3 align="center" margin-bottom="-10">Energies</h3>
 
-
-<img src="./Energies.png" alt="Energies of MR-AS4/COL system" class="center" width="600" height="400">
+<center>
+<img src="./Energies.png" alt="Energies of MR-AS4/COL system" class="center" width="600" height="300">
+</center>
 
 This image is obtained using the [PlotEnergies.ipynb](./NoteBooks/PlotEnergies.ipynb) notebook.
 
