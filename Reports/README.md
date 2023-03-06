@@ -95,7 +95,7 @@ scp sebas@nascimento:path_to_MD_folder/*.nc ./
 
 - Run equilibrium process with amber (equil.in)
 - Define and run the production process (prod.in), adapat parameter to get the best performance in GPU  
-- automaging process
+- automaging process: This add the periodical boundary conditions for the molecules inside the box
 
 ```
 source /usr/local/amber20/amber.sh
@@ -112,9 +112,9 @@ eof
 ```
 source /usr/local/amber20/amber.sh
 cpptraj .path/.prmtop << eof
-trajin prod.nc 
+trajin prod_img.nc 
 rms first out rms.dat @CA,C,N
-trajout prod_rms.nc
+trajout prod_img_rms.nc
 eof
 ```
 
@@ -157,11 +157,50 @@ Prepare LiGaMD
 - Input files examples in [Amber tutorials](http://miaolab.org/GaMD/lib/GaMD_Amber-Tutorial.pdf) page 5
 - Script to plot ouput files with python [PyReweighting](http://miaolab.org/PyReweighting/)
 - [Mioa Lab - resources](http://miaolab.org/resources.html)
-- Check meanning of LiGAMD input parameters [amber manual](http://ambermd.org/doc12/Amber22.pdf) page 499
+- Check meanning of LiGAMD input parameters [amber manual](http://ambermd.org/doc12/Amber22.pdf) page 499, 471
 
 
 
 - Use **making-it-rain**, Amber_inputs.ipynb, with the complex output generated in the closter (input for the notebook) files: .prmtop, .inpcrd, and .pdb
+
+
+## Week 3
+
+- Reset numering on MR, it starts at 727
+- Add mutations to the ligand (S810L) in chimera
+
+```
+swapaa leu:810
+```
+
+- Prepare and run LiGaMD simulations on server
+
+```
+iEP = 2
+igamd = 10 (single boost)
+dt = 0.001
+sigma0P = default 
+change mask    225 -> 1 (residue number)
+```
+
+- Calculation of energies in different residues
+
+| **Residue** | **Atom #** | **AS4** | **COL** |
+|:-----------:|:----------:|:-------:|:-------:|
+|     SER     |     85     |     ~   |         |
+|     ARG     |     92     |   *230  |    *    |
+|     GLN     |     51     |         |    *    |
+|     ASN     |     45     |         |         |
+|     THR     |     222    |         |         |
+|      HH     |     22     |         |         |
+|     SER     |     118    |         |         |
+|     SER     |     810    |         |         |
+
+where:
+
+- * relevant interaction
+- ~ middle interaction
+
 
 
 
