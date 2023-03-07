@@ -89,7 +89,7 @@ This image is obtained using the [PlotEnergies.ipynb](./NoteBooks/PlotEnergies.i
 Characterization of ligand binding thermodynamics and kinetics](https://www.biorxiv.org/content/10.1101/2020.04.20.051979v1.full.pdf)
 
 [8] [Ligand Gaussian Accelerated Molecular Dynamics (LiGaMD):
-Characterization of Ligand Binding Thermodynamics and Kinetics - 2021](https://pubs.acs.org/doi/pdf/10.1021/acs.jctc.0c00395)
+Characterization of Ligand Binding Thermodynamics and Kinetics - latest](https://pubs.acs.org/doi/pdf/10.1021/acs.jctc.0c00395)
 
 [9] [Gaussian accelerated molecular dynamics: principles and applications](http://miaolab.org/library/documents/2021-WIREs_GaMD.pdf)
 
