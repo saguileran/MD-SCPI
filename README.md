@@ -25,7 +25,7 @@ Evaluation of the unbinding kinetics of Mineralocorticoid (MR) receptor steroid 
 
 ## [Weekly Reports](https://saguileran.github.io/MD-SCPI/Reports/)
 
-Report of weekly updates
+Report of weekly updates. 
 
 ## Output Files
 
@@ -61,10 +61,10 @@ Report of weekly updates
 <h3 align="center" margin-bottom="-10">Energies</h3>
 
 <center>
-<img src="./Energies.png" alt="Energies of MR-AS4/COL system" class="center" width="600" height="300">
+<img src="./Energies.png" alt="Total energies of MR-AS4/COL systems" class="center" width="600" height="300">
 </center>
 
-This image is obtained using the [PlotEnergies.ipynb](./NoteBooks/PlotEnergies.ipynb) notebook.
+This image is obtained using the [PlotEnergies.ipynb](./NoteBooks/PlotEnergies.ipynb) notebook that use jscatter pacakge to import dat files and matplotlib to plot.
 
 
 ## References
@@ -79,13 +79,13 @@ This image is obtained using the [PlotEnergies.ipynb](./NoteBooks/PlotEnergies.i
 
 [4] [Crystal structure of a mutant mineralocorticoid receptor responsible for hypertension](https://www.nature.com/articles/nsmb939)
 
-[] [Activating MineralocorticoidReceptor Mutation inHypertension Exacerbated byPregnancy](https://www.science.org/doi/epdf/10.1126/science.289.5476.119)
+[5] [Activating MineralocorticoidReceptor Mutation inHypertension Exacerbated byPregnancy](https://www.science.org/doi/epdf/10.1126/science.289.5476.119)
 
 ### Software
 
-[5] [Comparative Analysis of Electrostatic Models for Ligand Docking](https://www.frontiersin.org/articles/10.3389/fmolb.2019.00052/full)
+[6] [Comparative Analysis of Electrostatic Models for Ligand Docking](https://www.frontiersin.org/articles/10.3389/fmolb.2019.00052/full)
 
-[6] [Ligand Gaussian accelerated molecular dynamics (LiGaMD):
+[7] [Ligand Gaussian accelerated molecular dynamics (LiGaMD):
 Characterization of ligand binding thermodynamics and kinetics](https://www.biorxiv.org/content/10.1101/2020.04.20.051979v1.full.pdf)
 
 [8] [Ligand Gaussian Accelerated Molecular Dynamics (LiGaMD):

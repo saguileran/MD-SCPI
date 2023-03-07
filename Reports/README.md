@@ -78,7 +78,8 @@ ambpdb -p file.prmtop < file.inpcrd > file_leap.pdb # conver tleap outputs to pd
 - Closter command lines [Nascimento Lab - Cluster](http://nascimento.ifsc.usp.br/wordpress/?page_id=53)
 
 ```
-qsub amber.sub
+qsub amber.sub (GPU)
+qsub amber.cpu.sub (CPU)
 qstat
 qdel ##procees
 ```
@@ -123,7 +124,7 @@ It generates one file where all the frame are matchet to the first one, prod-rms
 - Calculate potential energies of the system, for ligand, protein, environment and interaction between them and residues
 
 ```
-/Users/asn/workspace/AmberEnergy++2/bin/AmberEnergy++ path_to/.prmtop prod.nc |tee out.dat
+/Users/asn/workspace/AmberEnergy++2/bin/AmberEnergy++ path_to/.prmtop prod.nc |tee out_name.dat
 3        # select NETCDF FORMAT FILE
 1/2/3/4  # select energy calculations and enter number of ligand and residue of interes
 xmgrace -nxy out.dat  # visualize potential energies wih xmgrace: ligand, protein and sum
@@ -166,7 +167,9 @@ Prepare LiGaMD
 
 ## Week 3
 
-- Reset numering on MR, it starts at 727
+Create mutation an prepare again all necessary input files
+
+- Reset numering on MR mutation, it starts at 727
 - Add mutations to the ligand (S810L) in chimera
 
 ```
@@ -198,9 +201,13 @@ change mask    225 -> 1 (residue number)
 
 where:
 
-- * relevant interaction
-- ~ middle interaction
+- $*$: relevant interaction and # frame
+- $~$: middle interaction
 
 
+- Prepare and run the leaprc file for the MR mutation
+- Run equiliration procees for the mutation ligand	
 
 # [MD-SCPI project](https://saguileran.github.io/MD-SCPI/)
+
+Home page of the project
