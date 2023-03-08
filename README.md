@@ -5,11 +5,10 @@ Evaluation of the unbinding kinetics of Mineralocorticoid (MR) receptor steroid 
 
 ## Objectives
 
-- Prepare the input files: PDB and mol files of the ligands (aldosterone and cortisol) and receptor (MR)
-- Create a Molecular Dynamics (MD) simulation for the MR aldosterone/cortisol system
+- Prepare the input files: PDB and mol files of the Mineralocorticoid (MR) and mutation ligands and proteins Aldosterone and Cortisol (AS4 and COL)
+- Create a Molecular Dynamics (MD) simulation for the MR/MR_mut - aldosterone/cortisol system
 - Create a Monte Carlo (MC) simulation for the MR aldosterone/cortisol system
-- Compare MD and MC simulations, are the results comparable to experiments?
-- Use MD-analysis
+- Contrast MD and MC simulations, does the MC simulation show the same behaviour has MC?
 
 ## Links of interest:
 
@@ -35,7 +34,7 @@ Report of weekly updates.
 <div class="container">
   <center>
     <video id="video" width="500" height="500" controls>
-        <source src="./MR-AS4.mp4" type="video/mp4">
+        <source src="./Results/MR-AS4.mp4" type="video/mp4">
     </video>
   </center>
     <div class="overlay">
@@ -49,7 +48,7 @@ Report of weekly updates.
 <div class="container">
   <center>
     <video id="video" width="500" height="500" controls>
-        <source src="./MR-COL.mp4" type="video/mp4">
+        <source src="./Results/MR-COL.mp4" type="video/mp4">
     </video>
   </center>
     <div class="overlay">
@@ -61,7 +60,7 @@ Report of weekly updates.
 <h3 align="center" margin-bottom="-10">Energies</h3>
 
 <center>
-<img src="./Energies.png" alt="Total energies of MR-AS4/COL systems" class="center" width="600" height="300">
+<img src="./Results/Energies.png" alt="Total energies of MR-AS4/COL systems" class="center" width="600" height="300">
 </center>
 
 This image is obtained using the [PlotEnergies.ipynb](./NoteBooks/PlotEnergies.ipynb) notebook that use jscatter pacakge to import dat files and matplotlib to plot.
@@ -103,3 +102,7 @@ on Gaussian descriptors](https://reader.elsevier.com/reader/sd/pii/S022352341200
 [13] [Towards a critical evaluation of an empirical and volume-based solvation function for ligand docking](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0174336)
 
 [14] [Making-it-rain: Cloud-based molecular simulations for everyone](https://zenodo.org/record/5196783#.Y_z-0rTMK3w)
+
+
+
+<!-- include ./References/README.md -->

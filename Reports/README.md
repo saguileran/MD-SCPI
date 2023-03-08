@@ -201,12 +201,23 @@ change mask    225 -> 1 (residue number)
 
 where:
 
-- $*$: relevant interaction and # frame
-- $~$: middle interaction
+- *: relevant interaction and # frame
+- ~: middle interaction
 
 
 - Prepare and run the leaprc file for the MR mutation
 - Run equiliration procees for the mutation ligand	
+
+- Add histograms to energies plot
+- Run equi, heat, density, equil and prod for the MR-AS4_mut
+
+
+
+- Leap procces for the MR-COL_mut file, prepare all around it 
+
+
+
+
 
 # [MD-SCPI project](https://saguileran.github.io/MD-SCPI/)
 
