@@ -4,8 +4,11 @@ layout: single
 search: true
 author_profile: false
 toc_sticky: true
-toc: true
+toc: false
 classes: wide
+
+sidebar:
+  nav: "reports"
 ---
 
 # Weekly Reports
