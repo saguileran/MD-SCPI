@@ -28,11 +28,10 @@ reports:
         url: /#output-files
       - title: "References"
         url: /#references
-        children:
-          - title: "Proteins and Ligands"
-            url: /#proteins-and-ligands
-          - title: "Software"
-            url: /#software
+      - title: "Proteins and Ligands"
+        url: /#proteins-and-ligands
+      - title: "Software"
+        url: /#software
 
   - title: Weekly Reports
     children:
