@@ -1,15 +1,41 @@
-title: Molecular Dynamics - Sao Carlos Physics Institute (MD-SCPI)
-description: Evaluation of the unbinding kinetics of Mineralocorticoid (MR) receptor steroid agonist Cortisol (COL) and Aldosterone (AS4) ligands.
-author: Sebastian Aguilera Novoa
+#title: Molecular Dynamics - Sao Carlos Physics Institute (MD-SCPI)
+#description: Evaluation of the unbinding kinetics of Mineralocorticoid (MR) receptor steroid agonist Cortisol (COL) and Aldosterone (AS4) ligands.
+#author: Sebastian Aguilera Novoa
 
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 
+# Site Settings
+locale                   : "en-US"
+title                    : &title "Molecular Dynamics - Sao Carlos Physics Institute (MD-SCPI)"
+title_separator          : "-"
+subtitle                 : &description "Evaluation of the unbinding kinetics of Mineralocorticoid (MR) receptor steroid agonist Cortisol (COL) and Aldosterone (AS4) ligands. Summer research at SCPI - Brazil "
+name                     : &name "Sao Carlos Physics Institute"
+description              : *description
+url                      : "https://saguileran.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl                  : "/" # the subpath of your site, e.g. "/blog"
+repository               : "saguileran/MD-SCPI/" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+teaser                   : "assets/img/404.png" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+logo                     : "assets/img/logo.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+masthead_title           : *title # overrides the website title displayed in the masthead, use " " for no title
+breadcrumbs              : false # true, false (default)
+words_per_minute         : 200
+
+
+
+# Site Author
+author:
+  name             : *name #"Sebastian Aguilera Novoa"
+#  avatar           : "/assets/img/bio-photo.jpg"
+#  bio              : "A physicist interested in sound waves simulations, computer science, signal processing, and science teaching."
+  location         : "Bogotá, CO"
+  email            : "saguileran@unal.edu.co"
+  links:
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://saguileran.github.io/"
+
+
+
 plugins:
   - jekyll-include-cache
-
-
-#show_downloads: true
-#theme: jekyll-theme-leap-day
-
-#markdown: markdown
 

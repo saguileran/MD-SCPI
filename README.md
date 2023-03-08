@@ -1,4 +1,7 @@
-# Molecular Dynamics - Sao Carlos Physics Institute (MD-SCPI)
+---
+layout: single
+author_profile: true
+---
 
 Evaluation of the unbinding kinetics of Mineralocorticoid (MR) receptor steroid agonist Cortisol (COL) and Aldosterone (AS4) ligands.
 
@@ -6,12 +9,12 @@ Evaluation of the unbinding kinetics of Mineralocorticoid (MR) receptor steroid 
 # Table of Contents
 
 - [Objectives](#objectives)
-- [Links of Interest](#Links_of_Interest)
-- [Weekly Reports](#weekly_reports)
+- [Links of Interest](#links-of-interest)
+- [Weekly Reports](#weekly-reports)
 - [Output Files](#output-files)
-- [References](#References)
-	- [Proteins and Ligands](#Proteins_and_Ligands)
-	- [Software](#Software)
+- [References](#references)
+	- [Proteins and Ligands](#proteins-and-ligands)
+	- [Software](#software)
 
 ## Objectives
 
