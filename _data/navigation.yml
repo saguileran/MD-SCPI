@@ -2,6 +2,8 @@
 main:
   - title: "Reports"
     url: /reports/
+  - title: 'Repository'
+    url: https://github.com/saguileran/MD-SCPI
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"

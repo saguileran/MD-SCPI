@@ -19,8 +19,8 @@ locale                   : "en-US"
 title                    : "Molecular Dynamics - Sao Carlos Physics Institute (MD-SCPI)"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
-description              : "An amazing website."
+name                     : 'Summer Research at SCPI' #"Your Name"
+description              : 'Evaluation of the unbinding kinetics of Mineralocorticoid (MR) receptor steroid agonist Cortisol (COL) and Aldosterone (AS4) ligands.'
 url                      : "https://saguileran.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "saguileran/MD-SCPI" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
