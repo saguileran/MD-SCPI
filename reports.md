@@ -2,7 +2,7 @@
 permalink: /reports/
 layout: single
 search: true
-author_profile: false
+author_profile: true
 toc_sticky: true
 toc: false
 classes: wide
@@ -11,7 +11,9 @@ sidebar:
   nav: "reports"
 ---
 
-# Weekly Reports
+<h1> Weekly Reports </h1> 
+
+Reports made during the internship
 
 ## Week 1
 
