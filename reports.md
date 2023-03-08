@@ -3,10 +3,12 @@ permalink: /reports/
 layout: single
 search: true
 author_profile: false
+toc_sticky: false
 toc: true
+classes: wide
 ---
 
-# **Weekly Reports**
+# Weekly Reports
 
 ## Week 1
 
