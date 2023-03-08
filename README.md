@@ -5,10 +5,10 @@ Evaluation of the unbinding kinetics of Mineralocorticoid (MR) receptor steroid 
 
 # Table of Contents
 
-- [Objectives](#Objectives)
+- [Objectives](#objectives)
 - [Links of Interest](#Links_of_Interest)
-- [Weekly Reports](#Weekly_Reports)
-- [Output Files](#Output_Files)
+- [Weekly Reports](#weekly_reports)
+- [Output Files](#output-files)
 - [References](#References)
 	- [Proteins and Ligands](#Proteins_and_Ligands)
 	- [Software](#Software)
