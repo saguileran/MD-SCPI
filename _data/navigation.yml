@@ -12,3 +12,46 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+
+reports:
+  - title: Home
+  - url: /
+    children:
+      - title: "Overview"
+        url: /#overview
+      - title: "Objectives"
+        url: /objectives
+      - title: "Links of Interest"
+        url: /#links-of-interest
+      - title: "Weekly Reports"
+        url: /#weekly-reports
+      - title: "Output Files"
+        url: /#output-files
+      - title: "References"
+        url: /#references
+        children:
+          - title: "Proteins and Ligands"
+            url: /#proteins-and-ligands
+          - title: "Software"
+            url: /#software
+
+  - title: Weekly Reports
+    children:
+      - title: "Week 1"
+        url: /reports/#week-1
+      - title: "Week 2"
+        url: /reports/#week-2
+      - title: "Week 3"
+        url: /reports/#week-3
+      - title: "Week 4"
+        url: /reports/#week-4
+      - title: "Week 5"
+        url: /reports/#week-5
+      - title: "Week 6"
+        url: /reports/#week-6
+      - title: "Week 7"
+        url: /reports/#week-7
+      - title: "Week 8"
+        url: /reports/#week-8
+      - title: "Final Report"
+        url: /reports/#final
