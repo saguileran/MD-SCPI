@@ -2,9 +2,14 @@ title: Molecular Dynamics - Sao Carlos Physics Institute (MD-SCPI)
 description: Evaluation of the unbinding kinetics of Mineralocorticoid (MR) receptor steroid agonist Cortisol (COL) and Aldosterone (AS4) ligands.
 author: Sebastian Aguilera Novoa
 
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 
-show_downloads: true
-theme: jekyll-theme-leap-day
+plugins:
+  - jekyll-include-cache
 
-markdown: markdown
+
+#show_downloads: true
+#theme: jekyll-theme-leap-day
+
+#markdown: markdown
 
