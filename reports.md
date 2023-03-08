@@ -198,78 +198,79 @@ change mask    225 -> 1 (residue number)
 - Calculation of energies in different residues
 
 <center>
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-baqh{text-align:center;vertical-align:top}
-.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
-.tg .tg-7btt{border-color:inherit;font-weight:bold;text-align:center;vertical-align:top}
-</style>
-<table class="tg">
-<thead>
-  <tr>
-    <th class="tg-7btt">Residue</th>
-    <th class="tg-7btt">Atom #</th>
-    <th class="tg-7btt">AS4</th>
-    <th class="tg-7btt">COL</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td class="tg-c3ow">SER</td>
-    <td class="tg-c3ow">85</td>
-    <td class="tg-c3ow">~</td>
-    <td class="tg-c3ow"></td>
-  </tr>
-  <tr>
-    <td class="tg-c3ow">ARG</td>
-    <td class="tg-c3ow">92</td>
-    <td class="tg-c3ow">*230</td>
-    <td class="tg-c3ow">*</td>
-  </tr>
-  <tr>
-    <td class="tg-c3ow">GLN</td>
-    <td class="tg-c3ow">51</td>
-    <td class="tg-c3ow">*</td>
-    <td class="tg-c3ow"></td>
-  </tr>
-  <tr>
-    <td class="tg-baqh">ASN</td>
-    <td class="tg-baqh">45</td>
-    <td class="tg-baqh"></td>
-    <td class="tg-baqh"></td>
-  </tr>
-  <tr>
-    <td class="tg-baqh">THR</td>
-    <td class="tg-baqh">222</td>
-    <td class="tg-baqh"></td>
-    <td class="tg-baqh"></td>
-  </tr>
-  <tr>
-    <td class="tg-baqh">HH</td>
-    <td class="tg-baqh">22</td>
-    <td class="tg-baqh"></td>
-    <td class="tg-baqh"></td>
-  </tr>
-  <tr>
-    <td class="tg-baqh">SER</td>
-    <td class="tg-baqh">118</td>
-    <td class="tg-baqh"></td>
-    <td class="tg-baqh"></td>
-  </tr>
-  <tr>
-    <td class="tg-baqh">SER</td>
-    <td class="tg-baqh">810</td>
-    <td class="tg-baqh"></td>
-    <td class="tg-baqh"></td>
-  </tr>
-</tbody>
+<table rules="groups">
+  <thead>
+    <tr>
+      <th style="text-align: left">Residue</th>
+      <th style="text-align: center">Atom #th>
+      <th style="text-align: right">AS4</th>
+      <th style="text-align: right">COL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">SER</td>
+      <td style="text-align: center">85</td>
+      <td style="text-align: right">~</td>
+      <td style="text-align: right"></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">ARGtd>
+      <td style="text-align: center">92/td>
+      <td style="text-align: right">*230</td>
+      <td style="text-align: right"></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td style="text-align: left">GLN</td>
+      <td style="text-align: center">51</td>
+      <td style="text-align: right">*</td>
+      <td style="text-align: right"></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">ASN</td>
+      <td style="text-align: center">45</td>
+      <td style="text-align: right"></td>
+      <td style="text-align: right"></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td style="text-align: left">THR</td>
+      <td style="text-align: center">220</td>
+      <td style="text-align: right"></td>
+      <td style="text-align: right"></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">HH</td>
+      <td style="text-align: center">22</td>
+      <td style="text-align: right"></td>
+      <td style="text-align: right"></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td style="text-align: left">SER</td>
+      <td style="text-align: center">118</td>
+      <td style="text-align: right"></td>
+      <td style="text-align: right"></td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td style="text-align: left">SER</td>
+      <td style="text-align: center">118</td>
+      <td style="text-align: right"></td>
+      <td style="text-align: right"></td>
+    </tr>
+  </tfoot>
 </table>
 </center>
 
+
+  
+</center>
 where:
 
 - *: relevant interaction with the frame number
