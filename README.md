@@ -102,9 +102,3 @@ on Gaussian descriptors](https://reader.elsevier.com/reader/sd/pii/S022352341200
 [13] [Towards a critical evaluation of an empirical and volume-based solvation function for ligand docking](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0174336)
 
 [14] [Making-it-rain: Cloud-based molecular simulations for everyone](https://zenodo.org/record/5196783#.Y_z-0rTMK3w)
-
-
-
-<!-- include ./Results/README.md -->
-
-{{./NoteBooks/README.md}}
