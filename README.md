@@ -8,7 +8,7 @@ Evaluation of the unbinding kinetics of Mineralocorticoid (MR) receptor steroid 
 - Prepare the input files: PDB and mol files of the Mineralocorticoid (MR) and mutation ligands and proteins Aldosterone and Cortisol (AS4 and COL)
 - Create a Molecular Dynamics (MD) simulation for the MR/MR_mut - aldosterone/cortisol system
 - Create a Monte Carlo (MC) simulation for the MR aldosterone/cortisol system
-- Contrast MD and MC simulations, does the MC simulation show the same behaviour has MC?
+- Contrast MD and MC simulations, does the MC simulation show the same behavior as MC?
 
 ## Links of interest:
 
