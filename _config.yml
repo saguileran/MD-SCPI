@@ -16,13 +16,13 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Molecular Dynamics - Sao Carlos Physics Institute (MD-SCPI)"
+title                    : &title "Molecular Dynamics - Summer Internship"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
-name                     : 'Summer Research at SCPI' #"Your Name"
-description              : 'Evaluation of the unbinding kinetics of Mineralocorticoid (MR) receptor steroid agonist Cortisol (COL) and Aldosterone (AS4) ligands.'
+subtitle                 : &subtitle "Sao Carlos Physics Institute (SCPI)"  # site tagline that appears below site title in masthead
+name                     : &name'Sebastian Aguilera Novoa' #"Your Name"
+description              : &description 'Evaluation of the unbinding kinetics of Mineralocorticoid (MR) receptor steroid agonist Cortisol (COL) and Aldosterone (AS4) ligands.'
 url                      : "https://saguileran.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
+baseurl                  : "/MD-SCPI" # the subpath of your site, e.g. "/blog"
 repository               : "saguileran/MD-SCPI" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
@@ -104,22 +104,25 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : *name #"Your Name"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
+  bio              : "Files and results from the summer internship in Brazil in the field of computational structural biology" #"I am an **amazing** person."
   location         : "Somewhere"
-  email            :
+  email            : "saguileran@unal.edu.co"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+       url: "mailto:saguileran@unal.edu.co"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
+      url: "https://saguileran.github.io/"
 
 # Site Footer
 footer:
   links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+       url: "mailto:saguileran@unal.edu.co"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url:
@@ -128,7 +131,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: "https://github.com/saguileran"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
