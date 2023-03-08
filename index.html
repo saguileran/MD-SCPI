@@ -2,3 +2,116 @@
 layout: home
 author_profile: true
 ---
+
+
+<p>Evaluation of the unbinding kinetics of Mineralocorticoid (MR) receptor steroid agonist Cortisol (COL) and Aldosterone (AS4) ligands.</p>
+<div id="toc_container">
+    <p class="toc_title">Table of Contents</p>
+    <ul class="toc_list">
+      <li><a href="#Overview">Overview</a>
+      <!--
+      <ul>
+        <li><a href="#First_Sub_Point_2">1.2 First Sub Point 2</a></li>
+      </ul> -->
+    </li>
+    <li><a href="#Objectives">Objectives</a></li>
+    <li><a href="#Links_of_Interest">Links of Interest</a></li>
+    <li><a href="#Weekly_Reports]">Weekly Reports</a></li>
+    <li><a href="#Output_Files">Output Files</a></li>
+    <li><a href="#References">References</a></li>
+    <ul>
+        <li><a href="#Proteins_and_Ligands">Proteins and Ligands</a></li>
+        <li><a href="#Software">Software</a></li>
+      </ul>
+    </ul>
+</div>
+
+<h1 id="table-of-contents">Table of Contents</h1>
+<ul>
+<li><a href="#objectives">Objectives</a></li>
+<li><a href="#links-of-interest">Links of Interest</a></li>
+<li><a href="#weekly-reports">Weekly Reports</a></li>
+<li><a href="#output-files">Output Files</a></li>
+<li><a href="#references">References</a><ul>
+<li><a href="#proteins-and-ligands">Proteins and Ligands</a></li>
+<li><a href="#software">Software</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="objectives">Objectives</h2>
+<ul>
+<li>Prepare the input files: PDB and mol files of the Mineralocorticoid (MR) and mutation ligands and proteins Aldosterone and Cortisol (AS4 and COL)</li>
+<li>Create a Molecular Dynamics (MD) simulation for the MR/MR_mut - aldosterone/cortisol system</li>
+<li>Create a Monte Carlo (MC) simulation for the MR aldosterone/cortisol system</li>
+<li>Contrast MD and MC simulations, does the MC simulation show the same behavior as MC?</li>
+</ul>
+<h2 id="links-of-interest">Links of Interest</h2>
+<ul>
+<li><a href="https://www.rcsb.org/">PDB-rcsb</a></li>
+<li><a href="http://miaolab.org/GaMD/">GaMD</a></li>
+<li><a href="https://github.com/ljmartin/openmm_gamd">GamD in openMM</a></li>
+<li><a href="https://github.com/MiaoLab20/GaMD-OpenMM">GamD</a></li>
+<li><a href="https://github.com/openmm/openmm">OpenMM</a></li>
+<li><a href="https://github.com/alessandronascimento/LiBELa">LiBELa</a></li>
+<li><a href="http://ambermd.org/doc12/Amber22.pdf">Amber Manuals</a></li>
+<li><a href="https://www.cgl.ucsf.edu/chimera/docs/UsersGuide/framecommand.html">Chimera User Guide - commands</a></li>
+</ul>
+<h2 id="-weekly-reports-https-saguileran-github-io-md-scpi-reports-"><a href="https://saguileran.github.io/MD-SCPI/Reports/">Weekly Reports</a></h2>
+<p>Report of weekly updates. </p>
+<h2 id="output-files">Output Files</h2>
+<h3 align="center" margin-bottom=0>MR-AS4</h3>
+
+<div class="container">
+  <center>
+    <video id="video" width="500" height="500" controls>
+        <source src="./Results/MR-AS4.mp4" type="video/mp4">
+    </video>
+  </center>
+    <div class="overlay">
+        <p align="center">Mineralocorticoid (MR) protein interaction with aldosteron (AS4) ligand</p>
+    </div>
+</div>
+
+
+<h3 align="center" margin-bottom="-10">MR-COL</h3>
+
+<div class="container">
+  <center>
+    <video id="video" width="500" height="500" controls>
+        <source src="./Results/MR-COL.mp4" type="video/mp4">
+    </video>
+  </center>
+    <div class="overlay">
+        <p align="center">Mineralocorticoid (MR) protein interaction with cortisol (COL) ligand</p>
+    </div>
+</div>
+
+
+<h3 align="center" margin-bottom="-10">Energies</h3>
+
+<center>
+<img src="./Results/Energies.png" alt="Total energies of MR-AS4/COL systems" class="center" width="900" height="800">
+</center>
+
+<p>This image is obtained using the <a href="./NoteBooks/PlotEnergies.ipynb">PlotEnergies.ipynb</a> notebook that use jscatter pacakge to import dat files and matplotlib to plot.</p>
+<h2 id="references">References</h2>
+<h3 id="proteins-and-ligands">Proteins and Ligands</h3>
+<p>[1] <a href="https://reader.elsevier.com/reader/sd/pii/S0085253815468644?token=DD3F83E8E16FA5690227FDF101F9E90AE9B71E9354A0C682904FE8E2C2A683B22EB819B6DF7372B86DDB5F00FBB62164&amp;originRegion=us-east-1&amp;originCreation=20230228185341">Mechanistic aspects of mineralocorticoid receptor activation</a></p>
+<p>[2] <a href="https://pubmed.ncbi.nlm.nih.gov/12538613/">The Severe Form of Hypertension Caused by the Activating S810L Mutation in the Mineralocorticoid Receptor Is Cortisone Related</a></p>
+<p>[3] <a href="https://www.science.org/doi/epdf/10.1126/science.289.5476.119">Activating Mineralocorticoid Receptor Mutation in Hypertension Exacerbated by Pregnancy</a></p>
+<p>[4] <a href="https://www.nature.com/articles/nsmb939">Crystal structure of a mutant mineralocorticoid receptor responsible for hypertension</a></p>
+<p>[5] <a href="https://www.science.org/doi/epdf/10.1126/science.289.5476.119">Activating MineralocorticoidReceptor Mutation inHypertension Exacerbated byPregnancy</a></p>
+<h3 id="software">Software</h3>
+<p>[6] <a href="https://www.frontiersin.org/articles/10.3389/fmolb.2019.00052/full">Comparative Analysis of Electrostatic Models for Ligand Docking</a></p>
+<p>[7] <a href="https://www.biorxiv.org/content/10.1101/2020.04.20.051979v1.full.pdf">Ligand Gaussian accelerated molecular dynamics (LiGaMD):
+Characterization of ligand binding thermodynamics and kinetics</a></p>
+<p>[8] <a href="https://pubs.acs.org/doi/pdf/10.1021/acs.jctc.0c00395">Ligand Gaussian Accelerated Molecular Dynamics (LiGaMD):
+Characterization of Ligand Binding Thermodynamics and Kinetics - latest</a></p>
+<p>[9] <a href="http://miaolab.org/library/documents/2021-WIREs_GaMD.pdf">Gaussian accelerated molecular dynamics: principles and applications</a></p>
+<p>[10] <a href="https://pubmed.ncbi.nlm.nih.gov/26141308/">Ligand- and receptor-based docking with LiBELa</a></p>
+<p>[11] <a href="https://reader.elsevier.com/reader/sd/pii/S0223523412006824?token=505CA34938BA9801282431D305185F62931911820538A228E6B97282A877D9F8E0EDF1194E046E02FB60090D0D93B694&amp;originRegion=us-east-1&amp;originCreation=20230224192727">MolShaCS: A free and open source tool for ligand similarity identification based
+on Gaussian descriptors</a></p>
+<p>[12] <a href="https://pubs.acs.org/doi/pdf/10.1021/acs.jpcb.2c03765">Gaussian Accelerated Molecular Dynamics in OpenMM</a></p>
+<p>[13] <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0174336">Towards a critical evaluation of an empirical and volume-based solvation function for ligand docking</a></p>
+<p>[14] <a href="https://zenodo.org/record/5196783#.Y_z-0rTMK3w">Making-it-rain: Cloud-based molecular simulations for everyone</a></p>
+
