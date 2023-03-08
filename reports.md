@@ -1,6 +1,6 @@
 ---
 permalink: /reports/
-layout: wide
+layout: single
 search: true
 author_profile: false
 toc: true
