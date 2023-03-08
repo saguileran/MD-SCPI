@@ -60,7 +60,7 @@ Report of weekly updates.
 <h3 align="center" margin-bottom="-10">Energies</h3>
 
 <center>
-<img src="./Results/Energies.png" alt="Total energies of MR-AS4/COL systems" class="center" width="700" height="800">
+<img src="./Results/Energies.png" alt="Total energies of MR-AS4/COL systems" class="center" width="900" height="800">
 </center>
 
 This image is obtained using the [PlotEnergies.ipynb](./NoteBooks/PlotEnergies.ipynb) notebook that use jscatter pacakge to import dat files and matplotlib to plot.
