@@ -3,7 +3,7 @@ permalink: /reports/
 layout: single
 search: true
 author_profile: false
-toc_sticky: false
+toc_sticky: true
 toc: true
 classes: wide
 ---
@@ -270,9 +270,6 @@ change mask    225 -> 1 (residue number)
 </table>
 </center>
 
-
-  
-</center>
 where:
 
 - *: relevant interaction with the frame number
