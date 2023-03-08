@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : &title "Molecular Dynamics - Summer Internship"
 title_separator          : "-"
 subtitle                 : &subtitle "Sao Carlos Physics Institute (SCPI)"  # site tagline that appears below site title in masthead
-name                     : &name'Sebastian Aguilera Novoa' #"Your Name"
+name                     : &name 'Sebastian Aguilera Novoa' #"Your Name"
 description              : &description 'Evaluation of the unbinding kinetics of Mineralocorticoid (MR) receptor steroid agonist Cortisol (COL) and Aldosterone (AS4) ligands.'
 url                      : "https://saguileran.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/MD-SCPI" # the subpath of your site, e.g. "/blog"
