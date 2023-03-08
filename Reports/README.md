@@ -1,5 +1,5 @@
 ---
-permalink: /Reports/
+permalink: /reports/
 layout: splash
 author_profile: false
 ---
