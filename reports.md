@@ -11,7 +11,7 @@ sidebar:
   nav: "reports"
 ---
 
-<h1> Weekly Reports </h1> 
+<h1 id='weekly-reports'> Weekly Reports </h1> 
 
 Reports made during the internship
 
