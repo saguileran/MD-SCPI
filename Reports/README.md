@@ -78,10 +78,10 @@ ambpdb -p file.prmtop < file.inpcrd > file_leap.pdb # conver tleap outputs to pd
 - Closter command lines [Nascimento Lab - Cluster](http://nascimento.ifsc.usp.br/wordpress/?page_id=53)
 
 ```
-qsub amber.sub (GPU)
-qsub amber.cpu.sub (CPU)
-qstat
-qdel ##procees
+qsub amber.cpu.sub # run heat, density and min process on CPU
+qsub amber.sub     # run equil and prod process on GPU) 
+qstat              # show current jobs submitted
+qdel #job	   # kill procees
 ```
 
 Note: the heat, equil, and density files are running using CPU (amber.cpu.sub) while the equil and prod process are assign to GPU (amber.cpu).
@@ -90,12 +90,12 @@ Note: the heat, equil, and density files are running using CPU (amber.cpu.sub) w
 - Display .nc files with chimera, Tools/MD/Ensemble Analysis/MD Movie, it generates a movie of the system
 
 ```
-scp sebas@nascimento:path_to_MD_folder/*.nc ./
+scp user_name@server_name:path_to_files/files ./    # copy from server to local
+scp ./files_to_copy user_name@server_name:path_to/  # copy from local to server
 ```
 
-
-- Run equilibrium process with amber (equil.in)
-- Define and run the production process (prod.in), adapat parameter to get the best performance in GPU  
+- Run minimization process with amber (min, heat, ando density input files)
+- Define and run the production process (equil and prod input files), adapat parameter to get the best performance in GPU  
 - automaging process: This add the periodical boundary conditions for the molecules inside the box
 
 ```
@@ -111,7 +111,7 @@ eof
 
 
 ```
-source /usr/local/amber20/amber.sh
+# source /usr/local/amber20/amber.sh # ran previously
 cpptraj .path/.prmtop << eof
 trajin prod_img.nc 
 rms first out rms.dat @CA,C,N
@@ -132,11 +132,11 @@ xmgrace -nxy out.dat  # visualize potential energies wih xmgrace: ligand, protei
 
 - Use [Chimera](https://www.cgl.ucsf.edu/chimera/) or [VMD](https://www.ks.uiuc.edu/Research/vmd/) to visualize the system trajectory, .prmtop and .nc files are necessary
 
-The molecular dynamics simulations can be divide in two steps:
+The molecular dynamics simulations can be divide in the following steps:
 
-**1.** Minimize and equilibrate
-**2.** Equilibrate and production 
-**3.** Use LigaMD
+1. **Minimization**: Heat, density and min process
+2. **Equilibrate**: Equilibrate and production process
+3. **LiGaMD**: Prepare conventional MD and Gaussian Accelerated MD steps, [Manual of GaMD in Amber](http://miaolab.org/GaMD/manual.html)
 
 Since the systems (MR-COL and MR-AS4) are already defined and compiled, tleap and MD process, the following step is to made mutations to MR
 
@@ -145,7 +145,8 @@ Some useful file extension meanings:
 - **prmtop**: parameters and topology
 - **crd**: coordinates
 - **pdb**: protein data base
-- **nc**: trajectory file
+- **nc**: trajectory ouput file, short of NetCDF (network Common Data Form) it stores multidimensional scientific data (variables)
+- **mol2**: molecule model file, it contains the coordinates and charges. It is obtained using AC (quantum calculations) and PDBs, or exporting it from the prmtop and nc files using chimera
 
 For the 3th step
 
@@ -167,7 +168,7 @@ Prepare LiGaMD
 
 ## Week 3
 
-Create mutation an prepare again all necessary input files
+Create mutations systems an prepare again all necessary input files
 
 - Reset numering on MR mutation, it starts at 727
 - Add mutations to the ligand (S810L) in chimera
@@ -188,6 +189,8 @@ change mask    225 -> 1 (residue number)
 
 - Calculation of energies in different residues
 
+<center>
+
 | **Residue** | **Atom #** | **AS4** | **COL** |
 |:-----------:|:----------:|:-------:|:-------:|
 |     SER     |     85     |     ~   |         |
@@ -199,26 +202,44 @@ change mask    225 -> 1 (residue number)
 |     SER     |     118    |         |         |
 |     SER     |     810    |         |         |
 
+</center>
+
 where:
 
-- *: relevant interaction and # frame
+- *: relevant interaction with number of frame
 - ~: middle interaction
 
 
-- Prepare and run the leaprc file for the MR mutation
-- Run equiliration procees for the mutation ligand	
+- Prepare and run the leaprc file for the MR mutations
+- Run equilibration procees for the mutation systems	
 
-- Add histograms to energies plot
-- Run equi, heat, density, equil and prod for the MR-AS4_mut
-
-
-
-- Leap procces for the MR-COL_mut file, prepare all around it 
+- Add histograms to energies plots
+- Run minimization step: min, heat, and density process for MR-AS4/COL_mut
+- Run production step: equil and prod process for the MR-AS4/COL_mut
 
 
+Prepare and test the **LiBEla** files
+
+- Use the previous nc an prmtop files to generated the mol2 file with the coordinates and charges of MR, AS4 and COL
+- Prepare the PDB file for the box
+- Prepare the input (libela.inp) file by changing some parameters
+- Create and submit the files for the MC simulations, parallel jobs are not required yet
+
+```
+source /share/apps/iMcLiBELa/LiBELa.sh
+time /share/apps/iMcLiBELa/bin/McLiBELa.openmp -i libela.inp
+```
+
+the **mode** parameter can be
+
+- eq (MC)
+- docking
+- MCR
+
+- Prepare several input files for the Mc simulations, change the random seed. 10 samples are ok
 
 
 
 # [MD-SCPI project](https://saguileran.github.io/MD-SCPI/)
 
-Home page of the project
+Home page of the project, short description
