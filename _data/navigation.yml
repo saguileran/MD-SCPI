@@ -15,7 +15,6 @@ main:
 
 reports:
   - title: Home
-  - url: /
     children:
       - title: "Overview"
         url: /#overview
@@ -55,3 +54,12 @@ reports:
         url: /reports/#week-8
       - title: "Final Report"
         url: /reports/#final
+    
+  - title: Repository
+    children:
+      - title: "NoteBooks"
+        url: https://github.com/saguileran/MD-SCPI/tree/main/Results/NoteBooks
+      - title: "PDBs"
+        url: https://github.com/saguileran/MD-SCPI/tree/main/PDBs
+      - title: "Results"
+        url: https://github.com/saguileran/MD-SCPI/tree/main/Results
