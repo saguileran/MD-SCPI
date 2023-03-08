@@ -3,10 +3,10 @@ permalink: /reports/
 layout: single
 search: true
 author_profile: false
-title: "Weekly Reports"
 toc: true
 ---
 
+# **Weekly Reports**
 
 ## Week 1
 
