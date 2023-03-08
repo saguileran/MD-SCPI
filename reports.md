@@ -7,7 +7,6 @@ title: "Weekly Reports"
 toc: true
 ---
 
-# **Weekly Reports**
 
 ## Week 1
 
