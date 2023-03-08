@@ -3,6 +3,15 @@
 Evaluation of the unbinding kinetics of Mineralocorticoid (MR) receptor steroid agonist Cortisol (COL) and Aldosterone (AS4) ligands.
 
 
+# Table of Contents
+- [Objectives](#Objectives)
+- [Links of Interest](#Links_of_Interest)
+- [Weekly Reports](#Weekly_Reports)
+- [Output Files](#Output_Files)
+- [References](#References)
+- [Proteins and Ligands](#Proteins_and_Ligands)
+- [Software](#Software)
+
 ## Objectives
 
 - Prepare the input files: PDB and mol files of the Mineralocorticoid (MR) and mutation ligands and proteins Aldosterone and Cortisol (AS4 and COL)
@@ -10,7 +19,7 @@ Evaluation of the unbinding kinetics of Mineralocorticoid (MR) receptor steroid 
 - Create a Monte Carlo (MC) simulation for the MR aldosterone/cortisol system
 - Contrast MD and MC simulations, does the MC simulation show the same behavior as MC?
 
-## Links of interest:
+## Links of Interest
 
 - [PDB-rcsb](https://www.rcsb.org/)
 - [GaMD](http://miaolab.org/GaMD/)
