@@ -1,3 +1,9 @@
+---
+permalink: /Reports/
+layout: splash
+author_profile: false
+---
+
 # **Weekly Reports**
 
 ## Week 1
