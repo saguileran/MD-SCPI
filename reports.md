@@ -1,6 +1,6 @@
 ---
 permalink: /reports/
-layout: single
+layout: wide
 search: true
 author_profile: false
 toc: true
@@ -198,18 +198,76 @@ change mask    225 -> 1 (residue number)
 - Calculation of energies in different residues
 
 <center>
-
-| **Residue** | **Atom #** | **AS4** | **COL** |
-|:-----------:|:----------:|:-------:|:-------:|
-|     SER     |     85     |     ~   |         |
-|     ARG     |     92     |   *230  |    *    |
-|     GLN     |     51     |         |    *    |
-|     ASN     |     45     |         |         |
-|     THR     |     222    |         |         |
-|      HH     |     22     |         |         |
-|     SER     |     118    |         |         |
-|     SER     |     810    |         |         |
-
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-baqh{text-align:center;vertical-align:top}
+.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-7btt{border-color:inherit;font-weight:bold;text-align:center;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-7btt">Residue</th>
+    <th class="tg-7btt">Atom #</th>
+    <th class="tg-7btt">AS4</th>
+    <th class="tg-7btt">COL</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-c3ow">SER</td>
+    <td class="tg-c3ow">85</td>
+    <td class="tg-c3ow">~</td>
+    <td class="tg-c3ow"></td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">ARG</td>
+    <td class="tg-c3ow">92</td>
+    <td class="tg-c3ow">*230</td>
+    <td class="tg-c3ow">*</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">GLN</td>
+    <td class="tg-c3ow">51</td>
+    <td class="tg-c3ow">*</td>
+    <td class="tg-c3ow"></td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">ASN</td>
+    <td class="tg-baqh">45</td>
+    <td class="tg-baqh"></td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">THR</td>
+    <td class="tg-baqh">222</td>
+    <td class="tg-baqh"></td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">HH</td>
+    <td class="tg-baqh">22</td>
+    <td class="tg-baqh"></td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">SER</td>
+    <td class="tg-baqh">118</td>
+    <td class="tg-baqh"></td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">SER</td>
+    <td class="tg-baqh">810</td>
+    <td class="tg-baqh"></td>
+    <td class="tg-baqh"></td>
+  </tr>
+</tbody>
+</table>
 </center>
 
 where:
