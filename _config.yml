@@ -107,7 +107,7 @@ author:
   name             : *name #"Your Name"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Files and results from the summer internship in Brazil in the field of computational structural biology" #"I am an **amazing** person."
-  location         : "Somewhere"
+  location         : "Sao Carlos, Brazil"
   email            : "saguileran@unal.edu.co"
   links:
     - label: "Email"
