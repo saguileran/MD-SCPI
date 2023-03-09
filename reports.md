@@ -210,7 +210,7 @@ change mask    225 -> 1 (residue number)
   <thead>
     <tr>
       <th style="text-align: left">Residue</th>
-      <th style="text-align: center">Atom #th>
+      <th style="text-align: center">Atom Numberth>
       <th style="text-align: right">AS4</th>
       <th style="text-align: right">COL</th>
     </tr>
