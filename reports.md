@@ -205,6 +205,7 @@ change mask    225 -> 1 (residue number)
 - Calculation of energies in different residues
 
 <center>
+  
 <table rules="groups">
   <thead>
     <tr>
@@ -273,6 +274,7 @@ change mask    225 -> 1 (residue number)
     </tr>
   </tfoot>
 </table>
+  
 </center>
 
 where:
