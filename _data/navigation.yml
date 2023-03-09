@@ -18,6 +18,8 @@ main:
 reports:
   - title: Home
     children:
+      - title: "Table Of Contents"
+        url: /#toc
       - title: "Overview"
         url: /#overview
       - title: "Objectives"

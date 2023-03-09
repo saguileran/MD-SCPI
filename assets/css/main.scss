@@ -27,8 +27,11 @@ search: false
 	font-size: 30px;
 }
 
-#toc_container li, #toc_container ul, #toc_container ul li{
+#toc_container li, #toc_container ul{
     list-style: outside circle none !important;
+}
+#toc_container ul li, #toc_container ul ul{
+    list-style: outside circle;
 }
 
 table.center {
