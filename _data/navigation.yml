@@ -19,7 +19,7 @@ reports:
       - title: "Overview"
         url: /#overview
       - title: "Objectives"
-        url: /objectives
+        url: /#objectives
       - title: "Links of Interest"
         url: /#links-of-interest
       - title: "Weekly Reports"
@@ -57,7 +57,7 @@ reports:
   - title: Repository
     children:
       - title: "NoteBooks"
-        url: https://github.com/saguileran/MD-SCPI/tree/main/Results/NoteBooks
+        url: https://github.com/saguileran/MD-SCPI/tree/main/NoteBooks
       - title: "PDBs"
         url: https://github.com/saguileran/MD-SCPI/tree/main/PDBs
       - title: "Results"
