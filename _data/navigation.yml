@@ -28,10 +28,6 @@ reports:
         url: /#output-files
       - title: "References"
         url: /#references
-      - title: "Proteins and Ligands"
-        url: /#proteins-and-ligands
-      - title: "Software"
-        url: /#software
 
   - title: Weekly Reports
     children:
@@ -54,8 +50,10 @@ reports:
       - title: "Final Report"
         url: /reports/#final
     
-  - title: Repository
+  - title: GitHub
     children:
+      - title: "Repository"
+        url: https://github.com/saguileran/MD-SCPI/tree/main/
       - title: "NoteBooks"
         url: https://github.com/saguileran/MD-SCPI/tree/main/NoteBooks
       - title: "PDBs"
