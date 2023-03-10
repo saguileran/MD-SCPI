@@ -209,7 +209,7 @@ change mask    225 -> 1 (residue number)
 
 <div align="center">
 
-<table style="text-align: center;" class="center">
+<table style="text-align: center;margin-left:auto;margin-right:auto;">
   <thead>
     <tr>
       <th><center>Residue</center></th>
