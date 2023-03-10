@@ -4,7 +4,7 @@ permalink: /reports/
 layout: single
 search: true
 author_profile: true
-toc_sticky: false
+toc_sticky: true
 toc: false
 classes: wide
 
