@@ -1,7 +1,9 @@
 
-# **Weekly Reports**
+# **Reports**
 
-## Week 1
+## Weekly Reports 
+
+### Week 1
 
 Prepare input files to MD and MC simulations:
 
@@ -57,7 +59,7 @@ sel :MOL za <5 (select atoms close to MOl at 5 Amstrong of distance)
 All commands and documentation, [Chimera User Guide - commands](https://www.cgl.ucsf.edu/chimera/docs/UsersGuide/framecommand.html)
 
 
-## Week 2
+### Week 2
 
 Merge protein and ligand PDBs and added solvent (water)
 
@@ -155,7 +157,7 @@ The 3rd step:
 - [GaMD - manual](http://miaolab.org/GaMD/manual.html) used to define steps and parameters to MD simulation
 - [GaMD_Amber-Tutorial](http://miaolab.org/GaMD/lib/GaMD_Amber-Tutorial.pdf) to define and tune LiGaMD parameters (sigma0/V)
 
-Prepare LiGaMD
+Prepare LiGaMD:
 
 - Input files examples in [Amber tutorials](http://miaolab.org/GaMD/lib/GaMD_Amber-Tutorial.pdf) on page 5
 - Script to plot output files with python [PyReweighting](http://miaolab.org/PyReweighting/)
@@ -167,7 +169,7 @@ Prepare LiGaMD
 - Use **making-it-rain**, Amber_inputs.ipynb, with the complex outputs generated in the server (input for the notebook) files: .prmtop, .inpcrd, and .pdb
 
 
-## Week 3
+### Week 3
 
 Create mutations systems and prepare again all necessary input files
 
@@ -233,14 +235,51 @@ time /share/apps/iMcLiBELa/bin/McLiBELa.openmp -i libela.inp
 
 the **mode** parameter can be
 
-- eq (MC)
-- docking
-- MCR
+- 1: eq (MC)
+- 2: docking
+- 3: MCR
 
-- Prepare several input files for the Mc simulations and change the random seed. 10 samples are ok
+**LiGaMD**
 
+- Execute the MR-COl_ligaMD production step
+- Submit the MR-AS4_ligaMD file varying the sigma0P parameter to 5
+- Set up and submit the MR-AS4_ligaMD_DualBoost, it maybe allows to the ligand to scape easily
+- MR-AS4_LiGaMD has already ran but it does not show the ligand unbinding then dual boost and varying sigmpa0D options are explored
 
+**LiBELa**
+
+- Prepare several input files for the Mc simulations and change the random seed. 10 samples are ok with 30M of steps
+- Adapt the run_mc.sh script to execute several MC simulations for the MR-AS4 system, varying the random seed and temperature (300, 600, 1200, 2400, 4800, 9600)
+- Improve ligand.inp file to generate a properly aceptance rate (0.3 - 0.5), it depends of the allowed translation parameters (related to translation, rotation and molecules coupling). The default values are:
+
+```
+cushion			0.5   # decresing this value increase the aceptance rate, it is related ti the center of mass transaltion of the whole ligand
+max_atom_displacement   0.01  # not used since it simulates MC idea for all atoms indendently
+rotation_step           1.25  # for the ligand considering it as a rigid body 
+torsion_step            1.25  # for the quadripole molecules systems, it is also called rotation bounds
+```
+
+This MC simulation gave an aceptance rate of 0.175 which is not good. 
+
+**A good exercise is to set up and run the same process (AC, leap, MD and LiGaMD) for other ligand as Progesterone (PRO)**
+
+Making-it-rain has a little issue related to Collab-conda python version, to fix it use fallba in command palette, [making-it-rain/issues/57](https://github.com/pablo-arantes/making-it-rain/issues/57) to execute the notebook with the previous version of collab environment
+	
+
+### Week 4
+
+### Week 5
+
+### Week 6
+
+### Week 7
+
+### Week 8
+
+## Final Report
+
+## Conclusions
 
 # [MD-SCPI project](https://saguileran.github.io/MD-SCPI/)
 
-Home page of the project, short description
+Home page of the project. Short description with an overview, objectives, results and references

@@ -9,7 +9,7 @@ Evaluation of the unbinding kinetics of Mineralocorticoid (MR) receptor steroid 
 
 - [Objectives](#objectives)
 - [Links of Interest](#links-of-interest)
-- [Weekly Reports](#weekly-reports)
+- [Reports](#reports)
 - [Output Files](#output-files)
 - [References](#references)
 	- [Proteins and Ligands](#proteins-and-ligands)
@@ -34,9 +34,9 @@ Evaluation of the unbinding kinetics of Mineralocorticoid (MR) receptor steroid 
 - [Chimera User Guide - commands](https://www.cgl.ucsf.edu/chimera/docs/UsersGuide/framecommand.html)
 
 
-## [Weekly Reports](https://saguileran.github.io/MD-SCPI/Reports/)
+## [Reports](https://saguileran.github.io/MD-SCPI/reports/)
 
-Report of weekly updates. 
+Reports made during the internship. Here you can find weekly updates and a final report with some conclusions.
 
 ## Output Files
 
