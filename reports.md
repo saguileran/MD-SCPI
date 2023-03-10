@@ -207,77 +207,45 @@ change mask    225 -> 1 (residue number)
 - Calculation of energies in different residues
 
   
-<table rules="groups">
+
+
+
+<table>
   <thead>
     <tr>
-      <th style="text-align: left">Residue</th>
-      <th style="text-align: center">Atom Numberth>
-      <th style="text-align: right">AS4</th>
-      <th style="text-align: right">COL</th>
+      <th>Parameter</th>
+      <th>Required</th>
+      <th>Description</th>
+      <th>Default</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align: left">SER</td>
-      <td style="text-align: center">85</td>
-      <td style="text-align: right">~</td>
-      <td style="text-align: right"></td>
+      <td><strong>toc</strong></td>
+      <td>Optional</td>
+      <td>Show table of contents. (boolean)</td>
+      <td><code class="language-plaintext highlighter-rouge">false</code></td>
     </tr>
     <tr>
-      <td style="text-align: left">ARGtd>
-      <td style="text-align: center">92/td>
-      <td style="text-align: right">*230</td>
-      <td style="text-align: right"></td>
+      <td><strong>toc_label</strong></td>
+      <td>Optional</td>
+      <td>Table of contents title. (string)</td>
+      <td><code class="language-plaintext highlighter-rouge">toc_label</code> in UI Text data file.</td>
+    </tr>
+    <tr>
+      <td><strong>toc_icon</strong></td>
+      <td>Optional</td>
+      <td>Table of contents icon, displays before the title. (string)</td>
+      <td><a href="https://fontawesome.com/v5/search?s=solid&amp;m=free">Font Awesome</a> <i class="fas fa-file-alt"></i> <strong>file-alt</strong> icon. Other FA icons can be used instead.</td>
+    </tr>
+    <tr>
+      <td><strong>toc_sticky</strong></td>
+      <td>Optional</td>
+      <td>Stick table of contents to top of screen.</td>
+      <td><code class="language-plaintext highlighter-rouge">false</code></td>
     </tr>
   </tbody>
-  <tbody>
-    <tr>
-      <td style="text-align: left">GLN</td>
-      <td style="text-align: center">51</td>
-      <td style="text-align: right">*</td>
-      <td style="text-align: right"></td>
-    </tr>
-    <tr>
-      <td style="text-align: left">ASN</td>
-      <td style="text-align: center">45</td>
-      <td style="text-align: right"></td>
-      <td style="text-align: right"></td>
-    </tr>
-  </tbody>
-  <tbody>
-    <tr>
-      <td style="text-align: left">THR</td>
-      <td style="text-align: center">220</td>
-      <td style="text-align: right"></td>
-      <td style="text-align: right"></td>
-    </tr>
-    <tr>
-      <td style="text-align: left">HH</td>
-      <td style="text-align: center">22</td>
-      <td style="text-align: right"></td>
-      <td style="text-align: right"></td>
-    </tr>
-  </tbody>
-  <tbody>
-    <tr>
-      <td style="text-align: left">SER</td>
-      <td style="text-align: center">118</td>
-      <td style="text-align: right"></td>
-      <td style="text-align: right"></td>
-    </tr>
-  </tbody>
-<!--
-  <tfoot>
-    <tr>
-      <td style="text-align: left">SER</td>
-      <td style="text-align: center">118</td>
-      <td style="text-align: right"></td>
-      <td style="text-align: right"></td>
-    </tr>
-  </tfoot>
--->
-</table>
-  
+<div></div></table>
 
 
 where:
