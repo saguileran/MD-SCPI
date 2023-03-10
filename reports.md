@@ -206,61 +206,44 @@ change mask    225 -> 1 (residue number)
 
 - Calculation of energies in different residues
 
-  
+
 <table>
   <thead>
     <tr>
-      <th>Residue</th>
-      <th>Atom #</th>
-      <th>AS4</th>
-      <th>COL</th>
+      <th>Parameter</th>
+      <th>Required</th>
+      <th>Description</th>
+      <th>Default</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td><strong>toc</SER></td>
-      <td>85</td>
-      <td>~</td>
-      <td> </td>
+      <td><strong>toc</strong></td>
+      <td>Optional</td>
+      <td>Show table of contents. (boolean)</td>
+      <td><code class="language-plaintext highlighter-rouge">false</code></td>
     </tr>
     <tr>
-      <td><strong>toc</ARG></td>
-      <td>92</td>
-      <td>*230</td>
-      <td> </td>
+      <td><strong>toc_label</strong></td>
+      <td>Optional</td>
+      <td>Table of contents title. (string)</td>
+      <td><code class="language-plaintext highlighter-rouge">toc_label</code> in UI Text data file.</td>
     </tr>
     <tr>
-      <td><strong>toc</GLN></td>
-      <td>51</td>
-      <td> </td>
-      <td>*</td>
+      <td><strong>toc_icon</strong></td>
+      <td>Optional</td>
+      <td>Table of contents icon, displays before the title. (string)</td>
+      <td><a href="https://fontawesome.com/v5/search?s=solid&amp;m=free">Font Awesome</a> <i class="fas fa-file-alt"></i> <strong>file-alt</strong> icon. Other FA icons can be used instead.</td>
     </tr>
     <tr>
-      <td><strong>toc</ASN></td>
-      <td>45</td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td><strong>toc</THR></td>
-      <td>222</td>
-      <td></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td><strong>toc</HH></td>
-      <td>22</td>
-      <td></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td><strong>toc</SER></td>
-      <td>118</td>
-      <td></td>
-      <td> </td>
+      <td><strong>toc_sticky</strong></td>
+      <td>Optional</td>
+      <td>Stick table of contents to top of screen.</td>
+      <td><code class="language-plaintext highlighter-rouge">false</code></td>
     </tr>
   </tbody>
 </table>
+
 
 
 
