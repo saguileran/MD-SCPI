@@ -85,6 +85,8 @@ qsub amber.cpu.sub # run heat, density and, min process on CPU
 qsub amber.sub     # run equil and prod process on GPU) 
 qstat              # show current jobs submitted
 qdel #job	   # kill process
+qstat -xml | tr '\n' ' ' | sed 's#<job_list[^>]*>#\n#g' \
+  | sed 's#<[^>]*>##g' | grep " " | column -t # show  whole jobs names
 ```
 
 Note: the heat, equil, and density files are running using CPU (amber.cpu.sub) while the equil and prod process are assigned to GPU (amber.cpu).
@@ -259,14 +261,32 @@ rotation_step           1.25  # for the ligand considering it as a rigid body
 torsion_step            1.25  # for the quadripole molecules systems, it is also called rotation bounds
 ```
 
-This MC simulation gave an aceptance rate of 0.175 which is not good. 
+This MC simulation gave an aceptance rate of 0.175 which is not good. A better aceptance rate is reached with ```cushion=0.3/0.25```, the result is 0.362/0.5.
+To execute several MC simulations a basch script is made, it create and submit several jobs varying the random seed and the temperature
 
-**A good exercise is to set up and run the same process (AC, leap, MD and LiGaMD) for other ligand as Progesterone (PRO)**
+**A good exercise is to set up and run the same process (AC, leap, MD and LiGaMD) for other ligand as Progesterone (STR)**
 
 Making-it-rain has a little issue related to Collab-conda python version, to fix it use fallba in command palette, [making-it-rain/issues/57](https://github.com/pablo-arantes/making-it-rain/issues/57) to execute the notebook with the previous version of collab environment
+
+To create a MD simulation of STR the following steps have to be done:
+
+1. Crate PDB without and with Hydrogen atoms using Chimera.
+2. Use antechamber (AC) to generate gctr and gesp files, line commands are in the [amber manual](http://ambermd.org/doc12/Amber22.pdf) at page 310.
+3. Run Gaussian 09 ```/share/apps/g09/g09``` to compute quantum calculations. Links of documentation [Gaussian09 calculations](https://ambermd.org/tutorials/advanced/tutorial20/mcpbpy.php) and [Gaussian09 Keywords](http://wild.life.nctu.edu.tw/~jsyu/compchem/g09/g09ur/l_keywords09.htm)
+4. Use AC to assign atom charges and atom types, it generates a mol2 file. The **-eq** flag is to predicts charge equilibration using both atom paths and some geometrical information (E/Z configuration).
+5. Align and renumbering mol2 files, move to inside the protein
+6. Create tleaprc file to run teLeap programs, it is done by executing the tleap command. In this step the protein and ligand files are required to be aligned and a charge equilibration process is required (add Na and Cl)
+7. Create the input files for the MD simulation: heat, densit, min, equil, and prod process
+8. Create, execute, and tune the LiGaMD files
+
+
+- **gctr**: Gaussian Cartesian (Generalization-Based Compact Trajectory Representation)
+- **gesp**: Gaussian ESP
 	
 
 ### Week 4
+
+Create and execute MD steps for MR-STR system
 
 ### Week 5
 
