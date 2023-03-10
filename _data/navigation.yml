@@ -33,8 +33,10 @@ reports:
       - title: "References"
         url: /#references
 
-  - title: Weekly Reports
+  - title: Reports
     children:
+      - title: "Weekly Reports"
+        url: /reports/#weekly-reports
       - title: "Week 1"
         url: /reports/#week-1
       - title: "Week 2"
@@ -52,7 +54,7 @@ reports:
       - title: "Week 8"
         url: /reports/#week-8
       - title: "Final Report"
-        url: /reports/#final
+        url: /reports/#final-report
     
   - title: GitHub
     children:
