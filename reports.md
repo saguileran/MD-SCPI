@@ -1,10 +1,9 @@
-
 ---
 permalink: /reports/
 layout: single
 search: true
 author_profile: true
-toc_sticky: true
+toc_sticky: false
 toc: false
 classes: wide
 
