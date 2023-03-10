@@ -3,19 +3,21 @@ permalink: /reports/
 layout: single
 search: true
 author_profile: true
-toc_sticky: true
-toc: false
+toc_sticky: false
+toc: true
 classes: wide
 
 sidebar:
   nav: "reports"
 ---
 
-<h1 id='weekly-reports'> Weekly Reports </h1> 
+<h1 id='reports'> Reports </h1>
+ 
+<h2 id='weekly-reports'> Weekly Reports </h2> 
 
 Reports made during the internship
 
-## Week 1
+### Week 1
 
 Prepare input files to MD and MC simulations:
 
@@ -71,7 +73,7 @@ sel :MOL za <5 (select atoms close to MOl at 5 Amstrong of distance)
 All commands and documentation, [Chimera User Guide - commands](https://www.cgl.ucsf.edu/chimera/docs/UsersGuide/framecommand.html)
 
 
-## Week 2
+### Week 2
 
 Merge protein and ligand PDBs and added solvent (water)
 
@@ -181,7 +183,7 @@ Prepare LiGaMD
 - Use **making-it-rain**, Amber_inputs.ipynb, with the complex outputs generated in the server (input for the notebook) files: .prmtop, .inpcrd, and .pdb
 
 
-## Week 3
+### Week 3
 
 Create mutations systems and prepare again all necessary input files
 
@@ -311,6 +313,17 @@ the **mode** parameter can be
 
 - Prepare several input files for the Mc simulations and change the random seed. 10 samples are ok
 
+### Week 4
+
+### Week 5
+
+### Week 6
+
+### Week 7
+
+### Week 8
+
+## Final Report
 
 
 # [MD-SCPI project](https://saguileran.github.io/MD-SCPI/)
