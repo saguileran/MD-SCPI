@@ -206,7 +206,6 @@ change mask    225 -> 1 (residue number)
 
 - Calculation of energies in different residues
 
-<center>
   
 <table rules="groups">
   <thead>
@@ -267,6 +266,7 @@ change mask    225 -> 1 (residue number)
       <td style="text-align: right"></td>
     </tr>
   </tbody>
+<!--
   <tfoot>
     <tr>
       <td style="text-align: left">SER</td>
@@ -275,9 +275,10 @@ change mask    225 -> 1 (residue number)
       <td style="text-align: right"></td>
     </tr>
   </tfoot>
+-->
 </table>
   
-</center>
+
 
 where:
 
