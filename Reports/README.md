@@ -194,7 +194,7 @@ change mask    225 -> 1 (residue number)
 
 - Calculation of energies in different residues
 
-<center>
+<div align="center">
 
 | **Residue** | **Atom #** | **AS4** | **COL** |
 |:-----------:|:----------:|:-------:|:-------:|
@@ -205,9 +205,8 @@ change mask    225 -> 1 (residue number)
 |     THR     |     222    |         |         |
 |      HH     |     22     |         |         |
 |     SER     |     118    |         |         |
-|     SER     |     810    |         |         |
 
-</center>
+</div>
 
 where:
 
