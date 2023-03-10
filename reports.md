@@ -210,10 +210,10 @@ change mask    225 -> 1 (residue number)
 <table>
   <thead>
     <tr>
-      <th>Residue</th>
-      <th>Atom #</th>
-      <th>AS4</th>
-      <th>COL</th>
+      <th><center>Residue</center></th>
+      <th><center>Atom #</center></th>
+      <th><center>AS4</center></th>
+      <th><center>COL</center></th>
     </tr>
   </thead>
   <tbody>
@@ -235,8 +235,34 @@ change mask    225 -> 1 (residue number)
       <td> </td>
       <td>*</td>
     </tr>
+    <tr>
+      <td><strong>ASN</strong></td>
+      <td>45</td>
+      <td> </td>
+      <td>*</td>
+    </tr>
+    <tr>
+      <td><strong>THR</strong></td>
+      <td>222</td>
+      <td> </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><strong>HH</strong></td>
+      <td>22</td>
+      <td> </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><strong>SER</strong></td>
+      <td>118</td>
+      <td> </td>
+      <td></td>
+    </tr>
   </tbody>
 </table>
+
+
 
 
 
