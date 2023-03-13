@@ -285,7 +285,9 @@ To create a MD simulation of STR the following steps have to be done:
 
 ### Week 4
 
-Create and execute MD steps for MR-STR system
+Create and execute the MD simulation steps for the MR-STR system.
+
+Generate and plot the MC simulations. A cushion of 0.25 is used with a search_box of 20. 
 
 ### Week 5
 
