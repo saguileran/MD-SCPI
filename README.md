@@ -69,7 +69,7 @@ Reports made during the internship. Here you can find weekly updates and a final
 </div>
 
 
-<h3 align="center" margin-bottom="-10">Energies</h3>
+<h3 align="center" margin-bottom="-10">MD Energies</h3>
 
 <center>
 <img src="./Results/Energies.png" alt="Total energies of MR-AS4/COL systems" class="center" width="900" height="800">
@@ -78,10 +78,10 @@ Reports made during the internship. Here you can find weekly updates and a final
 This image is obtained using the [PlotEnergies.ipynb](./NoteBooks/PlotEnergies.ipynb) notebook that use jscatter pacakge to import dat files and matplotlib to plot.
 
 
-<h3 align="center" margin-bottom="-10">Energies</h3>
+<h3 align="center" margin-bottom="-10">MC Energies</h3>
 
 <center>
-<img src="./Results/MC_energies.png" alt="Total energies of MC-AS4 system" class="center" width="900" height="800">
+<img src="./Results/MC_energies.png" alt="Total energies of MC-AS4 system" class="center" width="900" height="400">
 </center>
 
 This image is obtained using the [Plots_MC.ipynb](./NoteBooks/Plots_MC.ipynb) notebook that use jscatter pacakge to import dat files and matplotlib to plot.
