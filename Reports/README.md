@@ -269,14 +269,14 @@ Making-it-rain has a little issue related to Collab-conda python version, to fix
 
 To create a MD simulation of STR the following steps have to be done:
 
-1. Crate PDB without and with Hydrogen atoms using Chimera.
-2. Use antechamber (AC) to generate gctr and gesp files, line commands are in the [amber manual](http://ambermd.org/doc12/Amber22.pdf) at page 310.
-3. Run Gaussian 09 ```/share/apps/g09/g09``` to compute quantum calculations. Links of documentation [Gaussian09 calculations](https://ambermd.org/tutorials/advanced/tutorial20/mcpbpy.php) and [Gaussian09 Keywords](http://wild.life.nctu.edu.tw/~jsyu/compchem/g09/g09ur/l_keywords09.htm)
-4. Use AC to assign atom charges and atom types, it generates a mol2 file. The **-eq** flag is to predicts charge equilibration using both atom paths and some geometrical information (E/Z configuration).
-5. Align and renumbering mol2 files, move to inside the protein
-6. Create tleaprc file to run teLeap programs, it is done by executing the tleap command. In this step the protein and ligand files are required to be aligned and a charge equilibration process is required (add Na and Cl)
-7. Create the input files for the MD simulation: heat, densit, min, equil, and prod process
-8. Create, execute, and tune the LiGaMD files
+1. Crate **PDBs** without and with Hydrogen atoms using Chimera.
+2. Use **antechamber** (AC) to generate the gctr and gesp files, line commands are in the [amber manual](http://ambermd.org/doc12/Amber22.pdf) at page 310.
+3. Run **Gaussian09** ```/share/apps/g09/g09``` to compute quantum calculations. Links of documentation [Gaussian09 calculations](https://ambermd.org/tutorials/advanced/tutorial20/mcpbpy.php) and [Gaussian09 Keywords](http://wild.life.nctu.edu.tw/~jsyu/compchem/g09/g09ur/l_keywords09.htm)
+4. Use **AC** to assign atom charges and atom types, it generates a mol2 file. The **-eq** flag is to predicts charge equilibration using both atom paths and some geometrical information (E/Z configuration).
+5. Align and relabel, carbon and hydrogen atoms, of the **mol2** files, move protein to inside of the ligand
+6. Create **tleaprc** file to run teLeap programs, it is done by executing the tleap command. In this step the protein and ligand files are required to be aligned and a charge equilibration process is required (add Na and Cl). Convert inpcr and prmtop to pdb file
+7. Create and submit the input files for the **MD simulation**: heat, densit, min, equil, and prod process
+8. Create, execute, and tune the **LiGaMD** files
 
 
 - **gctr**: Gaussian Cartesian (Generalization-Based Compact Trajectory Representation)
@@ -285,7 +285,7 @@ To create a MD simulation of STR the following steps have to be done:
 
 ### Week 4
 
-Create and execute the MD simulation steps for the MR-STR system.
+Create and execute the MD simulation steps for the MR-STR (Progesteron) system.
 
 Generate and plot the MC simulations. A cushion of 0.25 is used with a search_box of 20. 
 
