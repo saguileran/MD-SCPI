@@ -81,7 +81,7 @@ Reports made during the internship. Here you can find weekly updates and the fin
 <h3 align="center" margin-bottom="-10">MD Energies</h3>
 
 <center>
-<img src="./Results/Energies.png" alt="Total energies of MR-AS4/COL systems" class="center" width="900" height="800">
+<img src="./Results/Energies.png" alt="Total energies of MR-AS4/COL systems" class="center" width="800" height="1200">
 </center>
 
 This image is obtained using the [PlotEnergies.ipynb](./NoteBooks/PlotEnergies.ipynb) notebook that use jscatter pacakge to import dat files and matplotlib to plot.
