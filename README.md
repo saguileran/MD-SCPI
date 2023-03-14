@@ -50,7 +50,7 @@ Reports made during the internship. Here you can find weekly updates and the fin
 ## Output Files
 
 
-<h3 align="center" margin-bottom=0>MR-AS4</h3>
+<h3 align="center" margin-bottom=0>MR-AS4 MD simulation</h3>
 
 <div class="container">
   <center>
@@ -64,7 +64,7 @@ Reports made during the internship. Here you can find weekly updates and the fin
 </div>
 
 
-<h3 align="center" margin-bottom="-10">MR-COL</h3>
+<h3 align="center" margin-bottom="-10">MR-COL MD simulation</h3>
 
 <div class="container">
   <center>
