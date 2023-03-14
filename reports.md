@@ -207,9 +207,9 @@ change mask    225 -> 1 (residue number)
 - Calculation of energies in different residues
 
 
-<div align="center" style="margin-left:100pt;">
+<div align="center">
 
-<table style="text-align:center;">
+<table style="text-align:center;margin-left:100pt;">
   <thead>
     <tr>
       <th><center>Residue</center></th>
