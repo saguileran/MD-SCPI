@@ -10,11 +10,9 @@ sidebar:
 
 <h1 id="md-scpi"> Molecular Dynamics - Sao Carlos Physics Institute (MD-SCPI) </h1> 
 
-<p>Evaluation of the unbinding kinetics of Mineralocorticoid (MR) receptor steroid agonist Cortisol (COL) and Aldosterone (AS4) ligands.</p>
-
-
 <h2 id="overview">Overview</h2>
 
+<p>Evaluation of the unbinding kinetics of Mineralocorticoid (MR) receptor steroid agonist Cortisol (COL) and Aldosterone (AS4) ligands.</p>
 
 
 <h2 id="objectives">Objectives</h2>
@@ -39,15 +37,17 @@ sidebar:
 </ul>
 
 <h2 id="reports"><a href="https://saguileran.github.io/MD-SCPI/reports/">Reports</a></h2>
-<p>Reports made. </p>
+
+<p>Reports made during the internship. Here you can find weekly updates and the final report with some conclusions.. </p>
 
 <h3 id="weekly-reports"><a href="https://saguileran.github.io/MD-SCPI/reports/#weekly-reports">Weekly Reports</a></h3>
 
-<h3 id="final-report"><a href="https://saguileran.github.io/MD-SCPI/reports/#final-report">Final Report</a></h3>
+<h3 id="final-report"><a href="https://github.com/saguileran/MD-SCPI/blob/712e20bfd9515a8912643ff07af56deab077c55e/Reports/FinalReport.pdf">Final Report</a></h3>
 
 
 <h2 id="output-files">Output Files</h2>
-<h3 align="center" margin-bottom=0>MR-AS4</h3>
+
+<h3 align="center" margin-bottom=0>MR-AS4 MD simulation</h3>
 
 <div class="container">
   <center>
@@ -60,7 +60,7 @@ sidebar:
     </div>
 </div>
 
-<h3 align="center" margin-bottom="-10">MR-COL</h3>
+<h3 align="center" margin-bottom="-10">MR-COL MD simulation</h3>
 
 <div class="container">
   <center>
@@ -74,31 +74,43 @@ sidebar:
 </div>
 
 
-<h3 align="center" margin-bottom="-10">Energies</h3>
+<h3 align="center" margin-bottom="-10">MD Energies</h3>
 
 <center>
 <img src="https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/Energies.png" class="center" width="900" height="800">
 </center>
 
 <p>This image is obtained using the <a href="./NoteBooks/PlotEnergies.ipynb">PlotEnergies.ipynb</a> notebook that use jscatter pacakge to import dat files and matplotlib to plot.</p>
+
+
+<h3 align="center" margin-bottom="-10">MC Energies</h3>
+
+<center>
+<img src="https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/MC_energies.png" alt="Total energies of MC-AS4 system" class="center" width="900" height="500">
+</center>
+
+<p>This image is obtained using the <a href="./NoteBooks/Plots_MC.ipynb">Plots_MC.ipynb</a> notebook that use jscatter pacakge to import dat files and matplotlib to plot.</p>
+
+
+
+
 <h2 id="references">References</h2>
+
 <h3 id="proteins-and-ligands">Proteins and Ligands</h3>
-<p>[1] <a href="https://reader.elsevier.com/reader/sd/pii/S0085253815468644?token=DD3F83E8E16FA5690227FDF101F9E90AE9B71E9354A0C682904FE8E2C2A683B22EB819B6DF7372B86DDB5F00FBB62164&amp;originRegion=us-east-1&amp;originCreation=20230228185341">Mechanistic aspects of mineralocorticoid receptor activation</a></p>
-<p>[2] <a href="https://pubmed.ncbi.nlm.nih.gov/12538613/">The Severe Form of Hypertension Caused by the Activating S810L Mutation in the Mineralocorticoid Receptor Is Cortisone Related</a></p>
-<p>[3] <a href="https://www.science.org/doi/epdf/10.1126/science.289.5476.119">Activating Mineralocorticoid Receptor Mutation in Hypertension Exacerbated by Pregnancy</a></p>
-<p>[4] <a href="https://www.nature.com/articles/nsmb939">Crystal structure of a mutant mineralocorticoid receptor responsible for hypertension</a></p>
-<p>[5] <a href="https://www.science.org/doi/epdf/10.1126/science.289.5476.119">Activating MineralocorticoidReceptor Mutation inHypertension Exacerbated byPregnancy</a></p>
+
+<p>[1] Chantal Hellal-Levy, Jérôme Fagart, Anny Souque, and Marie-Edith Rafestin-Oblin. <a href="https://www.sciencedirect.com/science/article/pii/S0085253815468644">Mechanistic aspects of mineralocorticoid receptor activation</a>. <em>Kidney International</em>, 57(4):1250–1255, 2000.</p>
+<p>[2] Marie-Edith Rafestin-Oblin, Anny Souque, Brigitte Bocchi, Gregory Pinon, Jerome Fagart, and Alain Vandewalle. <a href="https://pubmed.ncbi.nlm.nih.gov/12538613/">The Severe Form of Hypertension Caused by the Activating S810L Mutation in the Mineralocorticoid Receptor Is Cortisone related</a>. <em>Endocrinology</em>, 144(2):528–533, 02 2003.</p>
+<p>[3] David S. Geller, Anita Farhi, Nikki Pinkerton, Michael Fradley, Michael Moritz, Adrian Spitzer, Gretchen Meinke, Francis T. F. Tsai, Paul B. Sigler, and Richard P. Lifton. <a href="https://www.science.org/doi/epdf/10.1126/science.289.5476.119">Activating mineralocorticoid receptor mutation in hypertension exacerbated by pregnancy</a>. <em>Science</em>, 289(5476):119–123, 2000.</p>
+<p>[4] Jérôme Fagart, Jessica Huyet, Grégory M. Pinon, Marina Rochel, Claudine Mayer, and Marie-Edith Rafestin-Oblin. <a href="https://www.science.org/doi/epdf/10.1126/science.289.5476.119">Crystal structure of a mutant mineralocorticoid receptor responsible for hypertension</a>. <em>Nature Structural &amp; Molecular Biology</em>, 12(6):554–555, Jun 2005.</p>
+
 <h3 id="software">Software</h3>
-<p>[6] <a href="https://www.frontiersin.org/articles/10.3389/fmolb.2019.00052/full">Comparative Analysis of Electrostatic Models for Ligand Docking</a></p>
-<p>[7] <a href="https://www.biorxiv.org/content/10.1101/2020.04.20.051979v1.full.pdf">Ligand Gaussian accelerated molecular dynamics (LiGaMD):
-Characterization of ligand binding thermodynamics and kinetics</a></p>
-<p>[8] <a href="https://pubs.acs.org/doi/pdf/10.1021/acs.jctc.0c00395">Ligand Gaussian Accelerated Molecular Dynamics (LiGaMD):
-Characterization of Ligand Binding Thermodynamics and Kinetics - latest</a></p>
-<p>[9] <a href="http://miaolab.org/library/documents/2021-WIREs_GaMD.pdf">Gaussian accelerated molecular dynamics: principles and applications</a></p>
-<p>[10] <a href="https://pubmed.ncbi.nlm.nih.gov/26141308/">Ligand- and receptor-based docking with LiBELa</a></p>
-<p>[11] <a href="https://reader.elsevier.com/reader/sd/pii/S0223523412006824?token=505CA34938BA9801282431D305185F62931911820538A228E6B97282A877D9F8E0EDF1194E046E02FB60090D0D93B694&amp;originRegion=us-east-1&amp;originCreation=20230224192727">MolShaCS: A free and open source tool for ligand similarity identification based
-on Gaussian descriptors</a></p>
-<p>[12] <a href="https://pubs.acs.org/doi/pdf/10.1021/acs.jpcb.2c03765">Gaussian Accelerated Molecular Dynamics in OpenMM</a></p>
-<p>[13] <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0174336">Towards a critical evaluation of an empirical and volume-based solvation function for ligand docking</a></p>
-<p>[14] <a href="https://zenodo.org/record/5196783#.Y_z-0rTMK3w">Making-it-rain: Cloud-based molecular simulations for everyone</a></p>
+
+<p>[5] Yinglong Miao, Apurba Bhattarai, and Jinan Wang. <a href="https://pubs.acs.org/doi/pdf/10.1021/acs.jctc.0c00395">Ligand gaussian accelerated molecular dynamics (ligamd): Characterization of ligand binding thermodynamics and kinetics</a>. <em>Journal of Chemical Theory and Computation</em>, 16(9):5526–5547, 2020. PMID: 32692556.</p>
+<p>[6] Yinglong Miao, Apurba Bhattarai, and Jinan Wang. <a href="https://www.biorxiv.org/content/10.1101/2020.04.20.051979v1.full.pdf">Ligand gaussian accelerated molecular dynamics (ligamd): Characterization of ligand binding thermodynamics and kinetics</a>. <em>bioRxiv</em>, 2020.</p>
+<p>[7] Heloisa dos Santos Muniz and Alessandro S. Nascimento. <a href="https://pubmed.ncbi.nlm.nih.gov/26141308/">Ligand- and receptor-based docking with LiBELa</a>. <em>Journal of Computer-Aided Molecular Design</em>, 29(8):713–723, Aug 2015.</p>
+<p>[8] Pablo R. Arantes, Marcelo D. Polêto, Conrado Pedebos, and Rodrigo Ligabue-Braun. <a href="https://zenodo.org/record/5196783#.ZBBO7rTMIzN">Making-it-rain: Cloud-based molecular simulations for everyone</a>, August 2021.</p>
+<p>[9] Matthew M. Copeland, Hung N. Do, Lane Votapka, Keya Joshi, Jinan Wang, Rommie E. Amaro, and Yinglong Miao. <a href="https://pubs.acs.org/doi/10.1021/acs.jpcb.2c03765?goto=articleMetrics&amp;ref=pdf">Gaussian Accelerated Molecular Dynamics in OpenMM</a>. <em>The Journal of Physical Chemistry B</em>, 126(31):5810–5820, 2022. PMID: 35895977.</p>
+<p>[10] Jinan Wang, Pablo R. Arantes, Apurba Bhattarai, Rohaine V. Hsu, Shristi Pawnikar, Yu-ming M. Huang, Giulia Palermo, and Yinglong Miao. <a href="http://miaolab.org/library/documents/2021-WIREs_GaMD.pdf">Gaussian accelerated molecular dynamics: Principles and applications</a>. <em>WIREs Computational Molecular Science</em>, 11(5):e1521, 2021.</p>
+<p>[11] Geraldo Rodrigues Sartori and Alessandro S. Nascimento. <a href="https://www.frontiersin.org/articles/10.3389/fmolb.2019.00052/full">Comparative Analysis of Electrostatic Models for Ligand Docking</a>. <em>Frontiers in Molecular Biosciences</em>, 6, 2019.</p>
+<p>[12] Heloisa S. Muniz and Alessandro S. Nascimento. <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0174336">Towards a critical evaluation of an empirical and volume-based solvation function for ligand docking</a>. <em>PLOS ONE</em>, 12(3):1–19, 03 2017.</p>
 
