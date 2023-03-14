@@ -1,0 +1,81 @@
+\begin{thebibliography}{10}
+
+\bibitem{HELLALLEVY20001250}
+Chantal Hellal-Levy, Jérôme Fagart, Anny Souque, and Marie-Edith
+  Rafestin-Oblin.
+\newblock Mechanistic aspects of mineralocorticoid receptor activation.
+\newblock {\em Kidney International}, 57(4):1250--1255, 2000.
+
+\bibitem{Severe}
+Marie-Edith Rafestin-Oblin, Anny Souque, Brigitte Bocchi, Gregory Pinon, Jerome
+  Fagart, and Alain Vandewalle.
+\newblock {The Severe Form of Hypertension Caused by the Activating S810L
+  Mutation in the Mineralocorticoid Receptor Is Cortisone Related}.
+\newblock {\em Endocrinology}, 144(2):528--533, 02 2003.
+
+\bibitem{Activating_Mineralocorticoid}
+David~S. Geller, Anita Farhi, Nikki Pinkerton, Michael Fradley, Michael Moritz,
+  Adrian Spitzer, Gretchen Meinke, Francis T.~F. Tsai, Paul~B. Sigler, and
+  Richard~P. Lifton.
+\newblock Activating mineralocorticoid receptor mutation in hypertension
+  exacerbated by pregnancy.
+\newblock {\em Science}, 289(5476):119--123, 2000.
+
+\bibitem{Fagart2005}
+Jéróme Fagart, Jessica Huyet, Grégory~M. Pinon, Marina Rochel, Claudine
+  Mayer, and Marie-Edith Rafestin-Oblin.
+\newblock Crystal structure of a mutant mineralocorticoid receptor responsible
+  for hypertension.
+\newblock {\em Nature Structural {\&} Molecular Biology}, 12(6):554--555, Jun
+  2005.
+
+\bibitem{ligamd_latest}
+Yinglong Miao, Apurba Bhattarai, and Jinan Wang.
+\newblock Ligand gaussian accelerated molecular dynamics (ligamd):
+  Characterization of ligand binding thermodynamics and kinetics.
+\newblock {\em Journal of Chemical Theory and Computation}, 16(9):5526--5547,
+  2020.
+\newblock PMID: 32692556.
+
+\bibitem{ligamd_Miao}
+Yinglong Miao, Apurba Bhattarai, and Jinan Wang.
+\newblock Ligand gaussian accelerated molecular dynamics (ligamd):
+  Characterization of ligand binding thermodynamics and kinetics.
+\newblock {\em bioRxiv}, 2020.
+
+\bibitem{libela}
+Heloisa dos Santos~Muniz and Alessandro~S. Nascimento.
+\newblock Ligand- and receptor-based docking with libela.
+\newblock {\em Journal of Computer-Aided Molecular Design}, 29(8):713--723, Aug
+  2015.
+
+\bibitem{making_it_rain}
+Pablo~R. Arantes, Marcelo~D. Polêto, Conrado Pedebos, and Rodrigo
+  Ligabue-Braun.
+\newblock Making-it-rain, August 2021.
+
+\bibitem{gaussian_openmm}
+Matthew~M. Copeland, Hung~N. Do, Lane Votapka, Keya Joshi, Jinan Wang,
+  Rommie~E. Amaro, and Yinglong Miao.
+\newblock Gaussian accelerated molecular dynamics in openmm.
+\newblock {\em The Journal of Physical Chemistry B}, 126(31):5810--5820, 2022.
+\newblock PMID: 35895977.
+
+\bibitem{gaussian_acelerated_basics}
+Jinan Wang, Pablo~R. Arantes, Apurba Bhattarai, Rohaine~V. Hsu, Shristi
+  Pawnikar, Yu-ming~M. Huang, Giulia Palermo, and Yinglong Miao.
+\newblock Gaussian accelerated molecular dynamics: Principles and applications.
+\newblock {\em WIREs Computational Molecular Science}, 11(5):e1521, 2021.
+
+\bibitem{ligand_docking}
+Geraldo~Rodrigues Sartori and Alessandro~S. Nascimento.
+\newblock Comparative analysis of electrostatic models for ligand docking.
+\newblock {\em Frontiers in Molecular Biosciences}, 6, 2019.
+
+\bibitem{ligand_docking_2}
+Heloisa~S. Muniz and Alessandro~S. Nascimento.
+\newblock Towards a critical evaluation of an empirical and volume-based
+  solvation function for ligand docking.
+\newblock {\em PLOS ONE}, 12(3):1--19, 03 2017.
+
+\end{thebibliography}

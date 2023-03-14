@@ -249,7 +249,7 @@ the **mode** parameter can be
 
 **LiBELa**
 
-- Prepare several input files for the Mc simulations and change the random seed. 10 samples are ok with 30M of steps
+- Prepare several input files for the Mc simulations and change the random seed, 10 samples are ok with 30M of steps
 - Adapt the run_mc.sh script to execute several MC simulations for the MR-AS4 system, varying the random seed and temperature (300, 600, 1200, 2400, 4800, 9600)
 - Improve ligand.inp file to generate a properly aceptance rate (0.3 - 0.5), it depends of the allowed translation parameters (related to translation, rotation and molecules coupling). The default values are:
 
@@ -288,6 +288,8 @@ To create a MD simulation of STR the following steps have to be done:
 Create and execute the MD simulation steps for the MR-STR (Progesteron) system.
 
 Generate and plot the MC simulations. A cushion of 0.25 is used with a search_box of 20. 
+
+To visualize the output files of the MC simulations import the ligand and protein PDBs to chimera and then use Tool/Surface-Binding Analysis and import the .inpcrd_mc.dat.gz file.
 
 ### Week 5
 
