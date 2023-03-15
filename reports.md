@@ -216,6 +216,10 @@ change mask    225 -> 1 (residue number)
       <th><center>Atom #</center></th>
       <th><center>AS4</center></th>
       <th><center>COL</center></th>
+      <th><center>STR</center></th>
+      <th><center>AS4_mut</center></th>
+      <th><center>COL_mut</center></th>
+      <th><center>STR_mut</center></th>
     </tr>
   </thead>
   <tbody>
@@ -224,11 +228,19 @@ change mask    225 -> 1 (residue number)
       <td>85</td>
       <td>~</td>
       <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
       </tr>
     <tr>
       <td><strong>ARG</strong></td>
       <td>92</td>
       <td>*230</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
       <td></td>
       </tr>
     <tr>
@@ -236,17 +248,29 @@ change mask    225 -> 1 (residue number)
       <td>51</td>
       <td> </td>
       <td>*</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
     </tr>
     <tr>
       <td><strong>ASN</strong></td>
       <td>45</td>
       <td> </td>
       <td>*</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
     </tr>
     <tr>
       <td><strong>THR</strong></td>
       <td>222</td>
       <td> </td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -254,11 +278,19 @@ change mask    225 -> 1 (residue number)
       <td>22</td>
       <td> </td>
       <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
     </tr>
     <tr>
       <td><strong>SER</strong></td>
       <td>118</td>
       <td> </td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
       <td></td>
     </tr>
   </tbody>
