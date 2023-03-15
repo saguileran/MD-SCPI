@@ -185,11 +185,11 @@ swapaa leu:810
 - Prepare and run LiGaMD simulations on the server
 
 ```
-iEP = 2
-igamd = 10 (single boost)
-dt = 0.001
-sigma0P = default 
-change mask    225 -> 1 (residue number)
+iEP = 2		# threshold energy E for the the first potential
+igamd = 10 	# (single boost)
+dt = 0.001      # time step
+sigma0P = 6 	# gaussian sigma of smothness
+mask = 225 -> 1 # (residue number)
 ```
 
 - Calculation of energies in different residues
@@ -197,7 +197,7 @@ change mask    225 -> 1 (residue number)
 <div align="center">
 
 
-| **Residue** | **Atom #** | **AS4** | **COL** | **STR** | **AS4_mut** | **COL_mut** | **STR_mut** |
+| **Residue** | **Atom #** | **MR-AS4** | **MR-COL** | **MR-STR** | **MR_S810-AS4** | **MR_S810L-COL** | **MR_S810L-STR** |
 |:-----------:|:----------:|:-------:|:-------:|:-------:|:-----------:|:-----------:|:-----------:|
 |     SER     |     85     |    ~    |         |         |             |             |             |
 |     ARG     |     92     |   *230  |    *    |         |             |             |             |
@@ -236,7 +236,7 @@ source /share/apps/iMcLiBELa/LiBELa.sh
 time /share/apps/iMcLiBELa/bin/McLiBELa.openmp -i libela.inp
 ```
 
-the **mode** parameter can be
+the **mode** parameter can be:
 
 - 1: eq (MC)
 - 2: docking
@@ -334,6 +334,34 @@ To visualize the MC simulations the files require are:
 - MR-AS4.mol2.gz
 
 First open the ligand and protein mol2 files with chimera, then import the .inpcrd_MC.mol2 using Tools - Surface/Binding Analysis - ViewDock, and finaly select Dock 6.
+
+Using LiBELa in the MR-AS4 system the ligand seems to scape at high temperatures, 9600K. To confirm that, 30 simulations will be execute at a temperature of 10000K, with ```cushion=0.25``` and ```search_box=20```.
+
+Submitted jobs:
+
+- MR-STR_equil_and_production
+- MR_mut-AS4_equil_and_production
+- MR_mut-COL_equil_and_production
+- MR_mut-STR_all_steps
+- MR-AS4_ligamd_dual
+
+Missing task:
+
+- MR-COL_ligamd_single/dual
+- MR-STR_ligamd_single/dual
+
+Another interesting method is **Locally-Enchanced Sampling (LES)** which allow to have a more realistic simulation by enlarging the molecule making a few copies of some part of the system, page 629 of [Amber Manual](http://ambermd.org/doc12/Amber22.pdf). In this method the copies are not interacting between them
+Make 5 (3 to 10 is suggested) copies of the ligand. Prepare input files with ADDLES, it requires a non-LES prmtop and prmcrd files which have been previously generated with tleap
+
+Prepare input file for LES
+
+
+Interesting articles about MR and AS4/COL/STR
+- https://books.google.com.br/books?hl=en&lr=&id=oQj8DwAAQBAJ&oi=fnd&pg=PA47&dq=MR+and+aldosterone&ots=mK73FQ565c&sig=UyQ1TdtifeOWhnAUMF0RBqM_87k&redir_esc=y#v=onepage&q=MR%20and%20aldosterone&f=false
+
+
+**LEaP: it combines the functionality of  *prep*, *link*, *edit* and *parm* of older versions of amber**
+
 
 ### Week 5
 

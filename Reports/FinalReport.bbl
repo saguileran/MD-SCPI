@@ -29,7 +29,21 @@ Jéróme Fagart, Jessica Huyet, Grégory~M. Pinon, Marina Rochel, Claudine
 \newblock {\em Nature Structural {\&} Molecular Biology}, 12(6):554--555, Jun
   2005.
 
-\bibitem{ligamd_latest}
+\bibitem{jwimit}
+K.~Belfon I.Y. Ben-Shalom J.T. Berryman S.R. Brozell D.S. Cerutti T.E. Cheatham
+  III G.A. Cisneros V.W.D. Cruzeiro T.A. Darden R.E. Duke G. Giambasu M.K.
+  Gilson H. Gohlke A.W. Goetz R. Harris S. Izadi S.A. Izmailov K. Kasavajhala
+  M.C. Kaymak E. King A. Ko-valenko T. Kurtzman T.S. Lee S. LeGrand P. Li C.
+  Lin J. Liu T. Luchko R. Luo M. Machado V. Man M. Manathunga K.M. Merz Y. Miao
+  O. Mikhailovskii G. Monard H. Nguyen K.A. O’Hearn A. Onufriev F. Pan S.
+  Pantano R. Qi A. Rahnamoun D.R. Roe A. Roitberg C. Sagui S. Schott-Verdugo A.
+  Shajan J. Shen C.L. Simmerling N.R. Skrynnikov J. Smith J. Swails R.C. Walker
+  J. Wang J. Wang H. Wei R.M. Wolf X. Wu Y. Xiong Y. Xue D.M. York S.~Zhao
+  D.A.~Case, H.M.~Aktulga and P.A.~Kollman (2022).
+\newblock {\em Amber 2022}.
+\newblock University of California, San Francisco.
+
+\bibitem{LiGAMD_latest}
 Yinglong Miao, Apurba Bhattarai, and Jinan Wang.
 \newblock Ligand gaussian accelerated molecular dynamics (ligamd):
   Characterization of ligand binding thermodynamics and kinetics.
