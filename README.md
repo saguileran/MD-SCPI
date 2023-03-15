@@ -111,25 +111,26 @@ This image is obtained using the [Plots_MC.ipynb](./NoteBooks/Plots_MC.ipynb) no
 
 ### Software
 
+[5] K. Belfon I.Y. Ben-Shalom J.T. Berryman S.R. Brozell D.S. Cerutti T.E. Cheatham III G.A. Cisneros V.W.D. Cruzeiro T.A. Darden R.E. Duke G. Giambasu M.K. Gilson H. Gohlke A.W. Goetz R. Harris S. Izadi S.A. Izmailov K. Kasavajhala M.C. Kaymak E. King A. Ko-valenko T. Kurtzman T.S. Lee S. LeGrand P. Li C. Lin J. Liu T. Luchko R. Luo M. Machado V. Man M. Manathunga K.M. Merz Y. Miao O. Mikhailovskii G. Monard H. Nguyen K.A. O’Hearn A. Onufriev F. Pan S. Pantano R. Qi A. Rahnamoun D.R. Roe A. Roitberg C. Sagui S. Schott-Verdugo A. Shajan J. Shen C.L. Simmerling N.R. Skrynnikov J. Smith J. Swails R.C. Walker J. Wang J. Wang H. Wei R.M. Wolf X. Wu Y. Xiong Y. Xue D.M. York S. Zhao D.A. Case, H.M. Aktulga and P.A. Kollman (2022). [Amber 2022](http://ambermd.org/doc12/Amber22.pdf). University of California, San Francisco.
 
-[5] Yinglong Miao, Apurba Bhattarai, and Jinan Wang. [Ligand gaussian accelerated molecular dynamics (ligamd): Characterization of ligand binding thermodynamics and kinetics](https://pubs.acs.org/doi/pdf/10.1021/acs.jctc.0c00395). *Journal of Chemical Theory and Computation*, 16(9):5526–5547, 2020. PMID: 32692556.
+[6] Yinglong Miao, Apurba Bhattarai, and Jinan Wang. [Ligand gaussian accelerated molecular dynamics (ligamd): Characterization of ligand binding thermodynamics and kinetics](https://pubs.acs.org/doi/pdf/10.1021/acs.jctc.0c00395). *Journal of Chemical Theory and Computation*, 16(9):5526–5547, 2020. PMID: 32692556.
 
-[6] Yinglong Miao, Apurba Bhattarai, and Jinan Wang. [Ligand gaussian accelerated molecular dynamics (ligamd): Characterization of ligand binding thermodynamics and kinetics](https://www.biorxiv.org/content/10.1101/2020.04.20.051979v1.full.pdf). *bioRxiv*, 2020.
+[7] Yinglong Miao, Apurba Bhattarai, and Jinan Wang. [Ligand gaussian accelerated molecular dynamics (ligamd): Characterization of ligand binding thermodynamics and kinetics](https://www.biorxiv.org/content/10.1101/2020.04.20.051979v1.full.pdf). *bioRxiv*, 2020.
 
-[7] Heloisa dos Santos Muniz and Alessandro S. Nascimento. [Ligand- and receptor-based docking with LiBELa](https://pubmed.ncbi.nlm.nih.gov/26141308/). *Journal of Computer-Aided Molecular Design*, 29(8):713–723, Aug 2015.
+[8] Heloisa dos Santos Muniz and Alessandro S. Nascimento. [Ligand- and receptor-based docking with LiBELa](https://pubmed.ncbi.nlm.nih.gov/26141308/). *Journal of Computer-Aided Molecular Design*, 29(8):713–723, Aug 2015.
 
-[8] Pablo R. Arantes, Marcelo D. Polêto, Conrado Pedebos, and Rodrigo Ligabue-Braun. [Making-it-rain: Cloud-based molecular simulations for everyone](https://zenodo.org/record/5196783#.ZBBO7rTMIzN), August 2021.
+[9] Pablo R. Arantes, Marcelo D. Polêto, Conrado Pedebos, and Rodrigo Ligabue-Braun. [Making-it-rain: Cloud-based molecular simulations for everyone](https://zenodo.org/record/5196783#.ZBBO7rTMIzN), August 2021.
 
-[9] Matthew M. Copeland, Hung N. Do, Lane Votapka, Keya Joshi, Jinan Wang, Rommie E. Amaro, and Yinglong Miao. [Gaussian Accelerated Molecular Dynamics in OpenMM](https://pubs.acs.org/doi/10.1021/acs.jpcb.2c03765?goto=articleMetrics&ref=pdf). *The Journal of Physical Chemistry B*, 126(31):5810–5820, 2022. PMID: 35895977.
+[10] Matthew M. Copeland, Hung N. Do, Lane Votapka, Keya Joshi, Jinan Wang, Rommie E. Amaro, and Yinglong Miao. [Gaussian Accelerated Molecular Dynamics in OpenMM](https://pubs.acs.org/doi/10.1021/acs.jpcb.2c03765?goto=articleMetrics&ref=pdf). *The Journal of Physical Chemistry B*, 126(31):5810–5820, 2022. PMID: 35895977.
 
-[10] Jinan Wang, Pablo R. Arantes, Apurba Bhattarai, Rohaine V. Hsu, Shristi Pawnikar, Yu-ming M. Huang, Giulia Palermo, and Yinglong Miao. [Gaussian accelerated molecular dynamics: Principles and applications](http://miaolab.org/library/documents/2021-WIREs_GaMD.pdf). *WIREs Computational Molecular Science*, 11(5):e1521, 2021.
+[11] Jinan Wang, Pablo R. Arantes, Apurba Bhattarai, Rohaine V. Hsu, Shristi Pawnikar, Yu-ming M. Huang, Giulia Palermo, and Yinglong Miao. [Gaussian accelerated molecular dynamics: Principles and applications](http://miaolab.org/library/documents/2021-WIREs_GaMD.pdf). *WIREs Computational Molecular Science*, 11(5):e1521, 2021.
 
-[11] Geraldo Rodrigues Sartori and Alessandro S. Nascimento. [Comparative Analysis of Electrostatic Models for Ligand Docking](https://www.frontiersin.org/articles/10.3389/fmolb.2019.00052/full). *Frontiers in Molecular Biosciences*, 6, 2019.
+[12] Geraldo Rodrigues Sartori and Alessandro S. Nascimento. [Comparative Analysis of Electrostatic Models for Ligand Docking](https://www.frontiersin.org/articles/10.3389/fmolb.2019.00052/full). *Frontiers in Molecular Biosciences*, 6, 2019.
 
-[12] Heloisa S. Muniz and Alessandro S. Nascimento. [Towards a critical evaluation of an empirical and volume-based solvation function for ligand docking](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0174336). *PLOS ONE*, 12(3):1–19, 03 2017.
+[13] Heloisa S. Muniz and Alessandro S. Nascimento. [Towards a critical evaluation of an empirical and volume-based solvation function for ligand docking](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0174336). *PLOS ONE*, 12(3):1–19, 03 2017.
 
 ### Theory
 
-[13] Tamar Schlick. Molecular Modeling and Simulation: An Interdisciplinary Guide, volume 21 of Interdis- ciplinary Applied Mathematics. *Springer New York, NY*, Berlin, Heidelberg, 2 edition, August 2010.
+[14] Tamar Schlick. Molecular Modeling and Simulation: An Interdisciplinary Guide, volume 21 of Interdis- ciplinary Applied Mathematics. *Springer New York, NY*, Berlin, Heidelberg, 2 edition, August 2010.
 
-[14] A.R. Leach. Molecular Modelling: Principles and Applications. *Prentice Hall*, 2 edition, 2001.
+[15] A.R. Leach. Molecular Modelling: Principles and Applications. *Prentice Hall*, 2 edition, 2001.
