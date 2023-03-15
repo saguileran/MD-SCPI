@@ -128,4 +128,8 @@ This image is obtained using the [Plots_MC.ipynb](./NoteBooks/Plots_MC.ipynb) no
 
 [12] Heloisa S. Muniz and Alessandro S. Nascimento. [Towards a critical evaluation of an empirical and volume-based solvation function for ligand docking](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0174336). *PLOS ONE*, 12(3):1–19, 03 2017.
 
+### Theory
 
+[13] Tamar Schlick. Molecular Modeling and Simulation: An Interdisciplinary Guide, volume 21 of Interdis- ciplinary Applied Mathematics. *Springer New York, NY*, Berlin, Heidelberg, 2 edition, August 2010.
+
+[14] A.R. Leach. Molecular Modelling: Principles and Applications. *Prentice Hall*, 2 edition, 2001.
