@@ -214,12 +214,12 @@ change mask    225 -> 1 (residue number)
     <tr>
       <th><center>Residue</center></th>
       <th><center>Atom #</center></th>
-      <th><center>AS4</center></th>
-      <th><center>COL</center></th>
-      <th><center>STR</center></th>
-      <th><center>AS4_mut</center></th>
-      <th><center>COL_mut</center></th>
-      <th><center>STR_mut</center></th>
+      <th><center>MR-AS4</center></th>
+      <th><center>MR-COL</center></th>
+      <th><center>MR-STR</center></th>
+      <th><center>MR_S810L-AS4</center></th>
+      <th><center>MR_S810L-COL</center></th>
+      <th><center>MR_S810L-STR</center></th>
     </tr>
   </thead>
   <tbody>
