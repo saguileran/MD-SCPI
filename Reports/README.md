@@ -342,13 +342,15 @@ Submitted jobs:
 - MR-STR_equil_and_production
 - MR_mut-AS4_equil_and_production
 - MR_mut-COL_equil_and_production
-- MR_mut-STR_all_steps
 - MR-AS4_ligamd_dual
+- MC-AS4_10000/15000/20000
 
 Missing task:
 
+- MR_mut-STR_all_steps
 - MR-COL_ligamd_single/dual
 - MR-STR_ligamd_single/dual
+
 
 Another interesting method is **Locally-Enchanced Sampling (LES)** which allow to have a more realistic simulation by enlarging the molecule making a few copies of some part of the system, page 629 of [Amber Manual](http://ambermd.org/doc12/Amber22.pdf). In this method the copies are not interacting between them
 Make 5 (3 to 10 is suggested) copies of the ligand. Prepare input files with ADDLES, it requires a non-LES prmtop and prmcrd files which have been previously generated with tleap
