@@ -5,45 +5,45 @@ The style file: unsrt.bst.bst
 Database file #1: ../references.bib
 Warning--entry type for "making_it_rain" isn't style-file defined
 --line 115 of file ../references.bib
-You've used 12 entries,
+You've used 14 entries,
             1791 wiz_defined-function locations,
-            538 strings with 6350 characters,
-and the built_in function-call counts, 2989 in all, are:
-= -- 227
-> -- 195
-< -- 0
-+ -- 69
-- -- 57
-* -- 264
-:= -- 514
-add.period$ -- 37
-call.type$ -- 12
-change.case$ -- 12
+            551 strings with 6605 characters,
+and the built_in function-call counts, 3321 in all, are:
+= -- 257
+> -- 203
+< -- 1
++ -- 73
+- -- 59
+* -- 284
+:= -- 564
+add.period$ -- 43
+call.type$ -- 14
+change.case$ -- 14
 chr.to.int$ -- 0
-cite$ -- 12
-duplicate$ -- 102
-empty$ -- 264
-format.name$ -- 57
-if$ -- 636
+cite$ -- 14
+duplicate$ -- 123
+empty$ -- 303
+format.name$ -- 59
+if$ -- 714
 int.to.chr$ -- 0
-int.to.str$ -- 12
-missing$ -- 11
-newline$ -- 64
-num.names$ -- 12
-pop$ -- 18
+int.to.str$ -- 14
+missing$ -- 15
+newline$ -- 74
+num.names$ -- 14
+pop$ -- 28
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 40
+skip$ -- 44
 stack$ -- 0
 substring$ -- 192
-swap$ -- 12
-text.length$ -- 0
+swap$ -- 16
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 21
-width$ -- 14
-write$ -- 134
+while$ -- 23
+width$ -- 16
+write$ -- 158
 (There was 1 warning)

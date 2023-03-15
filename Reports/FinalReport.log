@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.11.14)  14 MAR 2023 08:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.11.14)  15 MAR 2023 09:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -298,10 +298,10 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 ] (./FinalReport.aux) ) 
 Here is how much of TeX's memory you used:
- 2822 strings out of 492649
- 40235 string characters out of 6129621
- 224679 words of memory out of 5000000
- 6670 multiletter control sequences out of 15000+600000
+ 2824 strings out of 492649
+ 40262 string characters out of 6129621
+ 224689 words of memory out of 5000000
+ 6672 multiletter control sequences out of 15000+600000
  7925 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,7n,25p,278b,216s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -311,7 +311,7 @@ sfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmr12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmr17.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmti10.pfb>
-Output written on FinalReport.pdf (2 pages, 78577 bytes).
+Output written on FinalReport.pdf (2 pages, 79306 bytes).
 PDF statistics:
  31 PDF objects out of 1000 (max. 8388607)
  21 compressed objects within 1 object stream

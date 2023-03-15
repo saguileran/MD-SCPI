@@ -78,4 +78,15 @@ Heloisa~S. Muniz and Alessandro~S. Nascimento.
   solvation function for ligand docking.
 \newblock {\em PLOS ONE}, 12(3):1--19, 03 2017.
 
+\bibitem{tamar}
+Tamar Schlick.
+\newblock {\em Molecular Modeling and Simulation: An Interdisciplinary Guide},
+  volume~21 of {\em Interdisciplinary Applied Mathematics}.
+\newblock Springer New York, NY, Berlin, Heidelberg, 2 edition, August 2010.
+
+\bibitem{leach2001molecular}
+A.R. Leach.
+\newblock {\em Molecular Modelling: Principles and Applications}.
+\newblock Prentice Hall, 2 edition, 2001.
+
 \end{thebibliography}
