@@ -5,6 +5,9 @@ file rprm name=(../../leap/AS4/MR-AS4.prmtop) read
 ~ wovr to overwrite writ no over write
 file wprm name=(lesparm_MR-AS4) wovr
 
+~ read coordinates with velocities and box
+file rcvb name=(equil_2.rst) read
+
 ~ ’wcrd is for writing coords with velo and box, if they are in the input file
 file wcrd name=(lescrd) wovr
 
@@ -16,12 +19,12 @@ action
 ~ CREATE SUBSPACES FOR LES
 
 ~ 3 copies of the fragment consisting of monomers (=residues) 1 and 2
-spac numc=3 pick #mon 1 done
+spac numc=10 pick #mon 1 1 done
 
 ~ numc: number of copies
 
 ~ the ’#sid’ command picks all atoms in the residue except C,O,CA,HA,N,H and HN.
-spac numc=2 pick #sid 1 1 done
+~ spac numc=2 pick #sid 1 1 done
 ~ spac numc=2 pick #sid 2 2 done
 
 ~ use the *EOD to end the input

@@ -351,19 +351,48 @@ Missing task:
 - MR-COL_ligamd_single/dual
 - MR-STR_ligamd_single/dual
 
-
 Another interesting method is **Locally-Enchanced Sampling (LES)** which allow to have a more realistic simulation by enlarging the molecule making a few copies of some part of the system, page 629 of [Amber Manual](http://ambermd.org/doc12/Amber22.pdf). In this method the copies are not interacting between them
 Make 5 (3 to 10 is suggested) copies of the ligand. Prepare input files with ADDLES, it requires a non-LES prmtop and prmcrd files which have been previously generated with tleap
-
-Prepare input file for LES
-
 
 Interesting articles about MR and AS4/COL/STR
 - https://books.google.com.br/books?hl=en&lr=&id=oQj8DwAAQBAJ&oi=fnd&pg=PA47&dq=MR+and+aldosterone&ots=mK73FQ565c&sig=UyQ1TdtifeOWhnAUMF0RBqM_87k&redir_esc=y#v=onepage&q=MR%20and%20aldosterone&f=false
 
+Tasks:
+
+- Check to where is the ligand moving in the MC simulations for some samples.
+- Make a plot for MC of RMSD vs #MC_step
+- Check how is going the LES simulation
+- Document the equilibration steps: min, heat, density, equil and prod steps
+- Prepare the MR_mut-STR system
+
+LES methods requires an input file of format rcvb. It is generated with the equil.rst file previously generated and using cpptraj to convert it. The LES method is implemented with 10 copies of the ligand (AS4), this is done to decrease the ligand-protein interaction stregth, by 1/10.
+
+- **rcvb**: read coordinates, velocities, and boox
+
+```
+# convert to the appropriate format
+cpptraj ../../leap/AS4/MR-AS4.prmtop << eof
+> trajin equil.rst 
+> autoimage
+> trajout equil_2.rst 
+> eof
+
+# run addles to generate lesparm files
+source /usr/local/amber20/amber.sh
+addles < les.inp |tee addles.out
+
+# convert LES output files to suitable formats: prmto, inpcrd, and pdb files
+mv lesparm_MR-AS4 MR-AS4_LES.prmtop
+mv lescrd MR-AS4_LES.inpcrd
+ambpdb -p lesparm_MR-AS4.prmtop < MR-AS4_LES.inpcrd > MR-AS4_LES_leap.pdb
+#ambpdb -p lesparm_MR-AS4 < lescrd > MR-AS4_LES_leap.pdb
+
+# submit job using 128 CPUs
+qsub amber.cpu.sub
+```
 
 **LEaP: it combines the functionality of  *prep*, *link*, *edit* and *parm* of older versions of amber**
-
+**Assisted Model Building with Energy Refinement (AMBER)**
 
 ### Week 5
 
@@ -379,4 +408,4 @@ Interesting articles about MR and AS4/COL/STR
 
 # [MD-SCPI project](https://saguileran.github.io/MD-SCPI/)
 
-Home page of the project. Short description with an overview, objectives, results and references
+Home page of the project. Short description with an overview, objectives, results and references.

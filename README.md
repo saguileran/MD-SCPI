@@ -91,7 +91,7 @@ This image is obtained using the [PlotEnergies.ipynb](./NoteBooks/PlotEnergies.i
 <h3 align="center" margin-bottom="-10">MC Energies</h3>
 
 <center>
-<img src="./Results/MC_energies.png" alt="Total energies of MC-AS4 system" class="center" width="900" height="900">
+<img src="./Results/MC_energies.png" alt="Total energies of MC-AS4 system" class="center" width="900" height="1300">
 </center>
 
 This image is obtained using the [Plots_MC.ipynb](./NoteBooks/Plots_MC.ipynb) notebook that use jscatter pacakge to import dat files and matplotlib to plot.
