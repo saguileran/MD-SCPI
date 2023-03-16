@@ -12,6 +12,7 @@
 - [References](#references)
     - [Proteins and Ligands](#proteins-and-ligands)
     - [Software](#software)
+    - [Theory](#theory)
 
 ## Overview
 
