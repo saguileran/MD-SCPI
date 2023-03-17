@@ -394,6 +394,14 @@ qsub amber.cpu.sub
 **LEaP: it combines the functionality of  *prep*, *link*, *edit* and *parm* of older versions of amber**
 **Assisted Model Building with Energy Refinement (AMBER)**
 
+Run a longer MC simulation, 100M steps, at a temperature of 5000K. In addition, 5 set of simulations were executed with the same set up, for the other systems: MR-COL, MR-STR, MR_S810L-AS4, MR_S810L-COL, and MR_S810L-STR.  
+
+To get the mol2 files necessary for the previous jobs the files are imported to chimera and then the water (za > 5), Na, and Cl molecules are removed.
+
+
+
+
+
 ### Week 5
 
 ### Week 6

@@ -82,7 +82,7 @@ Reports made during the internship. Here you can find weekly updates and the fin
 <h3 align="center" margin-bottom="-10">MD Energies</h3>
 
 <center>
-<img src="./Results/Energies.png" alt="Total energies of MR-AS4/COL systems" class="center" width="800" height="1200">
+<img src="./Results/Energies.png" alt="Total energies of the MR-AS4/COL systems" class="center" width="800" height="1200">
 </center>
 
 This image is obtained using the [PlotEnergies.ipynb](./NoteBooks/PlotEnergies.ipynb) notebook that use jscatter pacakge to import dat files and matplotlib to plot.
@@ -91,10 +91,17 @@ This image is obtained using the [PlotEnergies.ipynb](./NoteBooks/PlotEnergies.i
 <h3 align="center" margin-bottom="-10">MC Energies</h3>
 
 <center>
-<img src="./Results/MC_energies.png" alt="Total energies of MC-AS4 system" class="center" width="900" height="1300">
+<img src="./Results/MC_energies.png" alt="Total energies of the MC-AS4 system" class="center" width="900" height="1300">
 </center>
 
-This image is obtained using the [Plots_MC.ipynb](./NoteBooks/Plots_MC.ipynb) notebook that use jscatter pacakge to import dat files and matplotlib to plot.
+
+<h3 align="center" margin-bottom="-10">MC RMSD</h3>
+
+<center>
+<img src="./Results/MC_RMSD.png" alt="RMSD as functio of MC time steap of the MC-AS4 system" class="center" width="900" height="1300">
+</center>
+
+These image are obtained using the [Plots_MC.ipynb](./NoteBooks/Plots_MC.ipynb) notebook that use jscatter pacakge to import dat files and matplotlib to plot.
 
 
 ## References
