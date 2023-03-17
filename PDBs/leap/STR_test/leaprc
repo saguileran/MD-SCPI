@@ -11,7 +11,7 @@ str = loadmol2 ../../AC/STR/str_resp_rename_aligned.mol2
 #check str
 
 complex = combine { str mr }
-#check complex
+check complex
 
 solvatebox complex TIP3PBOX 12.0
 charge complex

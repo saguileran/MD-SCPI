@@ -19,5 +19,6 @@ charge complex
 saveamberparm complex MR_S810L-STR.prmtop MR_S810L-STR.inpcrd
 saveamberparm mr MR_S810L.prmtop MR_S810L.inpcrd
 saveamberparm str STR.prmtop STR.inpcrd
+
 quit 
 
