@@ -43,6 +43,15 @@ K.~Belfon I.Y. Ben-Shalom J.T. Berryman S.R. Brozell D.S. Cerutti T.E. Cheatham
 \newblock {\em Amber 2022}.
 \newblock University of California, San Francisco.
 
+\bibitem{Miao_2023}
+Jinan Wang and Yinglong Miao.
+\newblock Ligand gaussian accelerated molecular dynamics 2 (ligamd2): Improved
+  calculations of ligand binding thermodynamics and kinetics with closed
+  protein pocket.
+\newblock {\em Journal of Chemical Theory and Computation}, 19(3):733--745,
+  2023.
+\newblock PMID: 36706316.
+
 \bibitem{LiGAMD_latest}
 Yinglong Miao, Apurba Bhattarai, and Jinan Wang.
 \newblock Ligand gaussian accelerated molecular dynamics (ligamd):

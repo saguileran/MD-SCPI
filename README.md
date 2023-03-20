@@ -36,6 +36,9 @@ Study and evaluation of the unbinding kinetics of Mineralocorticoid (MR and MR-S
 - [LiBELa](https://github.com/alessandronascimento/LiBELa)
 - [Amber Manuals](http://ambermd.org/doc12/Amber22.pdf)
 - [Chimera User Guide - commands](https://www.cgl.ucsf.edu/chimera/docs/UsersGuide/framecommand.html)
+- [Living Journal of Computational Molecular Science](https://livecomsjournal.org/index.php/livecoms/index)
+- [tese_Alessandro_Silva_Nascimento.pdf](https://teses.usp.br/teses/disponiveis/76/76132/tde-13032009-124546/publico/tese_Alessandro_Silva_Nascimento.pdf) pag ~127
+
 
 
 ## [Reports](https://saguileran.github.io/MD-SCPI/reports/)
