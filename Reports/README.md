@@ -1,4 +1,3 @@
-
 # **Reports**
 
 ## Weekly Reports 
@@ -403,6 +402,17 @@ To get the mol2 files necessary for the previous jobs the files are imported to 
 
 
 ### Week 5
+
+VMD scripts
+
+```
+protein					Licorice
+resid 1  				Licorice
+same residue as within 5. of resid 1	NewCartoon
+```
+
+
+
 
 ### Week 6
 
