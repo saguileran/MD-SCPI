@@ -412,7 +412,7 @@ same residue as within 5. of resid 1	NewCartoon
 ```
 
 - Update the MD energies plots, calculate the energies for the residues of interest and adding them to the whole plot
-- Copying the data of the MC simulations for all the systems at 5000K with 100M of MC steps
+- Copying and plot the data of the MC simulations for all the systems at 5000K with 100M of MC steps
 - Submit the Cortisol-MD system with LiGaMD with $\sigma_P=6$ and $\sigma_D=6$
 - Submit the Aldosterone-MD system with LiGaMD with $\sigma_P=8$ and $\sigma_D=6$
 - Create and sumbit several MC simulations for a system at 7000K with 100M of MC steps
@@ -420,8 +420,21 @@ same residue as within 5. of resid 1	NewCartoon
 - Read and test [PyEMMA](http://www.emma-project.org/latest/index.html) for use as an analyze tool for the MC simulations, since them have no sense of time. Explore the tutorial [Showcase pentapeptide: a PyEMMA walkthrough](http://www.emma-project.org/latest/tutorials/notebooks/00-pentapeptide-showcase.html) to know how the package work and how can be used in our problem
 - LES simulation is very inefficient, it performance is less than 1 ns/day then it is killed. Although it is interesting to explore the system behaviour is not worth to run the simulation 
 
-
 An other article of interest, where PyEMMA and MC simulations are used, is [PELE-MSM: A Monte Carlo Based Protocol for the Estimation of Absolute Binding Free Energies](https://pubs.acs.org/doi/full/10.1021/acs.jctc.9b00753), can it be used to analyze MC simulations using the RMSD as the feature parameter?
+
+- Submit jobs for all the 6 systems for a MC simulation of 100M steps and at temperature of 7000K (14.48h-22-03)
+- Plotting all data of the MC simulations and calculating un/binding events in each system
+
+**ligand**|**temperature**|**binding**|**unbinding**|
+|:---:|:---:|:---:|:---:|
+|AS4|5000K_long|1|0|
+|AS4|10000K|23|5|
+|AS4|15000K|100|85|
+|COL|5000K|0|0|
+|STR|5000K|0|0|
+|AS4_mut|5000K|6|0|
+|COL_mut|5000K|6|0|
+|STR_mut|5000K|0|0|
 
 
 ### Week 6
