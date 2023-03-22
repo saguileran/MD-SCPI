@@ -47,6 +47,7 @@ disp (display atoms)
 distance sel
 sel :AS4/MOl (select AS4/COl atoms)
 color green #1/:MOL (change color)
+color black :AS4@C=  (change colors of C on AS4)
 label @C= (label all Carbon atoms)
 ~label (remove all labels)
 color C/#1
@@ -214,6 +215,8 @@ where:
 - *: relevant interaction with the frame number
 - ~: middle interaction
 
+
+Other tasks done:
 
 - Prepare and run the leaprc file for the MR mutations
 - Run equilibration process for the mutation systems	
@@ -398,12 +401,9 @@ Run a longer MC simulation, 100M steps, at a temperature of 5000K. In addition, 
 To get the mol2 files necessary for the previous jobs the files are imported to chimera and then the water (za > 5), Na, and Cl molecules are removed.
 
 
-
-
-
 ### Week 5
 
-VMD scripts
+VMD useful commands
 
 ```
 protein					Licorice
@@ -411,7 +411,17 @@ resid 1  				Licorice
 same residue as within 5. of resid 1	NewCartoon
 ```
 
+- Update the MD energies plots, calculate the energies for the residues of interest and adding them to the whole plot
+- Copying the data of the MC simulations for all the systems at 5000K with 100M of MC steps
+- Submit the Cortisol-MD system with LiGaMD with $\sigma_P=6$ and $\sigma_D=6$
+- Submit the Aldosterone-MD system with LiGaMD with $\sigma_P=8$ and $\sigma_D=6$
+- Create and sumbit several MC simulations for a system at 7000K with 100M of MC steps
+- Create a python script to count the binding and unbiding events in the MC simulations, this will give us an idea of how frequently (or easy) the ligand binding. The threshold for the event detection is 11 kcal/mol, since the plots shows that the system can present 3 states: unbinding, flipping, and unbinding with mean of RMSD ~3, ~7.5, and ~16, respectively
+- Read and test [PyEMMA](http://www.emma-project.org/latest/index.html) for use as an analyze tool for the MC simulations, since them have no sense of time. Explore the tutorial [Showcase pentapeptide: a PyEMMA walkthrough](http://www.emma-project.org/latest/tutorials/notebooks/00-pentapeptide-showcase.html) to know how the package work and how can be used in our problem
+- LES simulation is very inefficient, it performance is less than 1 ns/day then it is killed. Although it is interesting to explore the system behaviour is not worth to run the simulation 
 
+
+An other article of interest, where PyEMMA and MC simulations are used, is [PELE-MSM: A Monte Carlo Based Protocol for the Estimation of Absolute Binding Free Energies](https://pubs.acs.org/doi/full/10.1021/acs.jctc.9b00753), can it be used to analyze MC simulations using the RMSD as the feature parameter?
 
 
 ### Week 6
