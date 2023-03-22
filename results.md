@@ -41,7 +41,19 @@ MC_images:
 
 ## Molecular Dynamics
 
-<img src='https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/Energies.png' alt="MD energies">
+<h3 align="center" margin-bottom="-10">MR-COL MD simulation</h3>
+
+<div class="container">
+  <center>
+    <video id="video" width="500" height="500" controls>
+        <source src="https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/MR-COL.mp4" type="video/mp4">
+    </video>
+  </center>
+    <div class="overlay">
+        <p align="center">Mineralocorticoid (MR) protein interaction with cortisol (COL) ligand</p>
+    </div>
+</div>
+
 
 ## Monte Carlo 
 
@@ -50,6 +62,13 @@ MC_images:
 
 ## Molecular Dynamics
 
+<img src='https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/Energies.png' alt="MD energies">
+
 ## Monte Carlo 
+
+<img src="https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/MC_energies.png" alt="MC energies as function of RMSD">
+
+<img src="https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/MC_RMSD_MR-AS4_high.png" alt="MC RMSD for high temperatures">
+
 
 {% include gallery id="MC_images" caption="MC energies" %}
