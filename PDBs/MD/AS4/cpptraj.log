@@ -1,0 +1,13 @@
+# 03/22/23 15:08:30
+ ../../leap/AS4/MR-AS4.prmtop# Loaded topologies:
+#   ../../leap/AS4/MR-AS4.prmtop
+trajin prod_img.nc
+rms first out rms.dat @CA,C,N
+trajout prod_img_rms.nc
+# 03/22/23 15:09:11
+ ../../leap/AS4/MR-AS4.prmtop# Loaded topologies:
+#   ../../leap/AS4/MR-AS4.prmtop
+trajin prod_img.nc
+rms first out rms.dat @CA,C,N
+trajout prod_img_rms.nc
+eof
