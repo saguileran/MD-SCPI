@@ -425,16 +425,17 @@ An other article of interest, where PyEMMA and MC simulations are used, is [PELE
 - Submit jobs for all the 6 systems for a MC simulation of 100M steps and at temperature of 7000K (14.48h-22-03)
 - Plotting all data of the MC simulations and calculating un/binding events in each system
 
-**ligand**|**temperature**|**binding**|**unbinding**|**Samples**|
-|:---:|:---:|:---:|:---:|:-----:|
-|AS4|5000K_long|1|0|
-|AS4|10000K|23|5|
-|AS4|15000K|100|85|
-|COL|5000K|0|0|
-|STR|5000K|0|0|
-|AS4_mut|5000K|6|0|
-|COL_mut|5000K|6|0|
-|STR_mut|5000K|0|0|
+|**ligand**|**temperature**|**binding**|**unbinding**|**Samples**|
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|AS4|5000K\_long|1|0|51|
+|AS4|10000K|23|5|31|
+|AS4|15000K|100|85|31|
+|COL|5000K|0|0|51|
+|STR|5000K|0|0|51|
+|AS4\_mut|5000K|6|0|51|
+|COL\_mut|5000K|6|0|51|
+|STR\_mut|5000K|0|0|51|
+
 
 - Create a more complex and realistic simulation using two proteins, because a recent article [Quaternary glucocorticoid receptor structure highlights allosteric interdomain communication](https://www.nature.com/articles/s41594-022-00914-4)
 - Prepare tleap files using this double protein system to create a LiGAMD simulation. It implies to create and submite the equilibration process for this system using MD simulation.
