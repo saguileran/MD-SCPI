@@ -3,7 +3,7 @@ permalink: /results/
 layout: single
 search: true
 author_profile: false
-toc_sticky: false
+toc_sticky: true
 toc: true
 toc_label: "Results"
 toc_icon: 'photo-film'
@@ -41,7 +41,10 @@ MC_images:
 
 ## Molecular Dynamics
 
+<img src='https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/Energies.png' alt="MD energies">
+
 ## Monte Carlo 
+
 
 # Images
 
