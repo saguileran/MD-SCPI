@@ -1,0 +1,21 @@
+source leaprc.protein.ff14SB
+source leaprc.gaff2
+source leaprc.water.tip3p
+
+mr = loadpdb MR_dimer.pdb
+as4 = loadmol2 ../../AC/AS4/as4_resp_rename_aligned.mol2
+as4_1 = loadpdb AS4_1.pdb
+as4_2 = loadpdb AS4_2.pdb
+
+complex = combine { as4_1  mr as4_2 }
+check complex
+
+solvatebox complex TIP3PBOX 12.0
+charge complex
+addionsRand complex Na+ 85 Cl- 83
+charge complex
+
+saveamberparm complex MR_dimer-AS4.prmtop MR_dimer-AS4.inpcrd
+saveamberparm mr MR_dimer.prmtop MR_dimer.inpcrd
+quit 
+

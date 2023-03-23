@@ -1,0 +1,969 @@
+log started: Thu Mar 23 09:09:05 2023
+
+Log file: ./leap.log
+>> #
+>> # ----- leaprc for loading the ff14SB force field
+>> # ----- NOTE: this is designed for PDB format 3!
+>> #
+>> #	load atom type hybridizations
+>> #
+>> addAtomTypes {
+>> 	{ "H"   "H" "sp3" }
+>> 	{ "HO"  "H" "sp3" }
+>> 	{ "HS"  "H" "sp3" }
+>> 	{ "H1"  "H" "sp3" }
+>> 	{ "H2"  "H" "sp3" }
+>> 	{ "H3"  "H" "sp3" }
+>> 	{ "H4"  "H" "sp3" }
+>> 	{ "H5"  "H" "sp3" }
+>> 	{ "HW"  "H" "sp3" }
+>> 	{ "HC"  "H" "sp3" }
+>> 	{ "HA"  "H" "sp3" }
+>> 	{ "HP"  "H" "sp3" }
+>> 	{ "HZ"  "H" "sp3" }
+>> 	{ "OH"  "O" "sp3" }
+>> 	{ "OS"  "O" "sp3" }
+>> 	{ "O"   "O" "sp2" }
+>> 	{ "O2"  "O" "sp2" }
+>> 	{ "OP"  "O" "sp2" }
+>> 	{ "OW"  "O" "sp3" }
+>> 	{ "CT"  "C" "sp3" }
+>> 	{ "CX"  "C" "sp3" }
+>> 	{ "C8"  "C" "sp3" }
+>> 	{ "2C"  "C" "sp3" }
+>> 	{ "3C"  "C" "sp3" }
+>> 	{ "CH"  "C" "sp3" }
+>> 	{ "CS"  "C" "sp2" }
+>> 	{ "C"   "C" "sp2" }
+>> 	{ "CO"   "C" "sp2" }
+>> 	{ "C*"  "C" "sp2" }
+>> 	{ "CA"  "C" "sp2" }
+>> 	{ "CB"  "C" "sp2" }
+>> 	{ "CC"  "C" "sp2" }
+>> 	{ "CN"  "C" "sp2" }
+>> 	{ "CM"  "C" "sp2" }
+>> 	{ "CK"  "C" "sp2" }
+>> 	{ "CQ"  "C" "sp2" }
+>> 	{ "CD"  "C" "sp2" }
+>> 	{ "C5"  "C" "sp2" }
+>> 	{ "C4"  "C" "sp2" }
+>> 	{ "CP"  "C" "sp2" }
+>> 	{ "CI"  "C" "sp3" }
+>> 	{ "CJ"  "C" "sp2" }
+>> 	{ "CW"  "C" "sp2" }
+>> 	{ "CV"  "C" "sp2" }
+>> 	{ "CR"  "C" "sp2" }
+>> 	{ "CA"  "C" "sp2" }
+>> 	{ "CY"  "C" "sp2" }
+>> 	{ "C0"  "Ca" "sp3" }
+>> 	{ "MG"  "Mg" "sp3" }
+>> 	{ "N"   "N" "sp2" }
+>> 	{ "NA"  "N" "sp2" }
+>> 	{ "N2"  "N" "sp2" }
+>> 	{ "N*"  "N" "sp2" }
+>> 	{ "NP"  "N" "sp2" }
+>> 	{ "NQ"  "N" "sp2" }
+>> 	{ "NB"  "N" "sp2" }
+>> 	{ "NC"  "N" "sp2" }
+>> 	{ "NT"  "N" "sp3" }
+>> 	{ "NY"  "N" "sp2" }
+>> 	{ "N3"  "N" "sp3" }
+>> 	{ "S"   "S" "sp3" }
+>> 	{ "SH"  "S" "sp3" }
+>> 	{ "P"   "P" "sp3" }
+>> 	{ "LP"  ""  "sp3" }
+>> 	{ "EP"  ""  "sp3" }
+>> 	{ "F"   "F" "sp3" }
+>> 	{ "Cl"  "Cl" "sp3" }
+>> 	{ "Br"  "Br" "sp3" }
+>> 	{ "I"   "I"  "sp3" }
+>> }
+>> #
+>> #	Load the main parameter set.
+>> #
+>> parm10 = loadamberparams parm10.dat
+Loading parameters: /usr/local/amber20/dat/leap/parm/parm10.dat
+Reading title:
+PARM99 + frcmod.ff99SB + frcmod.parmbsc0 + OL3 for RNA
+>> frcmod14SB = loadamberparams frcmod.ff14SB
+Loading parameters: /usr/local/amber20/dat/leap/parm/frcmod.ff14SB
+Reading force field modification type file (frcmod)
+Reading title:
+ff14SB protein backbone and sidechain parameters
+>> #
+>> #	Load main chain and terminating amino acid libraries
+>> #
+>> loadOff amino12.lib
+Loading library: /usr/local/amber20/dat/leap/lib/amino12.lib
+Loading: ALA
+Loading: ARG
+Loading: ASH
+Loading: ASN
+Loading: ASP
+Loading: CYM
+Loading: CYS
+Loading: CYX
+Loading: GLH
+Loading: GLN
+Loading: GLU
+Loading: GLY
+Loading: HID
+Loading: HIE
+Loading: HIP
+Loading: HYP
+Loading: ILE
+Loading: LEU
+Loading: LYN
+Loading: LYS
+Loading: MET
+Loading: PHE
+Loading: PRO
+Loading: SER
+Loading: THR
+Loading: TRP
+Loading: TYR
+Loading: VAL
+>> loadOff aminoct12.lib
+Loading library: /usr/local/amber20/dat/leap/lib/aminoct12.lib
+Loading: CALA
+Loading: CARG
+Loading: CASN
+Loading: CASP
+Loading: CCYS
+Loading: CCYX
+Loading: CGLN
+Loading: CGLU
+Loading: CGLY
+Loading: CHID
+Loading: CHIE
+Loading: CHIP
+Loading: CHYP
+Loading: CILE
+Loading: CLEU
+Loading: CLYS
+Loading: CMET
+Loading: CPHE
+Loading: CPRO
+Loading: CSER
+Loading: CTHR
+Loading: CTRP
+Loading: CTYR
+Loading: CVAL
+Loading: NHE
+Loading: NME
+>> loadOff aminont12.lib
+Loading library: /usr/local/amber20/dat/leap/lib/aminont12.lib
+Loading: ACE
+Loading: NALA
+Loading: NARG
+Loading: NASN
+Loading: NASP
+Loading: NCYS
+Loading: NCYX
+Loading: NGLN
+Loading: NGLU
+Loading: NGLY
+Loading: NHID
+Loading: NHIE
+Loading: NHIP
+Loading: NILE
+Loading: NLEU
+Loading: NLYS
+Loading: NMET
+Loading: NPHE
+Loading: NPRO
+Loading: NSER
+Loading: NTHR
+Loading: NTRP
+Loading: NTYR
+Loading: NVAL
+>> 
+>> #
+>> #	Define the PDB name map for the amino acids
+>> #
+>> addPdbResMap {
+>>   { 0 "HYP" "HYP" } { 1 "HYP" "CHYP" }
+>>   { 0 "ALA" "NALA" } { 1 "ALA" "CALA" }
+>>   { 0 "ARG" "NARG" } { 1 "ARG" "CARG" }
+>>   { 0 "ASN" "NASN" } { 1 "ASN" "CASN" }
+>>   { 0 "ASP" "NASP" } { 1 "ASP" "CASP" }
+>>   { 0 "CYS" "NCYS" } { 1 "CYS" "CCYS" }
+>>   { 0 "CYX" "NCYX" } { 1 "CYX" "CCYX" }
+>>   { 0 "GLN" "NGLN" } { 1 "GLN" "CGLN" }
+>>   { 0 "GLU" "NGLU" } { 1 "GLU" "CGLU" }
+>>   { 0 "GLY" "NGLY" } { 1 "GLY" "CGLY" }
+>>   { 0 "HID" "NHID" } { 1 "HID" "CHID" }
+>>   { 0 "HIE" "NHIE" } { 1 "HIE" "CHIE" }
+>>   { 0 "HIP" "NHIP" } { 1 "HIP" "CHIP" }
+>>   { 0 "ILE" "NILE" } { 1 "ILE" "CILE" }
+>>   { 0 "LEU" "NLEU" } { 1 "LEU" "CLEU" }
+>>   { 0 "LYS" "NLYS" } { 1 "LYS" "CLYS" }
+>>   { 0 "MET" "NMET" } { 1 "MET" "CMET" }
+>>   { 0 "PHE" "NPHE" } { 1 "PHE" "CPHE" }
+>>   { 0 "PRO" "NPRO" } { 1 "PRO" "CPRO" }
+>>   { 0 "SER" "NSER" } { 1 "SER" "CSER" }
+>>   { 0 "THR" "NTHR" } { 1 "THR" "CTHR" }
+>>   { 0 "TRP" "NTRP" } { 1 "TRP" "CTRP" }
+>>   { 0 "TYR" "NTYR" } { 1 "TYR" "CTYR" }
+>>   { 0 "VAL" "NVAL" } { 1 "VAL" "CVAL" }
+>>   { 0 "HIS" "NHIS" } { 1 "HIS" "CHIS" }
+>> }
+>> 
+>> #
+>> # assume that most often proteins use HIE
+>> #
+>> NHIS = NHIE
+>> HIS = HIE
+>> CHIS = CHIE
+> 
+> source leaprc.gaff2
+----- Source: /usr/local/amber20/dat/leap/cmd/leaprc.gaff2
+----- Source of /usr/local/amber20/dat/leap/cmd/leaprc.gaff2 done
+>> logFile leap.log
+log started: Thu Mar 23 09:09:05 2023
+
+Log file: ./leap.log
+>> #
+>> # ----- leaprc for loading the general Amber Force field.
+>> #       This file is mostly for use with Antechamber
+>> #
+>> #	load atom type hybridizations
+>> #
+>> addAtomTypes {
+>> 	{ "h1"  "H" "sp3" }
+>> 	{ "h2"  "H" "sp3" }
+>> 	{ "h3"  "H" "sp3" }
+>> 	{ "h4"  "H" "sp3" }
+>> 	{ "h5"  "H" "sp3" }
+>> 	{ "ha"  "H" "sp3" }
+>> 	{ "hc"  "H" "sp3" }
+>> 	{ "hn"  "H" "sp3" }
+>> 	{ "ho"  "H" "sp3" }
+>> 	{ "hp"  "H" "sp3" }
+>> 	{ "hs"  "H" "sp3" }
+>> 	{ "hw"  "H" "sp3" }
+>> 	{ "hx"  "H" "sp3" }
+>> 	{ "o"  "O" "sp2" }
+>> 	{ "o2"  "O" "sp2" }
+>> 	{ "oh"  "O" "sp3" }
+>> 	{ "op"  "O" "sp3" }
+>> 	{ "oq"  "O" "sp3" }
+>> 	{ "os"  "O" "sp3" }
+>> 	{ "ow"  "O" "sp3" }
+>> 	{ "c"  "C" "sp2" }
+>> 	{ "c1"  "C" "sp2" }
+>> 	{ "c2"  "C" "sp2" }
+>> 	{ "c3"  "C" "sp3" }
+>> 	{ "ca"  "C" "sp2" }
+>> 	{ "cc"  "C" "sp2" }
+>> 	{ "cd"  "C" "sp2" }
+>> 	{ "ce"  "C" "sp2" }
+>> 	{ "cf"  "C" "sp2" }
+>> 	{ "cg"  "C" "sp2" }
+>> 	{ "ch"  "C" "sp2" }
+>> 	{ "cp"  "C" "sp2" }
+>> 	{ "cs"  "C" "sp2" }
+>> 	{ "cq"  "C" "sp2" }
+>> 	{ "cu"  "C" "sp2" }
+>> 	{ "cv"  "C" "sp2" }
+>> 	{ "cx"  "C" "sp2" }
+>> 	{ "cy"  "C" "sp2" }
+>> 	{ "cz"  "C" "sp2" }
+>> 	{ "n"   "N" "sp2" }
+>> 	{ "n1"  "N" "sp2" }
+>> 	{ "n2"  "N" "sp2" }
+>> 	{ "n3"  "N" "sp3" }
+>> 	{ "n4"  "N" "sp3" }
+>> 	{ "n5"  "N" "sp3" }
+>> 	{ "n6"  "N" "sp3" }
+>> 	{ "n7"  "N" "sp3" }
+>> 	{ "n8"  "N" "sp3" }
+>> 	{ "n9"  "N" "sp3" }
+>> 	{ "na"  "N" "sp2" }
+>> 	{ "nb"  "N" "sp2" }
+>> 	{ "nc"  "N" "sp2" }
+>> 	{ "nd"  "N" "sp2" }
+>> 	{ "ne"  "N" "sp2" }
+>> 	{ "nf"  "N" "sp2" }
+>> 	{ "nh"  "N" "sp2" }
+>> 	{ "ni"  "N" "sp2" }
+>> 	{ "nj"  "N" "sp2" }
+>> 	{ "nk"  "N" "sp3" }
+>> 	{ "nl"  "N" "sp3" }
+>> 	{ "nm"  "N" "sp2" }
+>> 	{ "nn"  "N" "sp2" }
+>> 	{ "no"  "N" "sp2" }
+>> 	{ "np"  "N" "sp3" }
+>> 	{ "nq"  "N" "sp3" }
+>> 	{ "ns"  "N" "sp2" }
+>> 	{ "nt"  "N" "sp2" }
+>> 	{ "nu"  "N" "sp2" }
+>> 	{ "nv"  "N" "sp2" }
+>> 	{ "nx"  "N" "sp3" }
+>> 	{ "ny"  "N" "sp3" }
+>> 	{ "nz"  "N" "sp3" }
+>> 	{ "n+"  "N" "sp3" }
+>> 	{ "s"   "S" "sp2" }
+>> 	{ "s2"   "S" "sp2" }
+>> 	{ "s3"   "S" "sp3" }
+>> 	{ "s4"   "S" "sp3" }
+>> 	{ "s6"   "S" "sp3" }
+>> 	{ "sh"   "S" "sp3" }
+>> 	{ "sp"   "S" "sp3" }
+>> 	{ "sq"   "S" "sp3" }
+>> 	{ "ss"   "S" "sp3" }
+>> 	{ "sx"   "S" "sp3" }
+>> 	{ "sy"   "S" "sp3" }
+>> 	{ "p2"   "P" "sp2" }
+>> 	{ "p3"   "P" "sp3" }
+>> 	{ "p4"   "P" "sp3" }
+>> 	{ "p5"   "P" "sp3" }
+>> 	{ "pb"   "P" "sp3" }
+>> 	{ "pc"   "P" "sp3" }
+>> 	{ "pd"   "P" "sp3" }
+>> 	{ "pe"   "P" "sp3" }
+>> 	{ "pf"   "P" "sp3" }
+>> 	{ "px"   "P" "sp3" }
+>> 	{ "py"   "P" "sp3" }
+>> 	{ "f"   "F" "sp3" }
+>> 	{ "cl"  "Cl" "sp3" }
+>> 	{ "br"  "Br" "sp3" }
+>> 	{ "i"   "I"  "sp3" }
+>> }
+>> #
+>> #	Load the general force field parameter set.
+>> #
+>> gaff = loadamberparams gaff2.dat
+Loading parameters: /usr/local/amber20/dat/leap/parm/gaff2.dat
+Reading title:
+AMBER General Force Field for organic molecules (Version 2.11, May 2016)
+> 
+> source leaprc.water.tip3p
+----- Source: /usr/local/amber20/dat/leap/cmd/leaprc.water.tip3p
+----- Source of /usr/local/amber20/dat/leap/cmd/leaprc.water.tip3p done
+>> #
+>> #       Load water and ions for TIP3P + Li/Merz monovalent ions 
+>> #       + Joung-Chetham monovalent ions
+>> #       + Li/Merz highly charged ions (+2 to +4, 12-6 normal usage set)
+>> #
+>> #       Note: the Li/Merz monovalent set is loaded only to get Tl+,
+>> #          Cu+, Ag+ NH4+, H3O+.  Since we load Joung-Cheatham second,
+>> #          the alkali halide parameters come from the Joung-Cheatham set
+>> #
+>> addAtomTypes {
+>> 	{ "HW"  "H" "sp3" }
+>> 	{ "OW"  "O" "sp3" }
+>> 	{ "F-"   "F" "sp3" }
+>> 	{ "Cl-"  "Cl" "sp3" }
+>> 	{ "Br-"  "Br" "sp3" }
+>> 	{ "I-"   "I"  "sp3" }
+>> 	{ "Li+"  "Li"  "sp3" }
+>> 	{ "Na+"  "Na"  "sp3" }
+>> 	{ "K+"  "K"  "sp3" }
+>> 	{ "Rb+"  "Rb"  "sp3" }
+>> 	{ "Cs+"  "Cs"  "sp3" }
+>> 	{ "Mg+"  "Mg"  "sp3" }
+>>     { "Tl+"  "Tl"  "sp3" }
+>>     { "Cu+"  "Cu"  "sp3" }
+>>     { "Ag+"  "Ag"  "sp3" }
+>>     { "NH4+"  "N"  "sp3" }
+>>     { "H3O+"  "O"  "sp3" }
+>>     { "Be2+" "Be"  "sp3" }
+>>     { "Cu2+" "Cu"  "sp3" }
+>>     { "Ni2+" "Ni"  "sp3" }
+>>     { "Pt2+" "Pt"  "sp3" }
+>>     { "Zn2+" "Zn"  "sp3" }
+>>     { "Co2+" "Co"  "sp3" }
+>>     { "Pd2+" "Pd"  "sp3" }
+>>     { "Ag2+" "Ag"  "sp3" }
+>>     { "Cr2+" "Cr"  "sp3" }
+>>     { "Fe2+" "Fe"  "sp3" }
+>>     { "Mg2+" "Mg"  "sp3" }
+>>     { "V2+"  "V"   "sp3" }
+>>     { "Mn2+" "Mn"  "sp3" }
+>>     { "Hg2+" "Hg"  "sp3" }
+>>     { "Cd2+" "Cd"  "sp3" }
+>>     { "Yb2+" "Yb"  "sp3" }
+>>     { "Ca2+" "Ca"  "sp3" }
+>>     { "Sn2+" "Sn"  "sp3" }
+>>     { "Pb2+" "Pb"  "sp3" }
+>>     { "Eu2+" "Eu"  "sp3" }
+>>     { "Sr2+" "Sr"  "sp3" }
+>>     { "Sm2+" "Sm"  "sp3" }
+>>     { "Ba2+" "Ba"  "sp3" }
+>>     { "Ra2+" "Ra"  "sp3" }
+>>     { "Al3+" "Al"  "sp3" }
+>>     { "Fe3+" "Fe"  "sp3" }
+>>     { "Cr3+" "Cr"  "sp3" }
+>>     { "In3+" "In"  "sp3" }
+>>     { "Tl3+" "Tl"  "sp3" }
+>>     { "Y3+"  "Y"   "sp3" }
+>>     { "La3+" "La"  "sp3" }
+>>     { "Ce3+" "Ce"  "sp3" }
+>>     { "Pr3+" "Pr"  "sp3" }
+>>     { "Nd3+" "Nd"  "sp3" }
+>>     { "Sm3+" "Sm"  "sp3" }
+>>     { "Eu3+" "Eu"  "sp3" }
+>>     { "Gd3+" "Gd"  "sp3" }
+>>     { "Tb3+" "Tb"  "sp3" }
+>>     { "Dy3+" "Dy"  "sp3" }
+>>     { "Er3+" "Er"  "sp3" }
+>>     { "Tm3+" "Tm"  "sp3" }
+>>     { "Lu3+" "Lu"  "sp3" }
+>>     { "Hf4+" "Hf"  "sp3" }
+>>     { "Zr4+" "Zr"  "sp3" }
+>>     { "Ce4+" "Ce"  "sp3" }
+>>     { "U4+"  "U"   "sp3" }
+>>     { "Pu4+" "Pu"  "sp3" }
+>>     { "Th4+" "Th"  "sp3" }
+>> }
+>> loadOff atomic_ions.lib
+Loading library: /usr/local/amber20/dat/leap/lib/atomic_ions.lib
+Loading: AG
+Loading: AL
+Loading: Ag
+Loading: BA
+Loading: BR
+Loading: Be
+Loading: CA
+Loading: CD
+Loading: CE
+Loading: CL
+Loading: CO
+Loading: CR
+Loading: CS
+Loading: CU
+Loading: CU1
+Loading: Ce
+Loading: Cl-
+Loading: Cr
+Loading: Dy
+Loading: EU
+Loading: EU3
+Loading: Er
+Loading: F
+Loading: FE
+Loading: FE2
+Loading: GD3
+Loading: H3O+
+Loading: HE+
+Loading: HG
+Loading: HZ+
+Loading: Hf
+Loading: IN
+Loading: IOD
+Loading: K
+Loading: K+
+Loading: LA
+Loading: LI
+Loading: LU
+Loading: MG
+Loading: MN
+Loading: NA
+Loading: NH4
+Loading: NI
+Loading: Na+
+Loading: Nd
+Loading: PB
+Loading: PD
+Loading: PR
+Loading: PT
+Loading: Pu
+Loading: RB
+Loading: Ra
+Loading: SM
+Loading: SR
+Loading: Sm
+Loading: Sn
+Loading: TB
+Loading: TL
+Loading: Th
+Loading: Tl
+Loading: Tm
+Loading: U4+
+Loading: V2+
+Loading: Y
+Loading: YB2
+Loading: ZN
+Loading: Zr
+>> loadOff solvents.lib
+Loading library: /usr/local/amber20/dat/leap/lib/solvents.lib
+Loading: CHCL3BOX
+Loading: DC4
+Loading: FB3
+Loading: FB3BOX
+Loading: FB4
+Loading: FB4BOX
+Loading: MEOHBOX
+Loading: NMABOX
+Loading: OP3
+Loading: OPC
+Loading: OPC3BOX
+Loading: OPCBOX
+Loading: PL3
+Loading: POL3BOX
+Loading: QSPCFWBOX
+Loading: SPC
+Loading: SPCBOX
+Loading: SPCFWBOX
+Loading: SPF
+Loading: SPG
+Loading: T4E
+Loading: TIP3PBOX
+Loading: TIP3PFBOX
+Loading: TIP4PBOX
+Loading: TIP4PEWBOX
+Loading: TIP5PBOX
+Loading: TP3
+Loading: TP4
+Loading: TP5
+Loading: TPF
+>> HOH = TP3
+>> WAT = TP3
+>> loadAmberParams frcmod.tip3p
+Loading parameters: /usr/local/amber20/dat/leap/parm/frcmod.tip3p
+Reading force field modification type file (frcmod)
+Reading title:
+This is the additional/replacement parameter set for TIP3P water
+>> loadAmberParams frcmod.ions1lm_126_tip3p
+Loading parameters: /usr/local/amber20/dat/leap/parm/frcmod.ions1lm_126_tip3p
+Reading force field modification type file (frcmod)
+Reading title:
+Li/Merz ion parameters of monovalent ions for TIP3P water model (12-6 normal usage set)
+>> loadAmberParams frcmod.ionsjc_tip3p
+Loading parameters: /usr/local/amber20/dat/leap/parm/frcmod.ionsjc_tip3p
+Reading force field modification type file (frcmod)
+Reading title:
+Monovalent ion parameters for Ewald and TIP3P water from Joung & Cheatham JPCB (2008)
+>> loadAmberParams frcmod.ions234lm_126_tip3p
+Loading parameters: /usr/local/amber20/dat/leap/parm/frcmod.ions234lm_126_tip3p
+Reading force field modification type file (frcmod)
+Reading title:
+Li/Merz ion parameters of divalent to tetravalent ions for TIP3P water model (12-6 normal usage set)
+>> 
+> 
+> 
+> mr = loadpdb MR_dimer.pdb
+Loading PDB file: ./MR_dimer.pdb
+Matching PDB residue names to LEaP variables.
+Mapped residue LEU, term: Terminal/beginning, seq. number: 0 to: NLEU.
+Mapped residue ARG, term: Terminal/last, seq. number: 256 to: CARG.
+Mapped residue LEU, term: Terminal/beginning, seq. number: 268 to: NLEU.
+Mapped residue ARG, term: Terminal/last, seq. number: 524 to: CARG.
+Starting new chain with TP3
+Starting new chain with TP3
+Starting new chain with TP3
+Starting new chain with TP3
+Starting new chain with TP3
+  Added missing heavy atom: .R<WAT 264>.A<O 1>
+Starting new chain with TP3
+  Added missing heavy atom: .R<WAT 265>.A<O 1>
+Starting new chain with TP3
+Starting new chain with TP3
+Starting new chain with TP3
+Starting new chain with TP3
+  Added missing heavy atom: .R<WAT 269>.A<O 1>
+Starting new chain with TP3
+Starting new chain with TP3
+Starting new chain with TP3
+Starting new chain with TP3
+Starting new chain with TP3
+  Added missing heavy atom: .R<WAT 532>.A<O 1>
+Starting new chain with TP3
+  Added missing heavy atom: .R<WAT 533>.A<O 1>
+Starting new chain with TP3
+Starting new chain with TP3
+Starting new chain with TP3
+Starting new chain with TP3
+  Added missing heavy atom: .R<WAT 537>.A<O 1>
+  total atoms in file: 8464
+  Leap added 12 missing atoms according to residue templates:
+       6 Heavy
+       6 H / lone pairs
+> as4 = loadmol2 ../../AC/AS4/as4_resp_rename_aligned.mol2
+Loading Mol2 file: ../../AC/AS4/as4_resp_rename_aligned.mol2
+Reading MOLECULE named AS4
+> as4_1 = loadpdb AS4_1.pdb
+Loading PDB file: ./AS4_1.pdb
+Matching PDB residue names to LEaP variables.
+  total atoms in file: 54
+> as4_2 = loadpdb AS4_2.pdb
+Loading PDB file: ./AS4_2.pdb
+Matching PDB residue names to LEaP variables.
+  total atoms in file: 54
+> 
+> complex = combine { as4_1  mr as4_2 }
+  Sequence: default_name
+  Sequence: default_name
+  Sequence: default_name
+> check complex
+Checking 'complex'....
+
+/usr/local/amber20/bin/teLeap: Warning!
+The unperturbed charge of the unit (-1.999400) is not zero.
+
+/usr/local/amber20/bin/teLeap: Warning!
+Close contact of 0.551298 angstroms between .R<NLEU 271>.A<HG 11> and .R<NLEU 271>.A<CD2 16>
+
+/usr/local/amber20/bin/teLeap: Warning!
+Close contact of 1.222913 angstroms between .R<NLEU 271>.A<HG 11> and .R<NLEU 271>.A<HD21 17>
+
+/usr/local/amber20/bin/teLeap: Warning!
+Close contact of 1.335058 angstroms between .R<NLEU 271>.A<HG 11> and .R<NLEU 271>.A<HD22 18>
+
+/usr/local/amber20/bin/teLeap: Warning!
+Close contact of 1.301969 angstroms between .R<NLEU 271>.A<HG 11> and .R<NLEU 271>.A<HD23 19>
+
+/usr/local/amber20/bin/teLeap: Warning!
+Close contact of 0.974347 angstroms between .R<ARG 361>.A<HH11 18> and .R<WAT 534>.A<O 1>
+
+/usr/local/amber20/bin/teLeap: Warning!
+Close contact of 1.025570 angstroms between .R<ARG 361>.A<HH11 18> and .R<WAT 534>.A<H2 3>
+
+/usr/local/amber20/bin/teLeap: Warning!
+Close contact of 1.482862 angstroms between .R<HID 385>.A<HA 4> and .R<TYR 734>.A<HH 15>
+
+/usr/local/amber20/bin/teLeap: Warning!
+Close contact of 1.206992 angstroms between .R<HID 385>.A<ND1 9> and .R<TYR 734>.A<CE1 11>
+
+/usr/local/amber20/bin/teLeap: Warning!
+Close contact of 1.478333 angstroms between .R<HID 385>.A<ND1 9> and .R<TYR 734>.A<HE1 12>
+
+/usr/local/amber20/bin/teLeap: Warning!
+Close contact of 1.165137 angstroms between .R<HID 385>.A<ND1 9> and .R<TYR 734>.A<CZ 13>
+
+/usr/local/amber20/bin/teLeap: Warning!
+Close contact of 0.810490 angstroms between .R<HID 385>.A<HD1 10> and .R<TYR 734>.A<CZ 13>
+
+/usr/local/amber20/bin/teLeap: Warning!
+Close contact of 0.769612 angstroms between .R<HID 385>.A<HD1 10> and .R<TYR 734>.A<OH 14>
+
+/usr/local/amber20/bin/teLeap: Warning!
+Close contact of 1.183756 angstroms between .R<HID 385>.A<HD1 10> and .R<TYR 734>.A<HH 15>
+
+/usr/local/amber20/bin/teLeap: Warning!
+Close contact of 0.592518 angstroms between .R<HID 385>.A<CE1 11> and .R<TYR 734>.A<CE1 11>
+
+/usr/local/amber20/bin/teLeap: Warning!
+Close contact of 0.498511 angstroms between .R<HID 385>.A<CE1 11> and .R<TYR 734>.A<HE1 12>
+
+/usr/local/amber20/bin/teLeap: Warning!
+Close contact of 1.064233 angstroms between .R<HID 385>.A<HE1 12> and .R<TYR 734>.A<CE1 11>
+
+/usr/local/amber20/bin/teLeap: Warning!
+Close contact of 1.004925 angstroms between .R<HID 385>.A<HE1 12> and .R<TYR 734>.A<HE1 12>
+
+/usr/local/amber20/bin/teLeap: Warning!
+Close contact of 1.481642 angstroms between .R<HID 385>.A<NE2 13> and .R<TYR 734>.A<HE1 12>
+
+/usr/local/amber20/bin/teLeap: Warning!
+Close contact of 1.279060 angstroms between .R<GLN 398>.A<OE1 12> and .R<GLN 666>.A<OE1 12>
+
+/usr/local/amber20/bin/teLeap: Warning!
+Close contact of 1.385071 angstroms between .R<ARG 405>.A<HH22 22> and .R<MET 652>.A<SD 11>
+
+/usr/local/amber20/bin/teLeap: Warning!
+Close contact of 1.372214 angstroms between .R<THR 409>.A<HG22 9> and .R<ASN 456>.A<HD21 11>
+
+/usr/local/amber20/bin/teLeap: Warning!
+Close contact of 1.359555 angstroms between .R<THR 452>.A<HG21 8> and .R<LYS 453>.A<H 2>
+
+/usr/local/amber20/bin/teLeap: Warning!
+Close contact of 1.011664 angstroms between .R<GLN 460>.A<HG3 10> and .R<GLN 463>.A<HE22 15>
+
+/usr/local/amber20/bin/teLeap: Warning!
+Close contact of 1.320573 angstroms between .R<TYR 466>.A<HE1 12> and .R<HID 653>.A<HE1 12>
+
+/usr/local/amber20/bin/teLeap: Warning!
+Close contact of 1.469254 angstroms between .R<WAT 528>.A<H1 2> and .R<WAT 531>.A<H2 3>
+
+/usr/local/amber20/bin/teLeap: Warning!
+Close contact of 0.551839 angstroms between .R<NLEU 539>.A<HG 11> and .R<NLEU 539>.A<CD2 16>
+
+/usr/local/amber20/bin/teLeap: Warning!
+Close contact of 1.223433 angstroms between .R<NLEU 539>.A<HG 11> and .R<NLEU 539>.A<HD21 17>
+
+/usr/local/amber20/bin/teLeap: Warning!
+Close contact of 1.335145 angstroms between .R<NLEU 539>.A<HG 11> and .R<NLEU 539>.A<HD22 18>
+
+/usr/local/amber20/bin/teLeap: Warning!
+Close contact of 1.302419 angstroms between .R<NLEU 539>.A<HG 11> and .R<NLEU 539>.A<HD23 19>
+
+/usr/local/amber20/bin/teLeap: Warning!
+Close contact of 1.276352 angstroms between .R<ARG 629>.A<HH11 18> and .R<WAT 802>.A<O 1>
+
+/usr/local/amber20/bin/teLeap: Warning!
+Close contact of 1.349724 angstroms between .R<ARG 629>.A<HH11 18> and .R<WAT 802>.A<H1 2>
+
+/usr/local/amber20/bin/teLeap: Warning!
+Close contact of 1.024604 angstroms between .R<ARG 629>.A<HH11 18> and .R<WAT 802>.A<H2 3>
+
+/usr/local/amber20/bin/teLeap: Warning!
+Close contact of 1.373004 angstroms between .R<THR 677>.A<HG22 9> and .R<ASN 724>.A<HD21 11>
+
+/usr/local/amber20/bin/teLeap: Warning!
+Close contact of 1.359206 angstroms between .R<THR 720>.A<HG21 8> and .R<LYS 721>.A<H 2>
+
+/usr/local/amber20/bin/teLeap: Warning!
+Close contact of 1.011846 angstroms between .R<GLN 728>.A<HG3 10> and .R<GLN 731>.A<HE22 15>
+
+/usr/local/amber20/bin/teLeap: Warning!
+Close contact of 1.469107 angstroms between .R<WAT 796>.A<H1 2> and .R<WAT 799>.A<H2 3>
+Checking parameters for unit 'complex'.
+Checking for bond parameters.
+Checking for angle parameters.
+check:  Warnings: 37
+Unit is OK.
+> 
+> solvatebox complex TIP3PBOX 12.0
+  Solute vdw bounding box:              73.271 107.430 62.907
+  Total bounding box for atom centers:  97.271 131.430 86.907
+  Solvent unit box:                     18.774 18.774 18.774
+The number of boxes:  x= 6  y= 8  z= 5
+  Total vdw box size:                   100.470 134.292 90.199 angstroms.
+  Volume: 1216990.586 A^3 
+  Total mass 622833.800 amu,  Density 0.850 g/cc
+  Added 31201 residues.
+> charge complex
+Total unperturbed charge:  -1.999400
+Total perturbed charge:    -1.999400
+> addionsRand complex Na+ 85 Cl- 83
+Adding 168 counter ions to "complex". 31055 solvent molecules will remain.
+0: Placed Na+ in complex at (-22.73, 54.23, -33.24).
+Placed Cl- in complex at (-4.48, 8.20, 27.26).
+0: Placed Na+ in complex at (-42.19, -12.14, 41.17).
+Placed Cl- in complex at (-13.48, 51.56, -3.21).
+0: Placed Na+ in complex at (-32.96, 40.89, -34.91).
+Placed Cl- in complex at (-40.87, -45.33, 19.46).
+0: Placed Na+ in complex at (44.28, 13.11, -36.90).
+Placed Cl- in complex at (-30.38, -59.59, -15.24).
+0: Placed Na+ in complex at (-44.68, 64.34, 39.37).
+Placed Cl- in complex at (21.60, 35.05, 13.43).
+0: Placed Na+ in complex at (25.90, -41.09, 12.22).
+Placed Cl- in complex at (-42.66, 58.72, -14.14).
+0: Placed Na+ in complex at (-18.83, -13.61, -33.48).
+Placed Cl- in complex at (43.38, 22.93, 12.24).
+0: Placed Na+ in complex at (3.93, -32.97, -38.36).
+Placed Cl- in complex at (-43.18, -17.48, 30.94).
+0: Placed Na+ in complex at (-8.27, -55.21, 2.19).
+Placed Cl- in complex at (-40.32, -36.73, 41.93).
+0: Placed Na+ in complex at (25.19, -17.10, -3.69).
+Placed Cl- in complex at (-39.57, -21.65, 37.60).
+0: Placed Na+ in complex at (27.04, -17.94, 17.74).
+Placed Cl- in complex at (-5.14, 17.62, 13.31).
+0: Placed Na+ in complex at (21.74, -29.23, 33.54).
+Placed Cl- in complex at (42.45, -35.92, 4.64).
+0: Placed Na+ in complex at (33.89, -24.28, 33.90).
+Placed Cl- in complex at (-12.24, -17.82, 27.52).
+0: Placed Na+ in complex at (31.53, 18.97, -34.29).
+Placed Cl- in complex at (-36.75, -54.20, -31.43).
+0: Placed Na+ in complex at (29.83, 61.75, 16.50).
+Placed Cl- in complex at (12.51, -25.29, -38.39).
+0: Placed Na+ in complex at (19.43, -43.79, -33.22).
+Placed Cl- in complex at (-28.96, -7.97, 42.00).
+0: Placed Na+ in complex at (-21.98, 36.30, -20.99).
+Placed Cl- in complex at (-7.13, 8.02, 39.37).
+0: Placed Na+ in complex at (-20.63, 63.39, 40.52).
+Placed Cl- in complex at (22.97, 10.48, 19.99).
+0: Placed Na+ in complex at (-15.81, -29.23, -4.01).
+Placed Cl- in complex at (-25.44, -15.30, 38.78).
+0: Placed Na+ in complex at (-7.68, -63.65, -26.76).
+Placed Cl- in complex at (-24.29, 27.87, -33.13).
+0: Placed Na+ in complex at (29.42, -13.61, -7.30).
+Placed Cl- in complex at (-1.79, 10.53, 43.21).
+0: Placed Na+ in complex at (9.26, 63.59, -33.46).
+Placed Cl- in complex at (14.72, -50.57, -12.67).
+0: Placed Na+ in complex at (32.12, -41.19, 30.65).
+Placed Cl- in complex at (-39.16, 9.85, -34.87).
+0: Placed Na+ in complex at (33.53, 46.28, 17.15).
+Placed Cl- in complex at (43.96, 39.23, -41.24).
+0: Placed Na+ in complex at (-1.04, -33.02, -18.10).
+Placed Cl- in complex at (39.39, 38.96, 32.26).
+0: Placed Na+ in complex at (-47.07, 7.27, 4.09).
+Placed Cl- in complex at (31.91, -36.26, -6.61).
+0: Placed Na+ in complex at (-37.77, 21.49, -8.84).
+Placed Cl- in complex at (31.68, -58.34, -40.38).
+0: Placed Na+ in complex at (-4.96, -2.23, -36.29).
+Placed Cl- in complex at (-21.16, -2.38, 30.52).
+0: Placed Na+ in complex at (-45.40, -29.01, 24.61).
+Placed Cl- in complex at (-5.63, 0.37, -28.23).
+0: Placed Na+ in complex at (-40.42, -29.47, -7.41).
+Placed Cl- in complex at (35.69, -17.33, 35.80).
+0: Placed Na+ in complex at (29.28, -36.44, 2.19).
+Placed Cl- in complex at (-35.32, -28.91, 5.44).
+0: Placed Na+ in complex at (-41.89, 40.70, 35.06).
+Placed Cl- in complex at (11.10, -63.65, 29.57).
+0: Placed Na+ in complex at (-44.28, -29.16, 36.01).
+Placed Cl- in complex at (16.74, -30.56, 18.22).
+0: Placed Na+ in complex at (-18.04, 8.63, -26.71).
+Placed Cl- in complex at (28.14, -33.37, -9.79).
+0: Placed Na+ in complex at (-16.35, -17.40, 28.67).
+Placed Cl- in complex at (-47.05, 46.98, -8.84).
+0: Placed Na+ in complex at (-26.89, -9.88, 33.25).
+Placed Cl- in complex at (-7.80, -41.69, -40.37).
+0: Placed Na+ in complex at (28.14, 22.95, 27.76).
+Placed Cl- in complex at (-34.95, -13.33, -5.00).
+0: Placed Na+ in complex at (-12.34, 54.66, 24.34).
+Placed Cl- in complex at (10.77, -42.43, -31.23).
+0: Placed Na+ in complex at (27.16, -15.25, 35.25).
+Placed Cl- in complex at (23.68, 20.41, -32.91).
+0: Placed Na+ in complex at (-10.59, -54.41, 3.83).
+Placed Cl- in complex at (43.21, 6.48, 28.41).
+0: Placed Na+ in complex at (-40.09, 6.24, 14.16).
+Placed Cl- in complex at (33.46, 48.01, -3.79).
+0: Placed Na+ in complex at (-35.01, 37.86, -11.73).
+Placed Cl- in complex at (12.91, 54.31, 34.72).
+0: Placed Na+ in complex at (-31.40, 48.82, 21.59).
+Placed Cl- in complex at (-23.73, 35.32, 1.26).
+0: Placed Na+ in complex at (-9.69, 33.16, -10.27).
+Placed Cl- in complex at (25.04, -28.13, 36.03).
+0: Placed Na+ in complex at (-43.81, 42.25, -30.22).
+Placed Cl- in complex at (37.64, 39.57, -18.83).
+0: Placed Na+ in complex at (1.86, 0.78, 41.31).
+Placed Cl- in complex at (10.92, 39.94, -42.72).
+0: Placed Na+ in complex at (21.20, 57.70, -8.88).
+Placed Cl- in complex at (18.43, -20.02, 23.11).
+0: Placed Na+ in complex at (42.98, -19.32, 31.08).
+Placed Cl- in complex at (-45.67, -50.67, 38.12).
+0: Placed Na+ in complex at (31.22, 44.34, -4.30).
+Placed Cl- in complex at (-1.79, 48.08, -13.11).
+0: Placed Na+ in complex at (27.36, -64.29, 23.23).
+Placed Cl- in complex at (28.49, -33.02, 4.97).
+0: Placed Na+ in complex at (-12.94, 22.93, 31.01).
+Placed Cl- in complex at (4.70, 12.00, -42.66).
+0: Placed Na+ in complex at (-17.17, 62.67, 25.45).
+Placed Cl- in complex at (-37.46, 58.34, 18.72).
+0: Placed Na+ in complex at (47.75, 34.31, 22.19).
+Placed Cl- in complex at (7.15, 8.00, 11.39).
+0: Placed Na+ in complex at (34.89, 18.17, -35.94).
+Placed Cl- in complex at (27.85, -41.94, 8.50).
+0: Placed Na+ in complex at (-33.32, -38.33, -37.82).
+Placed Cl- in complex at (1.10, 55.40, -26.15).
+0: Placed Na+ in complex at (20.00, -19.97, -21.56).
+Placed Cl- in complex at (41.74, -27.07, -36.33).
+0: Placed Na+ in complex at (-26.71, -26.48, -12.21).
+Placed Cl- in complex at (-31.11, -1.66, 24.34).
+0: Placed Na+ in complex at (-7.30, -61.56, -35.42).
+Placed Cl- in complex at (-2.49, -22.84, 40.09).
+0: Placed Na+ in complex at (-1.31, 65.08, 33.70).
+Placed Cl- in complex at (16.12, -0.60, 39.16).
+0: Placed Na+ in complex at (35.71, -60.17, 14.09).
+Placed Cl- in complex at (-20.81, 6.99, -38.10).
+0: Placed Na+ in complex at (8.01, -26.48, 26.17).
+Placed Cl- in complex at (-14.18, 33.11, -25.24).
+0: Placed Na+ in complex at (22.26, -5.89, 10.45).
+Placed Cl- in complex at (28.98, 53.08, 3.41).
+0: Placed Na+ in complex at (-44.66, -34.97, 35.08).
+Placed Cl- in complex at (-31.29, -9.35, -1.51).
+0: Placed Na+ in complex at (-17.66, 32.84, 14.37).
+Placed Cl- in complex at (-23.58, 3.85, -7.55).
+0: Placed Na+ in complex at (-16.35, -31.60, -36.27).
+Placed Cl- in complex at (-43.43, -37.36, 17.72).
+0: Placed Na+ in complex at (-43.11, -44.87, -34.96).
+Placed Cl- in complex at (-22.40, 31.58, -29.60).
+0: Placed Na+ in complex at (-6.26, -44.07, 17.94).
+Placed Cl- in complex at (2.43, 43.50, -36.27).
+0: Placed Na+ in complex at (19.43, -6.24, 23.11).
+Placed Cl- in complex at (-5.63, -55.95, 9.32).
+0: Placed Na+ in complex at (-25.25, -14.16, 22.64).
+Placed Cl- in complex at (48.39, -45.25, -12.21).
+0: Placed Na+ in complex at (31.22, -30.76, 33.24).
+Placed Cl- in complex at (4.58, 59.67, 2.64).
+0: Placed Na+ in complex at (-46.69, -5.84, -24.98).
+Placed Cl- in complex at (-46.95, 1.97, -30.26).
+0: Placed Na+ in complex at (-28.20, -0.48, -9.79).
+Placed Cl- in complex at (42.29, -25.88, -39.02).
+0: Placed Na+ in complex at (12.89, 37.74, 36.49).
+Placed Cl- in complex at (33.07, 45.74, -29.06).
+0: Placed Na+ in complex at (-40.29, 56.92, 12.99).
+Placed Cl- in complex at (-42.19, -49.69, 22.40).
+0: Placed Na+ in complex at (-5.43, 52.68, 11.87).
+Placed Cl- in complex at (-14.60, -4.26, -36.13).
+0: Placed Na+ in complex at (33.07, 64.52, 27.26).
+Placed Cl- in complex at (1.24, 22.27, 35.65).
+0: Placed Na+ in complex at (42.48, 25.16, 6.72).
+Placed Cl- in complex at (37.50, -32.39, 4.07).
+0: Placed Na+ in complex at (31.91, -55.95, -9.45).
+Placed Cl- in complex at (30.42, -29.53, 20.60).
+0: Placed Na+ in complex at (-35.44, -18.15, 1.02).
+Placed Cl- in complex at (-9.16, -43.48, 19.12).
+0: Placed Na+ in complex at (18.52, 30.16, -38.71).
+Placed Cl- in complex at (14.90, -63.36, 12.29).
+0: Placed Na+ in complex at (-37.32, 6.26, -5.83).
+Placed Cl- in complex at (32.41, -30.79, -6.88).
+0: Placed Na+ in complex at (23.23, 22.36, 9.62).
+Placed Cl- in complex at (28.07, -56.75, 5.83).
+0: Placed Na+ in complex at (-40.66, -15.20, 32.22).
+Placed Cl- in complex at (-40.87, -7.78, 38.23).
+0: Placed Na+ in complex at (-31.38, 26.57, -33.26).
+0: Placed Na+ in complex at (-3.48, 3.13, 27.33).
+> charge complex
+Total unperturbed charge:   0.000600
+Total perturbed charge:     0.000600
+> 
+> saveamberparm complex MR_dimer-AS4.prmtop MR_dimer-AS4.inpcrd
+Checking Unit.
+Building topology.
+Building atom parameters.
+Building bond parameters.
+Building angle parameters.
+Building proper torsion parameters.
+Building improper torsion parameters.
+ ** Warning: No sp2 improper torsion term for  c3-c3-c2-ce
+        atoms are: C7 C13 C8 C9
+ ** Warning: No sp2 improper torsion term for  ha-c2-ce-c
+        atoms are: H4 C8 C9 C10
+ ** Warning: No sp2 improper torsion term for  c3-c3-c2-ce
+        atoms are: C7 C13 C8 C9
+ ** Warning: No sp2 improper torsion term for  ha-c2-ce-c
+        atoms are: H4 C8 C9 C10
+ total 1678 improper torsions applied
+Building H-Bond parameters.
+Incorporating Non-Bonded adjustments.
+Not Marking per-residue atom chain types.
+Marking per-residue atom chain types.
+  (Residues lacking connect0/connect1 - 
+   these don't have chain types marked:
+
+	res	total affected
+
+	AS4	2
+	CARG	2
+	NLEU	2
+	WAT	31055
+  )
+ (no restraints)
+> saveamberparm mr MR_dimer.prmtop MR_dimer.inpcrd
+Checking Unit.
+
+/usr/local/amber20/bin/teLeap: Warning!
+The unperturbed charge of the unit (-2.000000) is not zero.
+
+/usr/local/amber20/bin/teLeap: Note.
+Ignoring the warning from Unit Checking.
+
+Building topology.
+Building atom parameters.
+Building bond parameters.
+Building angle parameters.
+Building proper torsion parameters.
+Building improper torsion parameters.
+ total 1672 improper torsions applied
+Building H-Bond parameters.
+Incorporating Non-Bonded adjustments.
+Not Marking per-residue atom chain types.
+Marking per-residue atom chain types.
+  (Residues lacking connect0/connect1 - 
+   these don't have chain types marked:
+
+	res	total affected
+
+	CARG	2
+	NLEU	2
+	WAT	22
+  )
+ (no restraints)
+> quit 
+	Quit
+
+Exiting LEaP: Errors = 0; Warnings = 38; Notes = 1.
