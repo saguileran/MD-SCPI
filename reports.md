@@ -2,7 +2,7 @@
 permalink: /reports/
 layout: single
 search: true
-author_profile: true
+author_profile: false
 toc_sticky: false
 toc: false
 classes: wide

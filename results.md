@@ -4,7 +4,7 @@ layout: single
 search: true
 author_profile: false
 toc_sticky: true
-toc: false
+toc: true
 toc_label: "Results"
 toc_icon: 'photo-film'
 classes: wide
