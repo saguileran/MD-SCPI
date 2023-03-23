@@ -44,6 +44,18 @@ MD_energies:
     alt: 'MD MR-AS4 energies'
     title: 'MD MR-AS4 energies'
 
+MC_energies:
+  - url: "https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/MC_energies.png"
+    image_path: "https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/MC_energies.png"
+    alt: 'MC MR-AS4 energies as function of RMSD'
+    title: 'MC MR-AS4 energies as function of RMSD'
+
+MC_RMSD_high:
+  - url: "https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/MC_RMSD_MR-AS4_high.png"
+    image_path: "https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/MC_RMSD_MR-AS4_high.png"
+    alt: 'MC MR-AS4 RMSD at high temperatures'
+    title: 'MC MR-AS4 RMSD at high temperatures'
+
 ---
 
 # Movies
@@ -145,15 +157,13 @@ MD_energies:
 
 ## Molecular Dynamics
 
-<img src='https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/Energies.png' alt="MD energies">
-
 {% include gallery id="MD_energies" caption="MD MR-AS4 energies" %}
 
 ## Monte Carlo 
 
-<img src="https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/MC_energies.png" alt="MC energies as function of RMSD">
+{% include gallery id="MC_energies" caption="MC MR-AS4 energies as function of RMSD" %}
 
-<img src="https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/MC_RMSD_MR-AS4_high.png" alt="MC RMSD for high temperatures">
+{% include gallery id="MC_RMSD_high" caption="MC MR-AS4 energies as function of RMSD at high temperatures" %}
 
 
 {% include gallery id="MC_images" caption="MC energies" %}
