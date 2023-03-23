@@ -4,9 +4,11 @@ layout: single
 search: true
 author_profile: false
 toc_sticky: true
-toc: true
+toc: false
 toc_label: "Results"
 toc_icon: 'photo-film'
+classes: wide
+
 sidebar:
   nav: "reports"
 
@@ -35,6 +37,13 @@ MC_images:
     image_path: "https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/MC_RMSD_MR-STR_mut.png"
     alt: 'RMSD MR-STR_mut MC'
     title: 'RMSD MR_S810L-STR MC'
+
+MD_energies:
+  - url: "https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/Energies.png"
+    image_path: "https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/Energies.png"
+    alt: 'MD MR-AS4 energies'
+    title: 'MD MR-AS4 energies'
+
 ---
 
 # Movies
@@ -137,6 +146,8 @@ MC_images:
 ## Molecular Dynamics
 
 <img src='https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/Energies.png' alt="MD energies">
+
+{% include gallery id="MD_energies" caption="MD MR-AS4 energies" %}
 
 ## Monte Carlo 
 
