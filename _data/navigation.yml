@@ -55,6 +55,16 @@ reports:
         url: /reports/#week-8
       - title: "Final Report"
         url: /reports/#final-report
+
+  - title: Results
+    children:
+      - title: "Movies"
+        url: /results/#movies
+      - title: "Images - MD"
+        url: /results/#molecular-dynamics-1
+      - title: "Images - MC"
+        url: /results/#monte-carlo-1
+
     
   - title: GitHub
     children:

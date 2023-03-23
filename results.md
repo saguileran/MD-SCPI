@@ -58,9 +58,11 @@ MC_RMSD_high:
 
 ---
 
-# Movies
+<h1 id='results'> Results </h1>
 
-## Molecular Dynamics
+## Movies
+
+### Molecular Dynamics
 
 
 <h3 align="center" margin-bottom=0>MR-AS4 MD simulation</h3>
@@ -150,16 +152,16 @@ MC_RMSD_high:
 
 
 
-## Monte Carlo 
+### Monte Carlo 
 
 
-# Images
+## Images
 
-## Molecular Dynamics
+### Molecular Dynamics
 
 {% include gallery id="MD_energies" caption="MD MR-AS4 energies" %}
 
-## Monte Carlo 
+### Monte Carlo 
 
 {% include gallery id="MC_energies" caption="MC MR-AS4 energies as function of RMSD" %}
 
