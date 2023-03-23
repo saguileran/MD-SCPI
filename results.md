@@ -169,3 +169,12 @@ MC_RMSD_high:
 
 
 {% include gallery id="MC_images" caption="MC energies" %}
+
+|**ligand**|**temperature**|**binding**|**unbinding**|**Samples**|
+|:---:|:---:|:---:|:---:|:---:|
+|AS4|5000K|2|0|31|
+|COL|5000K|0|0|51|
+|STR|5000K|0|0|51|
+|AS4\_mut|5000K|3|0|51|
+|COL\_mut|5000K|3|0|51|
+|STR\_mut|5000K|0|0|51|
