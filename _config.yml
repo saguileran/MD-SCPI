@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : &title "Molecular Dynamics - Summer Internship"
+title                    : &title "Molecular Modeling and Simulation - Summer Internship"
 title_separator          : "-"
-subtitle                 : &subtitle "Sao Carlos Physics Institute (SCPI)"  # site tagline that appears below site title in masthead
+subtitle                 : &subtitle "Institute of Physics of São Carlos  (IPSC)"  # site tagline that appears below site title in masthead
 name                     : &name 'Sebastian Aguilera Novoa' #"Your Name"
-description              : &description 'Evaluation of the unbinding kinetics of Mineralocorticoid (MR) receptor steroid agonist Cortisol (COL) and Aldosterone (AS4) ligands.'
+description              : &description 'Evaluation of the unbinding kinetics of Mineralocorticoid (MR-wt and MR_S810L) receptor steroid agonist Cortisol (COL), Aldosterone (AS4), and Progesterone (STR) ligands using numerical methods.'
 url                      : "https://saguileran.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/MD-SCPI" # the subpath of your site, e.g. "/blog"
 repository               : "saguileran/MD-SCPI" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -106,7 +106,7 @@ analytics:
 author:
   name             : *name #"Your Name"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Files and results from the summer internship in Brazil in the field of computational structural biology" #"I am an **amazing** person."
+  bio              : "Extensive description of the summer internship at IPSC, Brazil. Here you can find the files, scripts, images and results obtained by the evaluation of the unbinding kinetics of the Mineralocorticoid receptor (MR-wt and MR-S810L) steroid agonists Cortisol (COL), Aldosterone (AS4), and Progesterone (ST) ligands."
   location         : "Sao Carlos, Brazil"
   email            : #"saguileran@unal.edu.co"
   links:
