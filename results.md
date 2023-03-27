@@ -55,11 +55,6 @@ MC_RMSD_high:
     image_path: "https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/MC_RMSD_MR-AS4_high.png"
     alt: 'MC MR-AS4 RMSD at high temperatures'
     title: 'MC MR-AS4 RMSD at high temperatures'
-MD_movies:
-  - url:  'https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/MR-AS4.mp4'
-    image_path: 'https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/MR-AS4.mp4'
-    alt: 'movie'
-    title: 'movie'
 ---
 
 <h1 id='results'> Results </h1>
@@ -68,14 +63,38 @@ MD_movies:
 
 ### Molecular Dynamics
 
-{% include gallery id="MD_movie" caption="MD MR-AS4 energies" %}
-
+<table width="100%">
+<tr>
+<td align="left" valign="top" width="50%">
+<center>
+    <video id="video" width="400" height="400" controls>
+        <source src="https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/MR-AS4.mp4" type="video/mp4">
+    </video>
+  </center>
+    <div class="overlay">
+        <p align="center">Mineralocorticoid (MR) protein interaction with aldosteron (AS4) ligand</p>
+    </div>
+</td>
+<td align="left" valign="top" width="50%">
+<center>
+    <video id="video" width="400" height="400" controls>
+        <source src="https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/MR-AS4.mp4" type="video/mp4">
+    </video>
+  </center>
+    <div class="overlay">
+        <p align="center">Mineralocorticoid (MR) protein interaction with aldosteron (AS4) ligand</p>
+    </div>
+</td
+</tr>
+</table>
+  
+  adasdasd
 
 <h3 align="center" margin-bottom=0>MR-AS4 MD simulation</h3>
 
 <div class="container">
   <center>
-    <video id="video" width="400" height="400" controls>
+    <video id="video" width="200" height="200" controls>
         <source src="https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/MR-AS4.mp4" type="video/mp4">
     </video>
   </center>
@@ -84,7 +103,7 @@ MD_movies:
     </div>
   
   <center>
-    <video id="video" width="400" height="400" controls>
+    <video id="video" width="200" height="200" controls>
         <source src="https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/MR-AS4.mp4" type="video/mp4">
     </video>
   </center>
