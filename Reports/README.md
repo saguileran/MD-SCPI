@@ -425,16 +425,20 @@ An other article of interest, where PyEMMA and MC simulations are used, is [PELE
 - Submit jobs for all the 6 systems for a MC simulation of 100M steps and at temperature of 7000K (14.48h-22-03)
 - Plotting all data of the MC simulations and calculating un/binding events in each system
 
-|**ligand**|**temperature**|**binding**|**unbinding**|**Samples**|
-|:---:|:---:|:---:|:---:|:---:|:---:|
-|AS4|5000K\_long|1|0|51|
-|AS4|10000K|23|5|31|
-|AS4|15000K|100|85|31|
-|COL|5000K|0|0|51|
-|STR|5000K|0|0|51|
-|AS4\_mut|5000K|6|0|51|
-|COL\_mut|5000K|6|0|51|
-|STR\_mut|5000K|0|0|51|
+| **ligand** | **temperature** | **binding** | **unbinding** | **Samples** | **biding_prob** | **unbiding_prob** |
+|:----------:|:---------------:|:-----------:|:-------------:|:-----------:|:---------------:|:-----------------:|
+|     AS4    |    5000K_long   |      0      |       1       |      51     |       0.00      |        1.96       |
+|     AS4    |      7000K      |      2      |       20      |      51     |       3.92      |       39.22       |
+|     COL    |      5000K      |      0      |       0       |      51     |       0.00      |        0.00       |
+|     COL    |      7000K      |      0      |       28      |      51     |       0.00      |       54.90       |
+|     STR    |      5000K      |      0      |       0       |      51     |       0.00      |        0.00       |
+|     STR    |      7000K      |      4      |       30      |      51     |       7.84      |       58.82       |
+|   AS4_mut  |      5000K      |      0      |       3       |      51     |       0.00      |        5.88       |
+|   AS4_mut  |      7000K      |      2      |       30      |      51     |       3.92      |       58.82       |
+|   COL_mut  |      5000K      |      0      |       3       |      51     |       0.00      |        5.88       |
+|   COL_mut  |      7000K      |      0      |       14      |      51     |       0.00      |       27.45       |
+|   STR_mut  |      5000K      |      0      |       0       |      51     |       0.00      |        0.00       |
+|   STR_mut  |      7000K      |      5      |       20      |      51     |       9.80      |       39.22       |
 
 
 - Create a more complex and realistic simulation using two proteins, because a recent article [Quaternary glucocorticoid receptor structure highlights allosteric interdomain communication](https://www.nature.com/articles/s41594-022-00914-4)
