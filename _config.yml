@@ -105,7 +105,7 @@ analytics:
 # Site Author
 author:
   name             : *name #"Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/ifsc.jpeg"
   bio              : "Extensive description of the summer internship at IPSC, Brazil. Here you can find the files, scripts, images and results obtained by the evaluation of the unbinding kinetics of the Mineralocorticoid receptor (MR-wt and MR-S810L) steroid agonists Cortisol (COL), Aldosterone (AS4), and Progesterone (ST) ligands."
   location         : "Sao Carlos, Brazil"
   email            : #"saguileran@unal.edu.co"
