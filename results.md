@@ -55,7 +55,11 @@ MC_RMSD_high:
     image_path: "https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/MC_RMSD_MR-AS4_high.png"
     alt: 'MC MR-AS4 RMSD at high temperatures'
     title: 'MC MR-AS4 RMSD at high temperatures'
-
+MD_movies:
+  - url:  'https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/MR-AS4.mp4'
+    image_path: 'https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/MR-AS4.mp4'
+    alt: 'movie'
+    title: 'movie'
 ---
 
 <h1 id='results'> Results </h1>
@@ -63,6 +67,8 @@ MC_RMSD_high:
 ## Movies
 
 ### Molecular Dynamics
+
+{% include gallery id="MD_movie" caption="MD MR-AS4 energies" %}
 
 
 <h3 align="center" margin-bottom=0>MR-AS4 MD simulation</h3>
@@ -170,7 +176,7 @@ MC_RMSD_high:
 
 {% include gallery id="MC_images" caption="MC energies" %}
 
-<div align="center">
+
 
 | **ligand** | **temperature** | **binding** | **unbinding** | **Samples** | **biding_prob** | **unbiding_prob** |
 |:----------:|:---------------:|:-----------:|:-------------:|:-----------:|:---------------:|:-----------------:|
@@ -187,4 +193,3 @@ MC_RMSD_high:
 |   STR_mut  |      5000K      |      0      |       0       |      51     |       0.00      |        0.00       |
 |   STR_mut  |      7000K      |      5      |       20      |      51     |       9.80      |       39.22       |
 
-</div>
