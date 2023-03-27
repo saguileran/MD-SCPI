@@ -64,96 +64,55 @@ MC_RMSD_high:
 ### Molecular Dynamics
 
 
-<div class="overlay">
-<p align="center">Mineralocorticoid (MR) protein interaction with aldosteron (AS4) ligand</p>
-</div>
-
-  adasdasd
-
 <h3 align="center" margin-bottom=0>MR-AS4 MD simulation</h3>
 
 <div class="container">
   <center>
-    <video id="video" width="200" height="200" controls>
+    <video id="video" width="400" height="400" controls>
         <source src="https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/MR-AS4.mp4" type="video/mp4">
     </video>
-    <video id="video" width="200" height="200" controls>
-        <source src="https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/MR-AS4.mp4" type="video/mp4">
+    <video id="video" width="400" height="400" controls>
+        <source src="https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/MR_S810L-AS4.mp4" type="video/mp4">
     </video>
+    <div class="overlay">
+        <p align="center">Mineralocorticoid (MR-wt/S810L) protein interaction with Aldosteron (AS4) ligand</p>
+    </div>
   </center>
 </div>
 
-<h3 align="center" margin-bottom="-10">MR-COL MD simulation</h3>
+
+<h3 align="center" margin-bottom=0>MR-COL MD simulation</h3>
 
 <div class="container">
   <center>
-    <video id="video" width="500" height="500" controls>
+    <video id="video" width="400" height="400" controls>
         <source src="https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/MR-COL.mp4" type="video/mp4">
     </video>
-  </center>
+    <video id="video" width="400" height="400" controls>
+        <source src="https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/MR_S810L-COL.mp4" type="video/mp4">
+    </video>
     <div class="overlay">
-        <p align="center">Mineralocorticoid (MR) protein interaction with cortisol (COL) ligand</p>
+        <p align="center">Mineralocorticoid (MR-wt/S810L) protein interaction with Cortisol (COL) ligand</p>
     </div>
+  </center>
 </div>
+
 
 <h3 align="center" margin-bottom=0>MR-STR MD simulation</h3>
 
 <div class="container">
   <center>
-    <video id="video" width="500" height="500" controls>
+    <video id="video" width="400" height="400" controls>
         <source src="https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/MR-STR.mp4" type="video/mp4">
     </video>
-  </center>
-    <div class="overlay">
-        <p align="center">Mineralocorticoid (MR) protein interaction with progesterone (STR) ligand</p>
-    </div>
-</div>
-
-
-
-
-<h3 align="center" margin-bottom=0>MR_S810L-AS4 MD simulation</h3>
-
-<div class="container">
-  <center>
-    <video id="video" width="500" height="500" controls>
-        <source src="https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/MR_S810L-AS4.mp4" type="video/mp4">
-    </video>
-  </center>
-    <div class="overlay">
-        <p align="center">Mineralocorticoid mutation (MR_S810L) protein interaction with aldosteron (AS4) ligand</p>
-    </div>
-</div>
-
-
-<h3 align="center" margin-bottom=0>MR_S810L-COL MD simulation</h3>
-
-<div class="container">
-  <center>
-    <video id="video" width="500" height="500" controls>
-        <source src="https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/MR_S810L-COL.mp4" type="video/mp4">
-    </video>
-  </center>
-    <div class="overlay">
-        <p align="center">Mineralocorticoid mutation (MR_S810L) protein interaction with cortisol (COL) ligand</p>
-    </div>
-</div>
-
-
-<h3 align="center" margin-bottom=0>MR_S810L-STR MD simulation</h3>
-
-<div class="container">
-  <center>
-    <video id="video" width="500" height="500" controls>
+    <video id="video" width="400" height="400" controls>
         <source src="https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/MR_S810L-STR.mp4" type="video/mp4">
     </video>
-  </center>
     <div class="overlay">
-        <p align="center">Mineralocorticoid mutation (MR_S810L) protein interaction with progesterone (STR) ligand</p>
+        <p align="center">Mineralocorticoid (MR-wt/S810L) protein interaction with progesterone (STR) ligand</p>
     </div>
+  </center>
 </div>
-
-
 
 
 
