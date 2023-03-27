@@ -75,7 +75,16 @@ MD_movies:
 
 <div class="container">
   <center>
-    <video id="video" width="500" height="500" controls>
+    <video id="video" width="400" height="400" controls>
+        <source src="https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/MR-AS4.mp4" type="video/mp4">
+    </video>
+  </center>
+    <div class="overlay">
+        <p align="center">Mineralocorticoid (MR) protein interaction with aldosteron (AS4) ligand</p>
+    </div>
+  
+  <center>
+    <video id="video" width="400" height="400" controls>
         <source src="https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/MR-AS4.mp4" type="video/mp4">
     </video>
   </center>
