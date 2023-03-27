@@ -63,9 +63,29 @@ MC_RMSD_high:
 
 ### Molecular Dynamics
 
-<table width="100%">
+
+|<center>
+    <video id="video" width="400" height="400" controls>
+        <source src="https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/MR-AS4.mp4" type="video/mp4">
+    </video>
+  </center>
+    <div class="overlay">
+        <p align="center">Mineralocorticoid (MR) protein interaction with aldosteron (AS4) ligand</p>
+    </div> | <center>
+    <video id="video" width="400" height="400" controls>
+        <source src="https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/MR-AS4.mp4" type="video/mp4">
+    </video>
+  </center>
+    <div class="overlay">
+        <p align="center">Mineralocorticoid (MR) protein interaction with aldosteron (AS4) ligand</p>
+    </div> |
+|---|---|
+
+
+
+<table>
 <tr>
-<td align="left" valign="top" width="50%">
+<td>
 <center>
     <video id="video" width="400" height="400" controls>
         <source src="https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/MR-AS4.mp4" type="video/mp4">
