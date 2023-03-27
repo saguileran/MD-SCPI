@@ -1,4 +1,4 @@
-# Molecular Dynamics - Sao Carlos Physics Institute (MD-SCPI)
+# Molecular Modeling and Simulation - Physics Institute of São Carlos (IPSC)
 
 # Table of Contents
 
