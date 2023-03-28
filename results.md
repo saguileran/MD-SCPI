@@ -119,10 +119,7 @@ MC_RMSD_high:
 
 <div class="container">
   <center>
-    <video id="video" width="400" height="400" controls>
-        <source src="https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/MR_dimer-AS4.mp4" type="video/mp4">
-    </video>
-    <video id="video" width="400" height="400" controls>
+    <video id="video" width="600" height="500" controls>
         <source src="https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/MR_dimer-AS4.mp4" type="video/mp4">
     </video>
     <div class="overlay">
