@@ -115,6 +115,23 @@ MC_RMSD_high:
 </div>
 
 
+<h3 align="center" margin-bottom=0>MR_dimer-AS4 MD simulation</h3>
+
+<div class="container">
+  <center>
+    <video id="video" width="400" height="400" controls>
+        <source src="https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/MR_dimer-AS4.mp4" type="video/mp4">
+    </video>
+    <video id="video" width="400" height="400" controls>
+        <source src="https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/MR_dimer-AS4.mp4" type="video/mp4">
+    </video>
+    <div class="overlay">
+        <p align="center">Mineralocorticoid dimer (MR_dimer) protein interaction with Aldosterone (AS4) ligand</p>
+    </div>
+  </center>
+</div>
+
+
 
 ### Monte Carlo 
 
