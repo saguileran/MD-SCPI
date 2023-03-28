@@ -340,6 +340,12 @@ the **mode** parameter can be
 
 ### Week 4
 
+<div class="notice">
+  <h4>Message</h4>
+  <p>A basic message.</p>
+</div>
+
+
 ### Week 5
 
 ### Week 6
