@@ -40,8 +40,8 @@ search: false
 .author__avatar {
   display: table-cell;
   vertical-align: top;
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
 
   @include breakpoint($large) {
     display: block;
@@ -52,6 +52,7 @@ search: false
   img {
     max-width: 175px;
     border-radius: 50%;
+    margin-left: 20px;
 
     @include breakpoint($large) {
       padding: 5px;
