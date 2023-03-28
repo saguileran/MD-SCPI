@@ -459,9 +459,14 @@ An other article of interest, where PyEMMA and MC simulations are used, is [PELE
 
 - **MSM**: Multiple Source Method
 
-
-
 ### Week 6
+
+```
+cpptraj ../../mol2/AS4.mol2.gz << eof
+trajin MR-AS4_19_MR-AS4.inpcrd_MC.mol2.gz
+trajout 19.nc
+eof
+```
 
 ### Week 7
 
