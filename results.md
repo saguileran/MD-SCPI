@@ -150,7 +150,7 @@ MC_RMSD_high:
 
 
 
-| **ligand** | **temperature** | **binding** | **unbinding** | **Samples** | **biding_prob** | **unbiding_prob** |
+| **ligand** | **temperature** | **unbinding** | **binding** | **Samples** | **unbiding_prob** | **biding_prob** |
 |:----------:|:---------------:|:-----------:|:-------------:|:-----------:|:---------------:|:-----------------:|
 |     AS4    |    5000K_long   |      0      |       1       |      51     |       0.00      |        1.96       |
 |     AS4    |      7000K      |      2      |       20      |      51     |       3.92      |       39.22       |
