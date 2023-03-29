@@ -461,12 +461,30 @@ An other article of interest, where PyEMMA and MC simulations are used, is [PELE
 
 ### Week 6
 
+- Extract the coordinates of the MC simulations to use them in PyEMMA (deep time)
+
 ```
 cpptraj ../../mol2/AS4.mol2.gz << eof
 trajin MR-AS4_19_MR-AS4.inpcrd_MC.mol2.gz
 trajout 19.nc
 eof
 ```
+
+- Create the dimer system (MR_dimer-AS4), define the mol files for a MC simulation
+- Define and submit the dimer system in a MD simulation, quilibration and production steps (it takes a whole week)
+- Tune the cushion parameter for the dimer system
+- Create the notebooks to analyze Mc simulations with TICA method (PyEMMA)
+
+- Create and measure two virtual points to calculate the ligand space pathway, since there are three possible pathways just two of them are analyze (the two more possibles). The points choosen are: CM atoms 379-472, and CM 279-344. The objective is to measure the distance from these points to the closest ligand
+
+```
+cpptraj ../leap/MR_dimer-AS4.prmtop << eof
+trajin equil.nc  # (mol file instead)
+distance :379,472 :1 out distance.dat
+eof
+```
+
+*Explain how is the protein framework and where are located the molecular simulations, why and how are they used*
 
 ### Week 7
 
