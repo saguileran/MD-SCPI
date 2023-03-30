@@ -58,7 +58,7 @@ MC_RMSD_high:
     
 MC_states:
   - url: "https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/States_AS4_7000K.png"
-    image_path: "https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/States_AS4_mut_7000K.png"
+    image_path: "https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/States_AS4_7000K.png"
     alt: 'States found using MC simulation and PyEMMA in the MR-AS4 system at 7000K'
     title: 'States found using MC simulation and PyEMMA in the MR-AS4 system at 7000K'
   - url: "https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/States_COL_7000K.png"
