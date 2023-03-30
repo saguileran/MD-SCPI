@@ -90,7 +90,7 @@ MC_states_examples:
   - url: "https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/States_7000K_COL.png"
     image_path: "https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/States_7000K_COL.png"
     alt: 'Example of the states found using MC simulation and PyEMMA in the MR-COL system at 7000K'
-    title: 'Example of the states found using MC simulation and PyEMMA in the MRt-COL system at 7000K'
+    title: 'Example of the states found using MC simulation and PyEMMA in the MR-COL system at 7000K'
   - url: "https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/States_7000K_STR.png"
     image_path: "https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/States_7000K_STR.png"
     alt: 'Example of the states found using MC simulation and PyEMMA in the MR-STR system at 7000K'
@@ -217,8 +217,10 @@ MC_states_examples:
 |   STR_mut  |      5000K      |      0      |       0       |      51     |       0.00      |        0.00       |
 |   STR_mut  |      7000K      |      5      |       20      |      51     |       9.80      |       39.22       |
 
+#### PyEMMA
+
 A better aproach to analyse these data is using [PyEMMA](http://www.emma-project.org/latest/index.html), a Python library for the estimation, validation and analysis Markov models of molecular kinetics and other kinetic and thermodynamic models from molecular dynamics (MD) data. 
 
-{% include gallery id="MC_states" caption="States found in the MC simulations at 7000K using pyemma" %}
+{% include gallery id="MC_states" caption="States found in the MC simulations at 7000K using PyEMMA" %}
 
-{% include gallery id="MC_states_examples" caption="Some examples of the states found in the MC simulations at 7000K using pyemma" %}
+{% include gallery id="MC_states_examples" caption="Some examples of the states found in the MC simulations at 7000K using PyEMMA" %}
