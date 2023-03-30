@@ -82,7 +82,11 @@ MC_states:
     alt: 'States found using MC simulation and PyEMMA in the MR_mut-STR system at 7000K'
     title: 'States found using MC simulation and PyEMMA in the MR_mut-STR system at 7000K'
     
- 
+MC_states_examples:
+  - url: "https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/States_7000K_AS4.png"
+    image_path: "https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/States_7000K_AS4.png"
+    alt: 'Example of the states found using MC simulation and PyEMMA in the MR-AS4 system at 7000K'
+    title: 'Example of the states found using MC simulation and PyEMMA in the MR-AS4 system at 7000K'
     
 ---
 
