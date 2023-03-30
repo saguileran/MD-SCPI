@@ -61,23 +61,23 @@ MC_states:
     image_path: "https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/States_AS4_mut_7000K.png"
     alt: 'States found using MC simulation and PyEMMA in the MR-AS4 system at 7000K'
     title: 'States found using MC simulation and PyEMMA in the MR-AS4 system at 7000K'
-   - url: "https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/States_COL_7000K.png"
+  - url: "https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/States_COL_7000K.png"
     image_path: "https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/States_COL_7000K.png"
     alt: 'States found using MC simulation and PyEMMA in the MR-COL system at 7000K'
     title: 'States found using MC simulation and PyEMMA in the MRt-COL system at 7000K'
-   - url: "https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/States_STR_7000K.png"
+  - url: "https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/States_STR_7000K.png"
     image_path: "https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/States_STR_7000K.png"
     alt: 'States found using MC simulation and PyEMMA in the MR-STR system at 7000K'
     title: 'States found using MC simulation and PyEMMA in the MR-STR system at 7000K'
-   - url: "https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/States_AS4_mut_7000K.png"
+  - url: "https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/States_AS4_mut_7000K.png"
     image_path: "https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/States_AS4_mut_7000K.png"
     alt: 'States found using MC simulation and PyEMMA in the MR_mut-AS4 system at 7000K'
     title: 'States found using MC simulation and PyEMMA in the MR_mut-AS4 system at 7000K'
-   - url: "https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/States_COL_mut_7000K.png"
+  - url: "https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/States_COL_mut_7000K.png"
     image_path: "https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/States_COL_mut_7000K.png"
     alt: 'States found using MC simulation and PyEMMA in the MR_mut-COL system at 7000K'
     title: 'States found using MC simulation and PyEMMA in the MR_mut-COL system at 7000K'
-   - url: "https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/States_STR_mut_7000K.png"
+  - url: "https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/States_STR_mut_7000K.png"
     image_path: "https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/States_STR_mut_7000K.png"
     alt: 'States found using MC simulation and PyEMMA in the MR_mut-STR system at 7000K'
     title: 'States found using MC simulation and PyEMMA in the MR_mut-STR system at 7000K'
@@ -87,23 +87,23 @@ MC_states:
     image_path: "https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/States_7000K_AS4.png"
     alt: 'Example of the states found using MC simulation and PyEMMA in the MR-AS4 system at 7000K'
     title: 'Example of the states found using MC simulation and PyEMMA in the MR-AS4 system at 7000K'
-   - url: "https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/States_7000K_COL.png"
+  - url: "https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/States_7000K_COL.png"
     image_path: "https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/States_7000K_COL.png"
     alt: 'Example of the states found using MC simulation and PyEMMA in the MR-COL system at 7000K'
     title: 'Example of the states found using MC simulation and PyEMMA in the MRt-COL system at 7000K'
-   - url: "https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/States_7000K_STR.png"
+  - url: "https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/States_7000K_STR.png"
     image_path: "https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/States_7000K_STR.png"
     alt: 'Example of the states found using MC simulation and PyEMMA in the MR-STR system at 7000K'
     title: 'Example of the states found using MC simulation and PyEMMA in the MR-STR system at 7000K'
-   - url: "https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/States_7000K_AS4_mut.png"
+  - url: "https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/States_7000K_AS4_mut.png"
     image_path: "https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/States_7000K_AS4_mut.png"
     alt: 'Example of the states found using MC simulation and PyEMMA in the MR_mut-AS4 system at 7000K'
     title: 'Example of the states found using MC simulation and PyEMMA in the MR_mut-AS4 system at 7000K'
-   - url: "https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/States_7000K_COL_mut.png"
+  - url: "https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/States_7000K_COL_mut.png"
     image_path: "https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/States_7000K_COL_mut.png"
     alt: 'Example of the states found using MC simulation and PyEMMA in the MR_mut-COL system at 7000K'
     title: 'Example of the states found using MC simulation and PyEMMA in the MR_mut-COL system at 7000K'
-   - url: "https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/States_7000K_STR_mut.png"
+  - url: "https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/States_7000K_STR_mut.png"
     image_path: "https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/States_7000K_STR_mut.png"
     alt: 'Example of the states found using MC simulation and PyEMMA in the MR_mut-STR system at 7000K'
     title: 'Example of the states found using MC simulation and PyEMMA in the MR_mut-STR system at 7000K'
