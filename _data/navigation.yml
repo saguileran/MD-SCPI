@@ -58,12 +58,16 @@ reports:
 
   - title: Results
     children:
-      - title: "Movies"
-        url: /results/#movies
+      - title: "Movies - MD"
+        url: /results/#molecular-dynamics
+      - title: "Movies - MC"
+        url: /results/#monte-carlo
       - title: "Images - MD"
         url: /results/#molecular-dynamics-1
       - title: "Images - MC"
         url: /results/#monte-carlo-1
+      - title: "MC - PyEMMA"
+        url: /results/#pyemma
 
     
   - title: GitHub
@@ -74,5 +78,5 @@ reports:
         url: https://github.com/saguileran/MD-SCPI/tree/main/NoteBooks
       - title: "PDBs"
         url: https://github.com/saguileran/MD-SCPI/tree/main/PDBs
-      - title: "Results"
+      - title: "Report"
         url: https://github.com/saguileran/MD-SCPI/tree/main/Results

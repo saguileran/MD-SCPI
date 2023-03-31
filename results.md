@@ -185,6 +185,19 @@ MC_states_examples:
 
 ### Monte Carlo 
 
+<h3 align="center" margin-bottom=0>MR-AS4 MC simulation</h3>
+
+<div class="container">
+  <center>
+    <video id="video" width="600" height="500" controls>
+        <source src="https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/MC-MR-AS4.mp4" type="video/mp4">
+    </video>
+    <div class="overlay">
+        <p align="center">Monte Carlo simulation of mineralocorticoid (MR) protein interacting with Aldosteron (AS4) ligand</p>
+    </div>
+  </center>
+</div>
+
 
 ## Images
 
@@ -204,7 +217,7 @@ MC_states_examples:
 
 | **ligand** | **temperature** | **unbinding** | **binding** | **Samples** | **unbiding_prob** | **biding_prob** |
 |:----------:|:---------------:|:-----------:|:-------------:|:-----------:|:---------------:|:-----------------:|
-|     AS4    |    5000K_long   |      0      |       1       |      51     |       0.00      |        1.96       |
+|     AS4    |      5000K      |      0      |       1       |      51     |       0.00      |        1.96       |
 |     AS4    |      7000K      |      2      |       20      |      51     |       3.92      |       39.22       |
 |     COL    |      5000K      |      0      |       0       |      51     |       0.00      |        0.00       |
 |     COL    |      7000K      |      0      |       28      |      51     |       0.00      |       54.90       |
