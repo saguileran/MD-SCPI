@@ -10,10 +10,10 @@ as4_2 = loadpdb AS4_2.pdb
 complex = combine { as4_1  mr as4_2 }
 check complex
 
-solvatebox complex TIP3PBOX 12.0
-charge complex
-addionsRand complex Na+ 85 Cl- 83
-charge complex
+#solvatebox complex TIP3PBOX 12.0
+#charge complex
+#addionsRand complex Na+ 85 Cl- 83
+#charge complex
 
 saveamberparm complex MR_dimer-AS4.prmtop MR_dimer-AS4.inpcrd
 saveamberparm mr MR_dimer.prmtop MR_dimer.inpcrd

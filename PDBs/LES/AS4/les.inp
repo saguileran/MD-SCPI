@@ -1,6 +1,6 @@
 ~ INPUT/OUTPUT FILES
 ~ file rcrd name=(501v200.coords) read
-file rprm name=(../../leap/AS4/MR-AS4.prmtop) read
+file rprm name=(../../leap/AS4_LES/MR-AS4_LES.prmtop) read
 
 ~ wovr to overwrite writ no over write
 file wprm name=(lesparm_MR-AS4) wovr

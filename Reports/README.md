@@ -496,7 +496,9 @@ Tutorials to use with PyEMMA in further analysis:
 - [Markov state model for pentapeptide](http://www.emma-project.org/latest/legacy-notebooks/applications/pentapeptide_msm/pentapeptide_msm.html)
 - [Markov state model for BPTI](http://www.emma-project.org/latest/legacy-notebooks/applications/bpti_msm/MSM_BPTI.html)
 
+The dimeral system also present binding and unbinding events, comparing it with the single system it shows more events at the same temperature suggesting that in the dimeral system the ligand can scape more easily. To analyze the simulations PyEMMA is used again. In addition, the dimeral system is simulated again using MC with 100M of steps but decreasing temperature, at 500K.
 
+Previous tests showed that LES simulation do not have good performance, since the systema has thousands of atoms. A new test is done, to compare it performance, but removing the solvent atoms and with 10 copies.
 
 ### Week 7
 
