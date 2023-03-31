@@ -485,14 +485,18 @@ distance :379,472 :1 out distance.dat
 eof
 ```
 
+This is not possible since LiBELA uses the files splited, then the generated mol files do not have information about the ligand.
+
 *Explain how is the protein framework and where are located the molecular simulations, why and how are they used*
 
 The LiGaMD simulation is not enough to reproduce binding and unbinding, for this propouse **LiGaMD2** is more apropiate. In this MC simulation, it is necessary to select the ligand and it surrounding residues to make a soft core, the it will be allow to the ligand binding easier. First test is done with a 6-6 configuration, $\sigma_D/\sigma_P$ nad a time of 1 ns
 
-Tutorials to use with PyEMMA in further analysis
+Tutorials to use with PyEMMA in further analysis:
 
-[Markov state model for pentapeptide](http://www.emma-project.org/latest/legacy-notebooks/applications/pentapeptide_msm/pentapeptide_msm.html)
-[Markov state model for BPTI](http://www.emma-project.org/latest/legacy-notebooks/applications/bpti_msm/MSM_BPTI.html)
+- [Markov state model for pentapeptide](http://www.emma-project.org/latest/legacy-notebooks/applications/pentapeptide_msm/pentapeptide_msm.html)
+- [Markov state model for BPTI](http://www.emma-project.org/latest/legacy-notebooks/applications/bpti_msm/MSM_BPTI.html)
+
+
 
 ### Week 7
 
