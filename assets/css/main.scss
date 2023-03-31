@@ -8,7 +8,9 @@ search: false
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
-
+.page__content {
+	text-align: justify;
+  }
 
 #toc_container {
     background: #f9f9f9 none repeat scroll 0 0;
