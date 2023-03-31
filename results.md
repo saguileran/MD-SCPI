@@ -37,6 +37,10 @@ MC_images:
     image_path: "https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/MC_RMSD_MR-STR_mut.png"
     alt: 'RMSD MR-STR_mut MC'
     title: 'RMSD MR_S810L-STR MC'
+  - url: "https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/MC_RMSD_MR-AS4_dimer.png"
+    image_path: "https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/MC_RMSD_MR-AS4_dimer.png"
+    alt: 'RMSD MR-AS4_dimer MC'
+    title: 'RMSD MR_AS4_dimer MC'
 
 MD_energies:
   - url: "https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/Energies.png"
