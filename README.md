@@ -30,17 +30,16 @@ Study and evaluation of the unbinding kinetics of Mineralocorticoid (MR and MR-S
 
 - [PDB-rcsb](https://www.rcsb.org/)
 - [GaMD](http://miaolab.org/GaMD/)
-- [GamD in openMM](https://github.com/ljmartin/openmm_gamd)
-- [GamD](https://github.com/MiaoLab20/GaMD-OpenMM)
+- [GamD-OpenMM](https://github.com/MiaoLab20/GaMD-OpenMM)
 - [OpenMM](https://github.com/openmm/openmm)
 - [LiBELa](https://github.com/alessandronascimento/LiBELa)
 - [Amber Manuals](http://ambermd.org/doc12/Amber22.pdf)
 - [Chimera User Guide - commands](https://www.cgl.ucsf.edu/chimera/docs/UsersGuide/framecommand.html)
 - [Living Journal of Computational Molecular Science](https://livecomsjournal.org/index.php/livecoms/index)
-- [tese_Alessandro_Silva_Nascimento.pdf](https://teses.usp.br/teses/disponiveis/76/76132/tde-13032009-124546/publico/tese_Alessandro_Silva_Nascimento.pdf) pag ~127
+- [Thesis_Alessandro_Silva_Nascimento.pdf](https://teses.usp.br/teses/disponiveis/76/76132/tde-13032009-124546/publico/tese_Alessandro_Silva_Nascimento.pdf) pag ~127
 - [Highly accurate protein structure prediction with AlphaFold](https://www.nature.com/articles/s41586-021-03819-2)
 - [Aldosterone and mineralocorticoid receptors: Orphan questions](https://www.sciencedirect.com/science/article/pii/S0085253815468814)
-- [Ligand Dissociation from Estrogen Receptor Is Mediated by Receptor Dimerization: Evidence from Molecular Dynamics Simulations](https://watermark.silverchair.com/mend1565.pdf?token=AQECAHi208BE49Ooan9kkhW_Ercy7Dm3ZL_9Cf3qfKAc485ysgAAAtAwggLMBgkqhkiG9w0BBwagggK9MIICuQIBADCCArIGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMhn715fNbyhMojeSzAgEQgIICg-cnTWQ_8O7mzRVyhFHRAI0O-FnXV9ZaINNoMKKRzvr_dyymx99YAiOeqWGeqMsqiqZ28FgNC_RFwDRi0l2oXirdvuFRrsKebm4hVNBdpYC-5pt_Sz3HsBdaWbjZlTBfBDX6eV3Bg6ykwJlIukIc1iNzUGxjagj8R3JUOxQqbMTcxgPACvtS5bs_lHoilQu4outNMcU5V5jJALn8dMAwAVyivOiSXAcaBJ5B8Cz0zBZ2X4x8PwA50VUFSulFrAd9cYuMzeOj6pf-9UUyndpBxSdFuxFgN2QisKHxRxTFOJyha_BpZe0fu5JmisWinsp9vQBCuy_DLiareEzamYu7_5FQbmhQVAP9KwWHwS6qaJlqvAmUR-pPRUoefV_yypImH_tg1oPqzvacAR5j39NwQczZqpwhoEvQUbU2kVGdUeBI2ViuZUOdXPC64vPXCSFNrqTzHDddsrozmu_IxCDSfQcdBFA-wEaDL8HfrqoPWnYtva6np1PLAYezVFkp1hwsnLI_RhUkBmSke59CikpbqHO67VFDjSHrif9b52XI4oep48s4UoQl7e2NWw-9g_N4f0ZTcNPsrP4ZNkPY_z7BARmcMwsonTKftWmmP1bCcYSK5NeIePymNO9iCS0UFlRvqNOsBu6Xiiyowjdh6NuJwdQFd-abLW7bI9SAP2CL-kjaV1meYxyzOhm7rLus3cVIJlXpO15Fq3AiKssTVyZfUi9bhSx2053_3FCcKT3SF7M0v_8EmtO75w7vFrRz4aePnDiRQ58w-yzG0CsNcpCOdKlY40nbgMipZTgBsxUQiOiKxODKGA8dI4kdGQ0_cr-MmpKEanLANN10q1IQoNa1_PbISus)
+- [Ligand Dissociation from Estrogen Receptor Is Mediated by Receptor Dimerization: Evidence from Molecular Dynamics Simulations](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5419439/)
 
 
 ## [Reports](https://saguileran.github.io/MD-SCPI/reports/)
