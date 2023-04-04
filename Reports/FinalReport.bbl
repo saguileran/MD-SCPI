@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{book-MR_AS4}
 Brian Harvey and Frederic Jaisser.
@@ -14,6 +14,26 @@ Leonardo Liccardo Daniela Elia Andrea Marzano Federica Gambino Giuseppina
 \newblock {\em Oxidative Medicine and Cellular Longevity}, 2018:1204598, Sep
   2018.
 
+\bibitem{discovery}
+Jeffrey~L. Arriza, Cary Weinberger, Gail Cerelli, Tom~M. Glaser, Barbara~L.
+  Handelin, David~E. Housman, and Ronald~M. Evans.
+\newblock Cloning of human mineralocorticoid receptor complementary dna:
+  Structural and functional kinship with the glucocorticoid receptor.
+\newblock {\em Science}, 237(4812):268--275, 1987.
+
+\bibitem{HELLALLEVY20001250}
+Chantal Hellal-Levy, Jérôme Fagart, Anny Souque, and Marie-Edith
+  Rafestin-Oblin.
+\newblock Mechanistic aspects of mineralocorticoid receptor activation.
+\newblock {\em Kidney International}, 57(4):1250--1255, 2000.
+
+\bibitem{Severe}
+Marie-Edith Rafestin-Oblin, Anny Souque, Brigitte Bocchi, Gregory Pinon, Jerome
+  Fagart, and Alain Vandewalle.
+\newblock {The Severe Form of Hypertension Caused by the Activating S810L
+  Mutation in the Mineralocorticoid Receptor Is Cortisone Related}.
+\newblock {\em Endocrinology}, 144(2):528--533, 02 2003.
+
 \bibitem{Activating_Mineralocorticoid}
 David~S. Geller, Anita Farhi, Nikki Pinkerton, Michael Fradley, Michael Moritz,
   Adrian Spitzer, Gretchen Meinke, Francis T.~F. Tsai, Paul~B. Sigler, and
@@ -21,6 +41,23 @@ David~S. Geller, Anita Farhi, Nikki Pinkerton, Michael Fradley, Michael Moritz,
 \newblock Activating mineralocorticoid receptor mutation in hypertension
   exacerbated by pregnancy.
 \newblock {\em Science}, 289(5476):119--123, 2000.
+
+\bibitem{dimer}
+Carina A. Johansson Anders Gunnarsson Euan Gordon Barry Collins Marie Castaldo
+  Christian Köhler David Öling Patrik Johansson Linda Fröderberg Roth Brice
+  Beinsteiner Ian Dainty Stephen Delaney Bruno P. Klaholz Isabelle M. L.~Billas
+  Sandra~Postel, Lisa~Wissler and Karl Edman.
+\newblock Quaternary glucocorticoid receptor structure highlights allosteric
+  interdomain communication.
+\newblock {\em Nature Structural {\&} Molecular Biology}, 30(3):286--295, Mar
+  2023.
+
+\bibitem{md_evidence}
+Milton~T. Sonoda, Leandro Martínez, Paul Webb, Munir~S. Skaf, and Igor
+  Polikarpov.
+\newblock Ligand dissociation from estrogen receptor is mediated by receptor
+  dimerization: Evidence from molecular dynamics simulations.
+\newblock {\em Molecular Endocrinology}, 22(7):1565--1578, 07 2008.
 
 \bibitem{libela}
 Heloisa dos Santos~Muniz and Alessandro~S. Nascimento.
@@ -64,5 +101,10 @@ Martin~K. Scherer, Benjamin Trendelkamp-Schroer, Fabian Paul, Guillermo
   and {Analysis} of {Markov} {Models}.
 \newblock {\em Journal of Chemical Theory and Computation}, 11:5525--5542,
   October 2015.
+
+\bibitem{making_it_rain}
+Pablo~R. Arantes, Marcelo~D. PolÃªto, Conrado Pedebos, and Rodrigo
+  Ligabue-Braun.
+\newblock Making-it-rain, August 2021.
 
 \end{thebibliography}

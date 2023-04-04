@@ -500,7 +500,24 @@ The dimeral system also present binding and unbinding events, comparing it with 
 
 Previous tests showed that LES simulation do not have good performance, since the systema has thousands of atoms. A new test is done, to compare it performance, but removing the solvent atoms and with 10 copies.
 
+Command to select and display the elements, with labels and atom numbers, close the ligand
+
+```
+sel :AS4 za < 4
+list residues spec sel
+```
+
+then go to Favorites -> Reply Log and there you have, now just extract the atom numbers.
+
+**Note**
+The LiGaMD simulation was no eable to reproduce the ligand unbinding process, no matter how long or how high are the soft parameters, then it is necessarly to explore and test LiGaMD2 which seems more apropiate for our propouse.
+
 ### Week 7
+
+- Define the atoms to be smothed: all around AS4 less than 4 amstrong. Then set up and submit the LiGaMD2 simulation.
+- Since the MR_dimer MC simulation does not give properly results, it is necessary to try with low cushion or maybe at less temperature. Again 51 simulations of this system are submitted at a temperature of 5000 and 7000K with 100M MC steps.
+- Create an introduction of the final report: answer the questions of why we select MR/aldo-col-str system, what is our main question and hypothesis, and "how" (way=simulation) we are going to try to answer these questions, our approach to this problem. 
+
 
 ### Week 8
 
