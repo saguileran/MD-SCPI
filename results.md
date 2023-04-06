@@ -276,3 +276,7 @@ A better aproach to analyse these data is using [PyEMMA](http://www.emma-project
 |  745.40  |   0.00   | 22070.17 |       | **2** |  745.40  |     0.00    | 22070.17 |
 | 10839.17 | 10280.94 |   0.00   |       | **3** | 10839.17 |   10280.94  |   0.00   |
 |          |          |          |       | **4** |          |             |          |
+
+|Table 1|Table 2|
+|--|--|
+|<table> <tr><th>Table 1 Heading 1</th><th>Table 1 Heading 2</th></tr><tr><td>Row 1 Column 1</td><td>Row 1 Column 2</td></tr> </table>| <table> <tr><th>Table 2 Heading 1</th><th>Table 2 Heading 2</th></tr><tr><td>Row 1 Column 1</td><td>Row 1 Column 2</td></tr> </table>|
