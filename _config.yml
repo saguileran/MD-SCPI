@@ -107,7 +107,7 @@ author:
   name             : *name #"Your Name"
   avatar           : "/assets/Images/ifsc.jpeg"
   bio              : "Extensive description of the summer internship at São Carlos Institute of Physics (SCIP), Brazil. Here you can find the files, scripts, images and results obtained."
-  location         : "São Carlos Institute of Physics (SCIP), Brazil"
+  location         : "USP, São Carlos, Brazil"
   email            : #"saguileran@unal.edu.co"
   links:
     - label: "Email"
