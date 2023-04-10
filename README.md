@@ -117,7 +117,7 @@ This image is obtained using the [PlotEnergies.ipynb](./NoteBooks/PlotEnergies.i
 <h4 align="center" margin-bottom="-10">States Examples</h4>
 
 <p align="center">
-<img src="./Results/States_7000K_AS4.png" alt="States exaples of the MR-Aldo system" class="center" width="700" height="500">
+<img src="./Results/States_7000K_AS4.png" alt="States examples of the MR-Aldo system" class="center" width="850" height="500">
 </p>
 
 These image are obtained using the notebooks [Plots_MC.ipynb](./NoteBooks/Plots_MC.ipynb), which use jscatter pacakge to import dat files and matplotlib to plot, and [PyEMMA_AS4.ipynb](./NoteBooks/PyEMMA_AS4.ipynb), which uses PyEMMA to analyze the simulatiosn outputs.
