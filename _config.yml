@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : &title "Molecular Modeling and Simulation - Summer Internship SCIP"
+title                    : &title "Molecular Modeling and Simulation - Summer Internship"
 title_separator          : "-"
 subtitle                 : &subtitle "São Carlos Institute of Physics (SCIP)"  # site tagline that appears below site title in masthead
 name                     : &name 'Sebastian Aguilera Novoa' #"Your Name"
