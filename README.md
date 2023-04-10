@@ -37,7 +37,7 @@ Study and evaluation of the unbinding kinetics of Mineralocorticoid (MR and MR-S
 - [Amber Manuals](http://ambermd.org/doc12/Amber22.pdf)
 - [Chimera User Guide - commands](https://www.cgl.ucsf.edu/chimera/docs/UsersGuide/framecommand.html)
 - [Living Journal of Computational Molecular Science](https://livecomsjournal.org/index.php/livecoms/index)
-- [Thesis_Alessandro_Silva_Nascimento.pdf](https://teses.usp.br/teses/disponiveis/76/76132/tde-13032009-124546/publico/tese_Alessandro_Silva_Nascimento.pdf) pag ~127
+- [Thesis_Alessandro_Silva_Nascimento.pdf](https://teses.usp.br/teses/disponiveis/76/76132/tde-13032009-124546/publico/tese_Alessandro_Silva_Nascimento.pdf), pag 127
 - [Highly accurate protein structure prediction with AlphaFold](https://www.nature.com/articles/s41586-021-03819-2)
 - [Aldosterone and mineralocorticoid receptors: Orphan questions](https://www.sciencedirect.com/science/article/pii/S0085253815468814)
 - [Ligand Dissociation from Estrogen Receptor Is Mediated by Receptor Dimerization: Evidence from Molecular Dynamics Simulations](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5419439/)
