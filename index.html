@@ -24,10 +24,11 @@ sidebar:
 <h2 id="objectives">Objectives</h2>
 
 <ul>
-<li>Prepare the input files: PDB and mol files of the Mineralocorticoid (MR) and mutation ligands and proteins Aldosterone and Cortisol (AS4 and COL)</li>
-<li>Create a Molecular Dynamics (MD) simulation for the MR/MR_mut - aldosterone/cortisol system</li>
-<li>Create a Monte Carlo (MC) simulation for the MR aldosterone/cortisol system</li>
-<li>Contrast MD and MC simulations, does the MC simulation show the same behavior as MC?</li>
+<li>Prepare the input files, PDB and mol files, of the Mineralocorticoid (MR) and a mutation (MR$_{S810L}$) proteins and the ligands of interest: Aldosterone (Aldo), Cortisol (Col), and Progesterone (Str)</li>
+<li>Create a Molecular Dynamics (MD) simulation for the MR/MR$_{S810L}$-aldo/col/str systems using amber and LiGaMD</li>
+<li>Create a Monte Carlo (MC) simulation for the simple and dimeral MR/MR$_{S810L}$-aldo/col/str systems using LiBELA</li>
+<li>Analyze the un/binding events in the MD and MC simulations using PyEMMA, how fast does the ligand scape of the protein?</li>
+<li>Contrast MD and MC simulations, does the MC simulation show the same behavior as MC? can both simulations emulate binding events?</li>
 </ul>
 
 <h2 id="links-of-interest">Links of Interest</h2>
@@ -44,7 +45,7 @@ sidebar:
 
 <h2 id="reports"><a href="https://saguileran.github.io/MD-SCPI/reports/">Reports</a></h2>
 
-<p>Reports made during the internship. Here you can find weekly updates and the final report with some conclusions.. </p>
+<p>Reports made during the internship. Here you can find weekly updates and the final report with some conclusions. </p>
 
 <h3 id="weekly-reports"><a href="https://saguileran.github.io/MD-SCPI/reports/#weekly-reports">Weekly Reports</a></h3>
 
@@ -52,6 +53,8 @@ sidebar:
 
 
 <h2 id="output-files">Output Files</h2>
+
+<p>Some output files obtained in the summer internship. </p>
 
 <h3 align="center" margin-bottom=0>MR-AS4 MD simulation</h3>
 
@@ -70,7 +73,7 @@ sidebar:
 
 <div class="container">
   <center>
-    <video id="video" width="600" height="500" controls>
+    <video id="video" width="500" height="500" controls>
         <source src="https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/MC-MR-AS4.mp4" type="video/mp4">
     </video>
     <div class="overlay">
@@ -98,23 +101,21 @@ sidebar:
 <h3 align="center" margin-bottom="-10">MC RMSD</h3>
 
 <center>
-<img src="https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/MC_RMSD_MR-AS4_high.png" alt="RMSD of the MC-AS4 system" class="center" width="900" height="500">
+<img src="https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/MC_RMSD_MR-AS4_high.png" alt="RMSD of the MC-AS4 system" class="center" width="500" height="500">
 </center>
 
 <h3 align="center" margin-bottom="-10">MC Analysis with PyEMMA</h3>
 
 <center>
-<img src="https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/States_AS4_7000K.png" alt="States found for MR-AS4 system using PyEMMA" class="center" width="900" height="500">
+<img src="https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/States_AS4_7000K.png" alt="States found for MR-AS4 system using PyEMMA" class="center" width="500" height="500">
 </center>
 
 
 <center>
-<img src="https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/States_7000K_AS4.png" alt="States examples found for MR-AS4 system using PyEMMA" class="center" width="900" height="500">
+<img src="https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/States_7000K_AS4.png" alt="States examples found for MR-AS4 system using PyEMMA" class="center" width="500" height="500">
 </center>
 
-<p>These image are obtained using the <a href="./NoteBooks/Plots_MC.ipynb">Plots_MC.ipynb</a> notebook that use jscatter pacakge to import dat files and matplotlib to plot.</p>
-
-
+<p>These image are obtained using the notebooks <a href="./NoteBooks/Plots_MC.ipynb">Plots_MC.ipynb</a>, which use jscatter pacakge to import dat files and matplotlib to plot, and <a href="./NoteBooks/PyEMMA_AS4.ipynb">PyEMMA_AS4.ipynb</a>, which uses PyEMMA to analyze the simulatiosn outputs.</p>
 
 
 <h2 id="references">References</h2>
