@@ -80,5 +80,7 @@ reports:
         url: https://github.com/saguileran/MD-SCPI/tree/main/NoteBooks
       - title: "PDBs"
         url: https://github.com/saguileran/MD-SCPI/tree/main/PDBs
-      - title: "Report"
+      - title: "Reports"
+        url: https://github.com/saguileran/MD-SCPI/tree/main/Reports
+      - title: "Results"
         url: https://github.com/saguileran/MD-SCPI/tree/main/Results
