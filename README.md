@@ -9,11 +9,11 @@
     - [Weekly Reports](#weekly-reports)
     - [Final Report](#final-report)
 - [Output Files](#output-files)
+- [Conclusions](#conclusions)
 - [References](#references)
     - [Proteins and Ligands](#proteins-and-ligands)
     - [Software](#software)
     - [Theory](#theory)
-- [Conclusions](#conclusions)
 
 ## Overview
 
