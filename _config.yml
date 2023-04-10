@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 locale                   : "en-US"
 title                    : &title "Molecular Modeling and Simulation - Summer Internship"
 title_separator          : "-"
-subtitle                 : &subtitle "São Carlos Institute of Physics (SCIP)"  # site tagline that appears below site title in masthead
+subtitle                 : &subtitle "São Carlos Institute of Physics (SCIP), University of São Paulo (USP)"  # site tagline that appears below site title in masthead
 name                     : &name 'Sebastian Aguilera Novoa' #"Your Name"
 description              : &description 'Evaluation of the unbinding kinetics of Mineralocorticoid (MR-wt and MR_S810L) receptor steroid agonist Cortisol (COL), Aldosterone (AS4), and Progesterone (STR) ligands using numerical methods.'
 url                      : "https://saguileran.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
