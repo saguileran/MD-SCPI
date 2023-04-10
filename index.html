@@ -66,17 +66,17 @@ sidebar:
     </div>
 </div>
 
-<h3 align="center" margin-bottom="-10">MR-COL MD simulation</h3>
+<h3 align="center" margin-bottom=0>MR-AS4 MC simulation</h3>
 
 <div class="container">
   <center>
-    <video id="video" width="500" height="500" controls>
-        <source src="https://raw.githubusercontent.com/saguileran/MD-SCPI/e65aebf7898254dfa84e0e22829bb332add54746/Results/MR-COL.mp4" type="video/mp4">
+    <video id="video" width="600" height="500" controls>
+        <source src="https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/MC-MR-AS4.mp4" type="video/mp4">
     </video>
-  </center>
     <div class="overlay">
-        <p align="center">Mineralocorticoid (MR) protein interaction with cortisol (COL) ligand</p>
+        <p align="center">Monte Carlo simulation of mineralocorticoid (MR) protein interacting with Aldosteron (AS4) ligand</p>
     </div>
+  </center>
 </div>
 
 
@@ -98,7 +98,18 @@ sidebar:
 <h3 align="center" margin-bottom="-10">MC RMSD</h3>
 
 <center>
-<img src="https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/MC_RMSD.png" alt="RMSD of the MC-AS4 system" class="center" width="900" height="500">
+<img src="https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/MC_RMSD_MR-AS4_high.png" alt="RMSD of the MC-AS4 system" class="center" width="900" height="500">
+</center>
+
+<h3 align="center" margin-bottom="-10">MC Analysis with PyEMMA</h3>
+
+<center>
+<img src="https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/States_AS4_7000K.png" alt="States found for MR-AS4 system using PyEMMA" class="center" width="900" height="500">
+</center>
+
+
+<center>
+<img src="https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/States_7000K_AS4.png" alt="States examples found for MR-AS4 system using PyEMMA" class="center" width="900" height="500">
 </center>
 
 <p>These image are obtained using the <a href="./NoteBooks/Plots_MC.ipynb">Plots_MC.ipynb</a> notebook that use jscatter pacakge to import dat files and matplotlib to plot.</p>
