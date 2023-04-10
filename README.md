@@ -85,27 +85,41 @@ Reports made during the internship. Here you can find weekly updates and the fin
 
 <h3 align="center" margin-bottom="-10">MD Energies</h3>
 
-<center>
+<p align="center">
 <img src="./Results/Energies.png" alt="Total energies of the MR-AS4/COL systems" class="center" width="800" height="1200">
-</center>
+</p>
 
 This image is obtained using the [PlotEnergies.ipynb](./NoteBooks/PlotEnergies.ipynb) notebook that use jscatter pacakge to import dat files and matplotlib to plot.
 
 
 <h3 align="center" margin-bottom="-10">MC Energies</h3>
 
-<center>
+<p align="center">
 <img src="./Results/MC_energies.png" alt="Total energies of the MC-AS4 system" class="center" width="900" height="700">
-</center>
+</p>
 
 
 <h3 align="center" margin-bottom="-10">MC RMSD</h3>
 
-<center>
-<img src="./Results/MC_RMSD.png" alt="RMSD as functio of MC time steap of the MC-AS4 system" class="center" width="900" height="700">
-</center>
+<p align="center">
+<img src="./Results/MC_RMSD_MR-AS4_high.png" alt="RMSD as function of MC time steap of the MC-AS4 system" class="center" width="900" height="700">
+</p>
 
-These image are obtained using the [Plots_MC.ipynb](./NoteBooks/Plots_MC.ipynb) notebook that use jscatter pacakge to import dat files and matplotlib to plot.
+<h3 align="center" margin-bottom="-10">PyEMMA</h3>
+
+<h4 align="center" margin-bottom="-10">States</h4>
+
+<p align="center">
+<img src="./Results/States_AS4_7000K.png" alt="States found in the MR-Aldo system using PyEMMA" class="center" width="400" height="400">
+</p>
+
+<h4 align="center" margin-bottom="-10">States Examples</h4>
+
+<p align="center">
+<img src="./Results/States_7000K_AS4.png" alt="States exaples of the MR-Aldo system" class="center" width="700" height="500">
+</p>
+
+These image are obtained using the notebooks [Plots_MC.ipynb](./NoteBooks/Plots_MC.ipynb), which use jscatter pacakge to import dat files and matplotlib to plot, and [PyEMMA_AS4.ipynb](./NoteBooks/PyEMMA_AS4.ipynb), which uses PyEMMA to analyze the simulatiosn outputs.
 
 
 ## References
