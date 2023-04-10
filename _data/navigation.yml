@@ -30,6 +30,8 @@ reports:
         url: /#weekly-reports
       - title: "Output Files"
         url: /#output-files
+      - title: "Conclusions"
+        url: /#conclusions
       - title: "References"
         url: /#references
 
