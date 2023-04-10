@@ -124,6 +124,10 @@ These image are obtained using the notebooks [Plots_MC.ipynb](./NoteBooks/Plots_
 
 ## Conclusions
 
+- LiGaMD is not eble to reproduce ligand un/binding events, while or nether LiGaMD2
+- LiBELa software is abel to emulate the ligand un/binding events when a high temperature is used, above of 5000K
+- Analyzing MC simulations with PyEMMA shows that in the tal sysmtem the ligand scape easier than in the other systems, talk also about mutations.
+
 
 ## References
 
