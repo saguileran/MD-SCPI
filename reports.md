@@ -412,7 +412,7 @@ qsub amber.cpu.sub
 
 <div class="notice">
   <h4>Note:</h4>
-  <p><b>LEaP</b>: it combines the functionality of <i>prep</i>, <i>link</i>, <i>edit</i> and *parm* of older versions of amber. <br>
+  <p><b>LEaP</b>: it combines the functionality of <i>prep</i>, <i>link</i>, <i>edit</i> and <i>parm</i> of older versions of amber. <br>
   <b>AMBER</b> means Assisted Model Building with Energy Refinement </p>
 </div>
 
@@ -444,23 +444,7 @@ same residue as within 5. of resid 1	NewCartoon
 An other article of interest, where PyEMMA and MC simulations are used, is [PELE-MSM: A Monte Carlo Based Protocol for the Estimation of Absolute Binding Free Energies](https://pubs.acs.org/doi/full/10.1021/acs.jctc.9b00753), can it be used to analyze MC simulations using the RMSD as the feature parameter?
 
 - Submit jobs for all the 6 systems for a MC simulation of 100M steps and at temperature of 7000K (14.48h-22-03)
-- Plotting all data of the MC simulations and calculating un/binding events in each system
-
-
-| **ligand** | **temperature** | **binding** | **unbinding** | **Samples** | **biding_prob** | **unbiding_prob** |
-|:----------:|:---------------:|:-----------:|:-------------:|:-----------:|:---------------:|:-----------------:|
-|     AS4    |    5000K_long   |      0      |       1       |      51     |       0.00      |        1.96       |
-|     AS4    |      7000K      |      2      |       20      |      51     |       3.92      |       39.22       |
-|     COL    |      5000K      |      0      |       0       |      51     |       0.00      |        0.00       |
-|     COL    |      7000K      |      0      |       28      |      51     |       0.00      |       54.90       |
-|     STR    |      5000K      |      0      |       0       |      51     |       0.00      |        0.00       |
-|     STR    |      7000K      |      4      |       30      |      51     |       7.84      |       58.82       |
-|   AS4_mut  |      5000K      |      0      |       3       |      51     |       0.00      |        5.88       |
-|   AS4_mut  |      7000K      |      2      |       30      |      51     |       3.92      |       58.82       |
-|   COL_mut  |      5000K      |      0      |       3       |      51     |       0.00      |        5.88       |
-|   COL_mut  |      7000K      |      0      |       14      |      51     |       0.00      |       27.45       |
-|   STR_mut  |      5000K      |      0      |       0       |      51     |       0.00      |        0.00       |
-|   STR_mut  |      7000K      |      5      |       20      |      51     |       9.80      |       39.22       |
+- Plotting all data of the MC simulations and calculating un/binding events in each system. The results are summirze in a table in the results page [un/binding events](https://saguileran.github.io/MD-SCPI/results/#mc-table).
 
 
 - Create a more complex and realistic simulation using two proteins, because a recent article [Quaternary glucocorticoid receptor structure highlights allosteric interdomain communication](https://www.nature.com/articles/s41594-022-00914-4)
