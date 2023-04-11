@@ -25,9 +25,12 @@
 \renewcommand{\abstracttextfont}{\normalfont\Huge}
 \renewcommand{\thesection}{\Roman{section}} 
 \renewcommand{\thesubsection}{\thesection.\Roman{subsection}}
+\renewenvironment{abstract}
+ {\quotation\small\noindent\rule{\linewidth}{.05pt}\par\smallskip
+  {\centering\bfseries\normalsize\abstractname\par}\smallskip}
+ {\par\noindent\rule{\linewidth}{.05pt}\vspace{15pt}\endquotation}
 
-
-\title{Evaluation of the unbinding kinetics of Mineralocorticoid receptor (MR) steroid agonist aldosterone, cortisol, and progesteron ligands using molecular simulations: MD and MC}
+\title{Evaluation of the unbinding kinetics of Mineralocorticoid receptor (MR) steroid agonist aldosterone, cortisol, and progesteron ligands using molecular modeling and simulations}
 
 \author{Sebastian Aguilera Novoa}
 \date{April 14, 2023}
@@ -42,11 +45,14 @@
     \maketitle
     \begin{abstract}
     \normalsize
-    asdasdasd
-    \vspace{20pt}
+    asdasdasd \\
+    
+    \textbf{Keywords:} molecular dynamics, ligamd, monte carlo,  libela, docking, mineralocorticoid receptor, aldosterone, cortisol, progesterone.
+    %\vspace{20pt}
     \end{abstract}
   \end{@twocolumnfalse}
 ]
+
 
 \section{Introduction}
 
@@ -54,10 +60,10 @@ Is wildly known the important role of the mineralocorticoid hormone aldosterone 
 
 
 \begin{figure}[h]
-%\centering
-\hspace*{-15pt}   
+\centering
+%\hspace*{-15pt}   
 \includegraphics[scale=0.35]{MR-AS4-COL.png}
-\caption{Mineralocorticoid/aldosterone receptor impact on health. \textit{Image taken and adapted from \cite{book-MR_AS4}.}}
+\caption{Mineralocorticoid/aldosterone receptor impact on health. \small{\textit{Image taken and adapted from}  \cite{book-MR_AS4}.}}
 \label{MR_functions}
 \end{figure}
 
@@ -65,7 +71,7 @@ The MR/aldo affinity have been already established, but a discovery at 1987 \cit
 
 Several studies of MR and its mutations have revealed that the substitution of leucine for serine at codon 810 (S810L) in hMR (MR$_{S810L}$) is responsible of early-onset hypertension and pregnancy-related hypertension raising the risk of pre-eclampsia and early hypertension. Clinical studies on hypertensive patients and their families showed that all MR$_{S810L}$ carriers had developed hypertension before they were 20 yr old, whereas who do not present this mutant had normal blood pressure. \cite{Severe, Activating_Mineralocorticoid}
 
-Currently, the crystal structure of MR is known and have been obtained using different methods such as X-Ray Diffraction or Cryogenic Electron Microscopy (CryoEM); even, resent articles have showed the asymmetric dimer form of MR \cite{dimer}. Nevertheless, these methods give just a static view of the protein behavior and do not allow to us to properly describe its dynamical: how MR interacts with a ligand in an un/binding process?. A confident and explored approach to answer this question is the molecular modeling. The huge progress in computational resources has led us to created robust and efficient methods to simulate proteins dynamics, such as Molecular Dynamics (MD) and Monte Carlo (MC) simulations, permitting to the researches explore the dynamics of protein-ligand interactions and given strong explanations to their behavior and are they interacting.  \cite{md_evidence}
+Currently, the crystal structure of MR is known and have been obtained using different methods such as X-Ray Diffraction or Cryogenic Electron Microscopy (CryoEM); even, resent articles in glucocorticoid receptor (GR) suggested the asymmetric dimer form of MR \cite{dimer}. Nevertheless, these methods give just a static view of the protein behavior and do not allow to us to properly describe its dynamics: how MR interacts with a ligand in an un/binding process?. A confident and explored approach to answer this question is the molecular modeling. The huge progress in computational resources has led us to developed robust and efficient methods to simulate proteins dynamics, such as Molecular Dynamics (MD) and Monte Carlo (MC) simulations, permitting to the researches explore the dynamics of protein-ligand interactions and give strong explanations to their behavior and how are they interacting.  \cite{md_evidence}
 
 
 
@@ -78,37 +84,65 @@ Selection of the best method to simulate the system, description of the simulati
 Describe how LiGaMD and LiBELa works and the difference between them.
 
 
+At present,
+
 \subsection{Molecular Dynamics (MD)}
 
-\subsubsection*{\textbf{Assisted Model Building with Energy Refinement (Amber)  
-}}
+\subsubsection*{\textbf{Assisted Model Building with Energy Refinement (Amber)}}
+
+Antechamber (AC)
+general AMBER force field (GAFF) 
+Gaussian program, version gaussian09
+LEaP: link, edit, and parm. It is the generic name given to the programs teLeap and xaLea
+Particle Mesh Ewald Molecular Dynamics (PMEMD)
+cMD
+
+\cite{amber}
+
+how to analyze the results: is enough to create or use existing python scripts to count and detect un/binding process.
+
+\subsubsection*{\textbf{Ligand Gaussian Accelerated Molecular Dynamics (LiGaMD)}}
 
 
-\subsubsection*{\textbf{Ligand Gaussian Accelerated Molecular Dynamics 2 (LiGaMD)}}
+\textbf{LiGaMD2} 
 
+\cite{ligamd_Miao, ligamd2}
 
-
-\cite{amber, ligamd_Miao, ligamd2}
-
-Other option is the \href{https://github.com/pablo-arantes/making-it-rain}{making it rain} project based on LiGaMD and google colab. \cite{making_it_rain}
+An alternative free option for users without cluster is the \href{https://github.com/pablo-arantes/making-it-rain}{making it rain} project based on LiGaMD which use google colab. \cite{making_it_rain}
 
 \subsection{Monte Carlo (MC)}
 
 
-\subsubsection*{\textbf{Ligand Binding Energy Landscape  (LiBELa)
-}}
+\subsubsection*{\textbf{Ligand Binding Energy Landscape  (LiBELa)}}
 \cite{libela}
 
-\subsubsection*{\textbf{Python API for Emma's Markov Model Algorithms (PyEMMA)}}
+\subsection{\textbf{Python API for Emma's Markov Model Algorithms (PyEMMA)}}
 
+\textbf{Time-lagged Independent Component
+Analysis (TICA)}
+
+\textbf{Markov State Models (MSMs)}
+
+independent components (ICs)
 
 \cite{pyemma}
 
 
 \section{Methods}
 
+What kind of simulation we ran and with which parameters. Why those values for MC and MD
+
+\subsection*{MD}
+
+Several MD simulations were tested using the LiGaMD software for the six systems: MR/Aldo, MR/Col, MR/Str, MR$_{S810L}$/Aldo, MR$_{S810L}$/Col, and MR$_{S810L}$/Str, at a temperature of 300 K. The simulation involves an equilibration (min, heat, density, and equil) process, to obtain an equilibrated system, and a production (prod) process to obtain an ensemble of snapshots where the system is evolving in time \cite{amber}. This simulations showed that using LiGaMD is it possible to characterize the protein-ligand thermodynamics and kinetics but it is not possible to reproduce the un/binding process of any of the ligands.
+It happens because the applied boost is not enough to let the ligand escape from the pocket that it is in, \textit{ligand binding pocket}	
+
+The last version of this software, LiGaMD2, illustrate how to use it for ligand binding simulations. The biggest difference with the first version is that for the residues and its surroundings, protein residues, a selective boost potential is applied to improve sampling of ligand binding and dissociation. Since the simulations take several days, in the best case a few, the simulations is only tested in the MR/Aldo system since it present the strongest interaction.
 
 
+\subsection*{MC}
+
+Using LiBELa the system MR/Aldo were explore for several temperatures in order to find at which temperatures the system present un/binding process. For low temperatures the simulation do not present this process but for high temperature, over than 5000 K, the ligand starts to disassociate
 
 
 \section{Results and Discussion}
@@ -128,6 +162,8 @@ Select images of interest and explain them
 \item LiGaMD2 is good enough to reproduce un/binding process?
 
 \end{itemize}
+
+%\end{multicols}
 
 
 \clearpage

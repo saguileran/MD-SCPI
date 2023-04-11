@@ -89,7 +89,11 @@ qstat -xml | tr '\n' ' ' | sed 's#<job_list[^>]*>#\n#g' \
   | sed 's#<[^>]*>##g' | grep " " | column -t # show  whole jobs names
 ```
 
-Note: the heat, equil, and density files are running using CPU (amber.cpu.sub) while the equil and prod process are assigned to GPU (amber.cpu).
+<div class="notice">
+  <h4>Note:</h4>
+  <p>The heat, equil, and density files are running using CPU (amber.cpu.sub) while the equil and prod process are assigned to GPU (amber.cpu).</p>
+</div>
+
 
 - Copy output elements (.nc files) to the local machine
 - Display .nc files with chimera, Tools/MD/Ensemble Analysis/MD Movie, it generates a movie of the system
@@ -165,8 +169,6 @@ Prepare LiGaMD:
 - Script to plot output files with python [PyReweighting](http://miaolab.org/PyReweighting/)
 - [Mioa Lab - resources](http://miaolab.org/resources.html)
 - Check the meanning of LiGAMD input parameters [amber manual](http://ambermd.org/doc12/Amber22.pdf) page 499, 471
-
-
 
 - Use **making-it-rain**, Amber_inputs.ipynb, with the complex outputs generated in the server (input for the notebook) files: .prmtop, .inpcrd, and .pdb
 
@@ -267,9 +269,12 @@ torsion_step            1.25  # for the quadripole molecules systems, it is also
 This MC simulation gave an aceptance rate of 0.175 which is not good. A better aceptance rate is reached with ```cushion=0.3/0.25```, the result is 0.362/0.5.
 To execute several MC simulations a basch script is made, it create and submit several jobs varying the random seed and the temperature
 
-**A good exercise is to set up and run the same process (AC, leap, MD and LiGaMD) for other ligand as Progesterone (STR)**
+<div class="notice">
+  <h4>Note:</h4>
+  <p>A good exercise is to set up and run the same process (AC, leap, MD and LiGaMD) for other ligand as Progesterone (STR).</p>
+  <p>Making-it-rain has a little issue related to Collab-conda python version, to fix it use fallba in command palette, [making-it-rain/issues/57](https://github.com/pablo-arantes/making-it-rain/issues/57) to execute the notebook with the previous version of collab environment.</p>
+</div>
 
-Making-it-rain has a little issue related to Collab-conda python version, to fix it use fallba in command palette, [making-it-rain/issues/57](https://github.com/pablo-arantes/making-it-rain/issues/57) to execute the notebook with the previous version of collab environment
 
 To create a MD simulation of STR the following steps have to be done:
 
@@ -393,8 +398,12 @@ ambpdb -p lesparm_MR-AS4.prmtop < MR-AS4_LES.inpcrd > MR-AS4_LES_leap.pdb
 qsub amber.cpu.sub
 ```
 
-**LEaP: it combines the functionality of  *prep*, *link*, *edit* and *parm* of older versions of amber**
-**Assisted Model Building with Energy Refinement (AMBER)**
+<div class="notice">
+  <h4>Message</h4>
+  <p>**LEaP**: it combines the functionality of  *prep*, *link*, *edit* and *parm* of older versions of amber. <br>
+  **AMBER** means Assisted Model Building with Energy Refinement </p>
+</div>
+
 
 Run a longer MC simulation, 100M steps, at a temperature of 5000K. In addition, 5 set of simulations were executed with the same set up, for the other systems: MR-COL, MR-STR, MR_S810L-AS4, MR_S810L-COL, and MR_S810L-STR.  
 
@@ -487,7 +496,11 @@ eof
 
 This is not possible since LiBELA uses the files splited, then the generated mol files do not have information about the ligand.
 
-*Explain how is the protein framework and where are located the molecular simulations, why and how are they used*
+<div class="notice">
+  <h4>To do:</h4>
+  <p>Explain how is the protein framework and where are located the molecular simulations, why and how are they used.</p>
+</div>
+
 
 The LiGaMD simulation is not enough to reproduce binding and unbinding, for this propouse **LiGaMD2** is more apropiate. In this MC simulation, it is necessary to select the ligand and it surrounding residues to make a soft core, the it will be allow to the ligand binding easier. First test is done with a 6-6 configuration, $\sigma_D/\sigma_P$ nad a time of 1 ns
 
@@ -509,17 +522,56 @@ list residues spec sel
 
 then go to Favorites -> Reply Log and there you have, now just extract the atom numbers.
 
-**Note**
-The LiGaMD simulation was no eable to reproduce the ligand unbinding process, no matter how long or how high are the soft parameters, then it is necessarly to explore and test LiGaMD2 which seems more apropiate for our propouse.
+<div class="notice">
+  <h4>Note:</h4>
+  <p>The LiGaMD simulation was no eable to reproduce the ligand unbinding process, no matter how long or how high are the soft parameters, then it is necessarly to explore and test LiGaMD2 which seems more apropiate for our propouse.</p>
+</div>
+
 
 ### Week 7
 
 - Define the atoms to be smothed: all around AS4 less than 4 amstrong. Then set up and submit the LiGaMD2 simulation.
-- Since the MR_dimer MC simulation does not give properly results, it is necessary to try with low cushion or maybe at less temperature. Again 51 simulations of this system are submitted at a temperature of 5000 and 7000K with 100M MC steps.
+- Test MR_dimer simulation with higher energies and same cushion. Again 51 simulations of this system are submitted at a temperature of 5000 and 7000K with 100M MC steps.
 - Create an introduction of the final report: answer the questions of why we select MR/aldo-col-str system, what is our main question and hypothesis, and "how" (way=simulation) we are going to try to answer these questions, our approach to this problem. 
-
+- Understand how to works PyEMMA to analyze the MC simulations and how fast the system are changing of states, is more how frequently are the states present
+- Setup a LES simulation of the MR-AS4 system without solvent, since there is not solvent the periodical boundary conditions have to be removed and taking acount in the input parameters of the LES simulation.
 
 ### Week 8
+
+- Because the LiGaMD1/2 simulations were not able to reproduce uun/binding process another simualtion is explored, ASMD.
+- Setup and submit ASMD simulation for all the system, 6 sets. Here the ligand 
+- Enhance the gh-pages:
+    - Add conclusion and other results.
+    - Correct orthography and grammar
+    - Update the Weekly Reports
+- Finish the Final Report, since the template is basic a new and more pretty template is used. The template is taken from overleaf and it does not work in texmaker.
+
+The ASMD input files requires the last distance between the centers of mass of the ligand and protein, this is done using cpptraj and selecting the closest carbon atom of the ligand (to make easier the calculation of the center of mass of the lingad)
+
+```
+cpptraj ../leap/MR-AS4.prmtop << eof
+trajin ../MD/prod.nc 
+distance :1@C3 :2-258@CA out distance.dat 
+eof
+```
+
+Then check the last distance with  ``` more distance.dat```. To find the closest atom of the ligand to the center of mass use
+
+```
+me cen #0 level 0.15 mark true radius 0.5 color red model 2
+```
+
+Center of mass: Aldo C3, Col C5, STR C8.
+
+To execute the bash scripts to create the input files and jobs use
+
+```
+./create_ASMDinputs.sh 50 100000         # ./*sh {NUM of trajectories} {NUM of MDsteps}
+./create_job.sh 50 ../MD/prod.rst 1      # ./*sh {NUM of trajectories} {Coord/RST7} {Stage Num}
+qsub job.1.sh				 # submit job
+```
+
+The bash scripts used are taken and adapted from [6.4 Adaptive Steered Molecular Dynamics](http://ambermd.org/tutorials/advanced/tutorial26/index.php).
 
 ## Final Report
 

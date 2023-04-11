@@ -2,32 +2,31 @@
  set up Locally Enhanced Sampling topology
 add_les> ~ INPUT/OUTPUT FILES
 add_les> ~ file rcrd name=(501v200.coords) read
-add_les> file rprm name=(../../leap/AS4/MR-AS4.prmtop) read
+add_les> file rprm name=(../../leap/AS4_LES/MR-AS4_LES.prmtop) read
   The following unit number was assigned    26
 | New format PARM file being parsed.
-| Version =    1.000 Date = 02/27/23 Time = 14:18:31
+| Version =    1.000 Date = 03/31/23 Time = 14:33:15
  Checking topology sizes against compiled limits
  Checking topology sizes against compiled limits
 
 
 add_les> ~ wovr to overwrite writ no over write
-add_les> file wprm name=(lesparm_MR-AS4) wovr
+add_les> file wprm name=(MR-AS4_LES_20.prmtop) wovr
   The following unit number was assigned    27
 
 
 add_les> ~ read coordinates with velocities and box
-add_les> file rcvb name=(equil_2.rst) read
+add_les> file rcrd name=(../../leap/AS4_LES/MR-AS4_LES.inpcrd) read
   The following unit number was assigned    28
-Coords, velocities and box from unit  28
-Cpptraj Generated Restart                                                       
+ urcrd:          28
+Coordinates only from unit  28
+AS4                                                                             
  Reading coordinates from input file
- Reading velocities from input file
- Reading box coords from input file
 
 
 add_les> ~ ’wcrd is for writing coords with velo and box, if they are in the 
 add_les> input file
-add_les> file wcrd name=(lescrd) wovr
+add_les> file wcrd name=(MR-AS4_LES_20.inpcrd) wovr
   The following unit number was assigned    29
 
 
@@ -43,559 +42,19 @@ add_les> ~ CREATE SUBSPACES FOR LES
 
 
 add_les> ~ 3 copies of the fragment consisting of monomers (=residues) 1 and 2
-add_les> spac numc=10 pick #mon 1 1 done
- picking from        49205  particles
+add_les> spac numc=20 pick #mon 1 1 done
+ picking from         4691  particles
  Picked           54  particles
- Making           10  copies
-Modifying velocities, factor is  3.36177
-Modifying velocities, factor is  3.05132
-Modifying velocities, factor is  2.98061
-Modifying velocities, factor is  3.29222
-Modifying velocities, factor is  3.29713
-Modifying velocities, factor is  3.00651
-Modifying velocities, factor is  3.04411
-Modifying velocities, factor is  2.95003
-Modifying velocities, factor is  3.23113
-Modifying velocities, factor is  3.26403
-Modifying velocities, factor is  3.36822
-Modifying velocities, factor is  2.84795
-Modifying velocities, factor is  3.03795
-Modifying velocities, factor is  3.22970
-Modifying velocities, factor is  2.99452
-Modifying velocities, factor is  3.33042
-Modifying velocities, factor is  3.32877
-Modifying velocities, factor is  3.31647
-Modifying velocities, factor is  2.94930
-Modifying velocities, factor is  2.94236
-Modifying velocities, factor is  3.30445
-Modifying velocities, factor is  3.31134
-Modifying velocities, factor is  3.07154
-Modifying velocities, factor is  3.17255
-Modifying velocities, factor is  3.40945
-Modifying velocities, factor is  3.28560
-Modifying velocities, factor is  3.15534
-Modifying velocities, factor is  2.86047
-Modifying velocities, factor is  3.14461
-Modifying velocities, factor is  3.13938
-Modifying velocities, factor is  2.86321
-Modifying velocities, factor is  2.93444
-Modifying velocities, factor is  2.90312
-Modifying velocities, factor is  3.09228
-Modifying velocities, factor is  3.08614
-Modifying velocities, factor is  3.25903
-Modifying velocities, factor is  3.07146
-Modifying velocities, factor is  3.31944
-Modifying velocities, factor is  2.94298
-Modifying velocities, factor is  3.05524
-Modifying velocities, factor is  3.26504
-Modifying velocities, factor is  3.26061
-Modifying velocities, factor is  3.13692
-Modifying velocities, factor is  3.05239
-Modifying velocities, factor is  3.04249
-Modifying velocities, factor is  3.23546
-Modifying velocities, factor is  3.01647
-Modifying velocities, factor is  3.03083
-Modifying velocities, factor is  2.91807
-Modifying velocities, factor is  2.97574
-Modifying velocities, factor is  3.20626
-Modifying velocities, factor is  3.08044
-Modifying velocities, factor is  3.34821
-Modifying velocities, factor is  2.84652
-Modifying velocities, factor is  3.31670
-Modifying velocities, factor is  3.37259
-Modifying velocities, factor is  3.08235
-Modifying velocities, factor is  3.32387
-Modifying velocities, factor is  3.03333
-Modifying velocities, factor is  3.36850
-Modifying velocities, factor is  2.98254
-Modifying velocities, factor is  2.94432
-Modifying velocities, factor is  2.92845
-Modifying velocities, factor is  2.89328
-Modifying velocities, factor is  3.34627
-Modifying velocities, factor is  3.11461
-Modifying velocities, factor is  3.44155
-Modifying velocities, factor is  3.04908
-Modifying velocities, factor is  3.41085
-Modifying velocities, factor is  2.95803
-Modifying velocities, factor is  3.23569
-Modifying velocities, factor is  3.23016
-Modifying velocities, factor is  3.11330
-Modifying velocities, factor is  2.96694
-Modifying velocities, factor is  3.29817
-Modifying velocities, factor is  2.88949
-Modifying velocities, factor is  2.96082
-Modifying velocities, factor is  3.28025
-Modifying velocities, factor is  3.13816
-Modifying velocities, factor is  3.43211
-Modifying velocities, factor is  3.33733
-Modifying velocities, factor is  3.17767
-Modifying velocities, factor is  3.18995
-Modifying velocities, factor is  3.17701
-Modifying velocities, factor is  3.14424
-Modifying velocities, factor is  3.22801
-Modifying velocities, factor is  3.17089
-Modifying velocities, factor is  2.92329
-Modifying velocities, factor is  3.26434
-Modifying velocities, factor is  3.13209
-Modifying velocities, factor is  2.96638
-Modifying velocities, factor is  2.92668
-Modifying velocities, factor is  3.04606
-Modifying velocities, factor is  3.46782
-Modifying velocities, factor is  3.26360
-Modifying velocities, factor is  3.40623
-Modifying velocities, factor is  3.24412
-Modifying velocities, factor is  3.42327
-Modifying velocities, factor is  3.00057
-Modifying velocities, factor is  2.89147
-Modifying velocities, factor is  3.25166
-Modifying velocities, factor is  3.18334
-Modifying velocities, factor is  3.00163
-Modifying velocities, factor is  3.05011
-Modifying velocities, factor is  3.25011
-Modifying velocities, factor is  3.30417
-Modifying velocities, factor is  3.13951
-Modifying velocities, factor is  3.20102
-Modifying velocities, factor is  3.37799
-Modifying velocities, factor is  3.15274
-Modifying velocities, factor is  3.31361
-Modifying velocities, factor is  2.87661
-Modifying velocities, factor is  3.20710
-Modifying velocities, factor is  2.95633
-Modifying velocities, factor is  3.39223
-Modifying velocities, factor is  3.30133
-Modifying velocities, factor is  2.96342
-Modifying velocities, factor is  3.01438
-Modifying velocities, factor is  3.22604
-Modifying velocities, factor is  3.33191
-Modifying velocities, factor is  3.33661
-Modifying velocities, factor is  2.88856
-Modifying velocities, factor is  3.18550
-Modifying velocities, factor is  2.87705
-Modifying velocities, factor is  2.91042
-Modifying velocities, factor is  3.36372
-Modifying velocities, factor is  3.22529
-Modifying velocities, factor is  3.44188
-Modifying velocities, factor is  3.02658
-Modifying velocities, factor is  3.44590
-Modifying velocities, factor is  3.11201
-Modifying velocities, factor is  3.18466
-Modifying velocities, factor is  3.12274
-Modifying velocities, factor is  2.86353
-Modifying velocities, factor is  3.46838
-Modifying velocities, factor is  2.92972
-Modifying velocities, factor is  3.28205
-Modifying velocities, factor is  2.94794
-Modifying velocities, factor is  3.17800
-Modifying velocities, factor is  2.87505
-Modifying velocities, factor is  3.01757
-Modifying velocities, factor is  3.11925
-Modifying velocities, factor is  3.19356
-Modifying velocities, factor is  3.10224
-Modifying velocities, factor is  3.20969
-Modifying velocities, factor is  3.05499
-Modifying velocities, factor is  3.01952
-Modifying velocities, factor is  3.10269
-Modifying velocities, factor is  3.35631
-Modifying velocities, factor is  2.98564
-Modifying velocities, factor is  3.35399
-Modifying velocities, factor is  3.26860
-Modifying velocities, factor is  2.87471
-Modifying velocities, factor is  2.86832
-Modifying velocities, factor is  3.21398
-Modifying velocities, factor is  2.91504
-Modifying velocities, factor is  3.21476
-Modifying velocities, factor is  3.08397
-Modifying velocities, factor is  2.88099
-Modifying velocities, factor is  3.29211
-Modifying velocities, factor is  3.32889
-Modifying velocities, factor is  3.22082
-Modifying velocities, factor is  2.85839
-Modifying velocities, factor is  3.17531
-Modifying velocities, factor is  2.99874
-Modifying velocities, factor is  3.07852
-Modifying velocities, factor is  3.17345
-Modifying velocities, factor is  3.13482
-Modifying velocities, factor is  3.32403
-Modifying velocities, factor is  3.14339
-Modifying velocities, factor is  2.98723
-Modifying velocities, factor is  3.37695
-Modifying velocities, factor is  2.92731
-Modifying velocities, factor is  3.14468
-Modifying velocities, factor is  3.01851
-Modifying velocities, factor is  3.09066
-Modifying velocities, factor is  3.13202
-Modifying velocities, factor is  3.21834
-Modifying velocities, factor is  2.86947
-Modifying velocities, factor is  3.20576
-Modifying velocities, factor is  3.39821
-Modifying velocities, factor is  3.40036
-Modifying velocities, factor is  2.87844
-Modifying velocities, factor is  3.37397
-Modifying velocities, factor is  2.86786
-Modifying velocities, factor is  3.25888
-Modifying velocities, factor is  3.42157
-Modifying velocities, factor is  3.19875
-Modifying velocities, factor is  3.11408
-Modifying velocities, factor is  3.22229
-Modifying velocities, factor is  3.43093
-Modifying velocities, factor is  3.08577
-Modifying velocities, factor is  3.10584
-Modifying velocities, factor is  3.19550
-Modifying velocities, factor is  3.13881
-Modifying velocities, factor is  3.36709
-Modifying velocities, factor is  3.22961
-Modifying velocities, factor is  3.42246
-Modifying velocities, factor is  2.93045
-Modifying velocities, factor is  2.94236
-Modifying velocities, factor is  3.31802
-Modifying velocities, factor is  2.98490
-Modifying velocities, factor is  2.87569
-Modifying velocities, factor is  3.15574
-Modifying velocities, factor is  3.11608
-Modifying velocities, factor is  3.39877
-Modifying velocities, factor is  3.24471
-Modifying velocities, factor is  3.18784
-Modifying velocities, factor is  2.96723
-Modifying velocities, factor is  2.91246
-Modifying velocities, factor is  2.86392
-Modifying velocities, factor is  3.30477
-Modifying velocities, factor is  3.16613
-Modifying velocities, factor is  2.92433
-Modifying velocities, factor is  3.26168
-Modifying velocities, factor is  3.01890
-Modifying velocities, factor is  2.91778
-Modifying velocities, factor is  3.08468
-Modifying velocities, factor is  3.16661
-Modifying velocities, factor is  2.95696
-Modifying velocities, factor is  3.15988
-Modifying velocities, factor is  2.93401
-Modifying velocities, factor is  2.93519
-Modifying velocities, factor is  2.87666
-Modifying velocities, factor is  3.09451
-Modifying velocities, factor is  2.94769
-Modifying velocities, factor is  2.93344
-Modifying velocities, factor is  2.94479
-Modifying velocities, factor is  3.07770
-Modifying velocities, factor is  3.44180
-Modifying velocities, factor is  3.27829
-Modifying velocities, factor is  3.39879
-Modifying velocities, factor is  3.13677
-Modifying velocities, factor is  3.40199
-Modifying velocities, factor is  3.05709
-Modifying velocities, factor is  3.05245
-Modifying velocities, factor is  3.39045
-Modifying velocities, factor is  3.22871
-Modifying velocities, factor is  3.33626
-Modifying velocities, factor is  3.22072
-Modifying velocities, factor is  3.47482
-Modifying velocities, factor is  3.45897
-Modifying velocities, factor is  3.01513
-Modifying velocities, factor is  3.31675
-Modifying velocities, factor is  3.24761
-Modifying velocities, factor is  3.29597
-Modifying velocities, factor is  3.45564
-Modifying velocities, factor is  3.14274
-Modifying velocities, factor is  2.95622
-Modifying velocities, factor is  2.95200
-Modifying velocities, factor is  3.06725
-Modifying velocities, factor is  2.98707
-Modifying velocities, factor is  3.18634
-Modifying velocities, factor is  2.93923
-Modifying velocities, factor is  3.32285
-Modifying velocities, factor is  3.40724
-Modifying velocities, factor is  2.90051
-Modifying velocities, factor is  3.00800
-Modifying velocities, factor is  3.33530
-Modifying velocities, factor is  3.27566
-Modifying velocities, factor is  3.23733
-Modifying velocities, factor is  3.21639
-Modifying velocities, factor is  3.22062
-Modifying velocities, factor is  3.13515
-Modifying velocities, factor is  3.26456
-Modifying velocities, factor is  3.37189
-Modifying velocities, factor is  3.21458
-Modifying velocities, factor is  3.05941
-Modifying velocities, factor is  3.10985
-Modifying velocities, factor is  3.24323
-Modifying velocities, factor is  3.27842
-Modifying velocities, factor is  3.33325
-Modifying velocities, factor is  3.17703
-Modifying velocities, factor is  3.25285
-Modifying velocities, factor is  3.01110
-Modifying velocities, factor is  3.39462
-Modifying velocities, factor is  3.08538
-Modifying velocities, factor is  3.00306
-Modifying velocities, factor is  3.24540
-Modifying velocities, factor is  2.85235
-Modifying velocities, factor is  3.31688
-Modifying velocities, factor is  3.28584
-Modifying velocities, factor is  3.33717
-Modifying velocities, factor is  3.04071
-Modifying velocities, factor is  3.18660
-Modifying velocities, factor is  3.19121
-Modifying velocities, factor is  3.20263
-Modifying velocities, factor is  3.31620
-Modifying velocities, factor is  3.17520
-Modifying velocities, factor is  3.35807
-Modifying velocities, factor is  2.99634
-Modifying velocities, factor is  2.90090
-Modifying velocities, factor is  3.47736
-Modifying velocities, factor is  3.03431
-Modifying velocities, factor is  2.90420
-Modifying velocities, factor is  3.32896
-Modifying velocities, factor is  3.08242
-Modifying velocities, factor is  2.98476
-Modifying velocities, factor is  3.46532
-Modifying velocities, factor is  3.16950
-Modifying velocities, factor is  3.26082
-Modifying velocities, factor is  3.45927
-Modifying velocities, factor is  3.26468
-Modifying velocities, factor is  3.36397
-Modifying velocities, factor is  2.90836
-Modifying velocities, factor is  3.13252
-Modifying velocities, factor is  3.29048
-Modifying velocities, factor is  3.13977
-Modifying velocities, factor is  2.85321
-Modifying velocities, factor is  3.31234
-Modifying velocities, factor is  3.44141
-Modifying velocities, factor is  3.19251
-Modifying velocities, factor is  2.99887
-Modifying velocities, factor is  3.35423
-Modifying velocities, factor is  3.20827
-Modifying velocities, factor is  2.89495
-Modifying velocities, factor is  3.27031
-Modifying velocities, factor is  2.98343
-Modifying velocities, factor is  3.04150
-Modifying velocities, factor is  3.31981
-Modifying velocities, factor is  3.43626
-Modifying velocities, factor is  3.45119
-Modifying velocities, factor is  3.41004
-Modifying velocities, factor is  3.41362
-Modifying velocities, factor is  3.17650
-Modifying velocities, factor is  3.02150
-Modifying velocities, factor is  2.85229
-Modifying velocities, factor is  3.10744
-Modifying velocities, factor is  3.09173
-Modifying velocities, factor is  3.36479
-Modifying velocities, factor is  3.38376
-Modifying velocities, factor is  2.84684
-Modifying velocities, factor is  3.42658
-Modifying velocities, factor is  3.32934
-Modifying velocities, factor is  3.25771
-Modifying velocities, factor is  3.21594
-Modifying velocities, factor is  3.28966
-Modifying velocities, factor is  3.02300
-Modifying velocities, factor is  3.07154
-Modifying velocities, factor is  3.39075
-Modifying velocities, factor is  2.86670
-Modifying velocities, factor is  3.37268
-Modifying velocities, factor is  3.25045
-Modifying velocities, factor is  2.93714
-Modifying velocities, factor is  3.16169
-Modifying velocities, factor is  3.45735
-Modifying velocities, factor is  3.38632
-Modifying velocities, factor is  3.30363
-Modifying velocities, factor is  3.19286
-Modifying velocities, factor is  3.30531
-Modifying velocities, factor is  3.00117
-Modifying velocities, factor is  2.98282
-Modifying velocities, factor is  3.07744
-Modifying velocities, factor is  3.37527
-Modifying velocities, factor is  3.12392
-Modifying velocities, factor is  3.14846
-Modifying velocities, factor is  3.37379
-Modifying velocities, factor is  3.22867
-Modifying velocities, factor is  3.01882
-Modifying velocities, factor is  2.84835
-Modifying velocities, factor is  3.42873
-Modifying velocities, factor is  3.22995
-Modifying velocities, factor is  3.35277
-Modifying velocities, factor is  3.46504
-Modifying velocities, factor is  2.87041
-Modifying velocities, factor is  3.26213
-Modifying velocities, factor is  3.14883
-Modifying velocities, factor is  2.91174
-Modifying velocities, factor is  3.29690
-Modifying velocities, factor is  3.35550
-Modifying velocities, factor is  3.35407
-Modifying velocities, factor is  3.35232
-Modifying velocities, factor is  3.07273
-Modifying velocities, factor is  2.94363
-Modifying velocities, factor is  3.27633
-Modifying velocities, factor is  3.29699
-Modifying velocities, factor is  2.87334
-Modifying velocities, factor is  3.40187
-Modifying velocities, factor is  3.36372
-Modifying velocities, factor is  3.14218
-Modifying velocities, factor is  3.21695
-Modifying velocities, factor is  3.12970
-Modifying velocities, factor is  3.31041
-Modifying velocities, factor is  3.28205
-Modifying velocities, factor is  3.07007
-Modifying velocities, factor is  3.12300
-Modifying velocities, factor is  3.29659
-Modifying velocities, factor is  3.47476
-Modifying velocities, factor is  3.01087
-Modifying velocities, factor is  3.01809
-Modifying velocities, factor is  3.00871
-Modifying velocities, factor is  3.37699
-Modifying velocities, factor is  2.99586
-Modifying velocities, factor is  3.08994
-Modifying velocities, factor is  2.84715
-Modifying velocities, factor is  2.86098
-Modifying velocities, factor is  3.37390
-Modifying velocities, factor is  3.08348
-Modifying velocities, factor is  3.17876
-Modifying velocities, factor is  3.38601
-Modifying velocities, factor is  3.37848
-Modifying velocities, factor is  3.45872
-Modifying velocities, factor is  3.28037
-Modifying velocities, factor is  3.09585
-Modifying velocities, factor is  3.23544
-Modifying velocities, factor is  2.88456
-Modifying velocities, factor is  3.12889
-Modifying velocities, factor is  3.21380
-Modifying velocities, factor is  3.23279
-Modifying velocities, factor is  3.11889
-Modifying velocities, factor is  3.23426
-Modifying velocities, factor is  3.41500
-Modifying velocities, factor is  2.97932
-Modifying velocities, factor is  2.93600
-Modifying velocities, factor is  3.02491
-Modifying velocities, factor is  3.19082
-Modifying velocities, factor is  3.15358
-Modifying velocities, factor is  3.13811
-Modifying velocities, factor is  3.38866
-Modifying velocities, factor is  3.46246
-Modifying velocities, factor is  2.94396
-Modifying velocities, factor is  3.45929
-Modifying velocities, factor is  2.95315
-Modifying velocities, factor is  3.08187
-Modifying velocities, factor is  3.25729
-Modifying velocities, factor is  3.27880
-Modifying velocities, factor is  3.11387
-Modifying velocities, factor is  3.03172
-Modifying velocities, factor is  3.40197
-Modifying velocities, factor is  3.12488
-Modifying velocities, factor is  2.97415
-Modifying velocities, factor is  3.09579
-Modifying velocities, factor is  3.13531
-Modifying velocities, factor is  2.87266
-Modifying velocities, factor is  3.44676
-Modifying velocities, factor is  3.32975
-Modifying velocities, factor is  2.85711
-Modifying velocities, factor is  3.11448
-Modifying velocities, factor is  2.99497
-Modifying velocities, factor is  2.91696
-Modifying velocities, factor is  3.43974
-Modifying velocities, factor is  3.30139
-Modifying velocities, factor is  3.36705
-Modifying velocities, factor is  3.46918
-Modifying velocities, factor is  2.86185
-Modifying velocities, factor is  3.47531
-Modifying velocities, factor is  3.28718
-Modifying velocities, factor is  3.18267
-Modifying velocities, factor is  3.28696
-Modifying velocities, factor is  3.07491
-Modifying velocities, factor is  3.04430
-Modifying velocities, factor is  3.46340
-Modifying velocities, factor is  3.07023
-Modifying velocities, factor is  3.47015
-Modifying velocities, factor is  3.09826
-Modifying velocities, factor is  3.05064
-Modifying velocities, factor is  3.03998
-Modifying velocities, factor is  3.10105
-Modifying velocities, factor is  3.16931
-Modifying velocities, factor is  3.11314
-Modifying velocities, factor is  2.96365
-Modifying velocities, factor is  2.91978
-Modifying velocities, factor is  3.24468
-Modifying velocities, factor is  2.93820
-Modifying velocities, factor is  2.86802
-Modifying velocities, factor is  2.86975
-Modifying velocities, factor is  2.84709
-Modifying velocities, factor is  3.19256
-Modifying velocities, factor is  2.96392
-Modifying velocities, factor is  3.44551
-Modifying velocities, factor is  3.34759
-Modifying velocities, factor is  3.45589
-Modifying velocities, factor is  3.21066
-Modifying velocities, factor is  3.18523
-Modifying velocities, factor is  2.87575
-Modifying velocities, factor is  3.06048
-Modifying velocities, factor is  3.02535
-Modifying velocities, factor is  3.36355
-Modifying velocities, factor is  2.95138
-Modifying velocities, factor is  2.97632
-Modifying velocities, factor is  3.34101
-Modifying velocities, factor is  3.31329
-Modifying velocities, factor is  3.23436
-Modifying velocities, factor is  3.09465
-Modifying velocities, factor is  3.14227
-Modifying velocities, factor is  3.36010
-Modifying velocities, factor is  3.25595
-Modifying velocities, factor is  3.27455
-Modifying velocities, factor is  3.34654
-Modifying velocities, factor is  3.26461
-Modifying velocities, factor is  2.95372
-Modifying velocities, factor is  2.93121
-Modifying velocities, factor is  3.28977
-Modifying velocities, factor is  2.97581
-Modifying velocities, factor is  3.01781
-Modifying velocities, factor is  3.07673
-Modifying velocities, factor is  3.24656
-Modifying velocities, factor is  2.96530
-Modifying velocities, factor is  3.33236
-Modifying velocities, factor is  3.46520
-Modifying velocities, factor is  3.22377
-Modifying velocities, factor is  3.24809
-Modifying velocities, factor is  3.33662
-Modifying velocities, factor is  3.33496
-Modifying velocities, factor is  2.96767
-Modifying velocities, factor is  2.88798
-Modifying velocities, factor is  3.08805
-Modifying velocities, factor is  3.16901
-Modifying velocities, factor is  3.45356
-Modifying velocities, factor is  3.34155
-Modifying velocities, factor is  3.24857
-Modifying velocities, factor is  3.40575
-Modifying velocities, factor is  3.20280
-Modifying velocities, factor is  3.08943
-Modifying velocities, factor is  3.39022
-Modifying velocities, factor is  3.37579
-Modifying velocities, factor is  3.24540
-Modifying velocities, factor is  2.96783
-Modifying velocities, factor is  2.92142
-Modifying velocities, factor is  3.44043
-Modifying velocities, factor is  3.20665
-Modifying velocities, factor is  2.96617
-Modifying velocities, factor is  3.35814
-Modifying velocities, factor is  3.16020
-Modifying velocities, factor is  3.38910
-Modifying velocities, factor is  3.05690
-Modifying velocities, factor is  3.38231
-Modifying velocities, factor is  3.47813
-Modifying velocities, factor is  3.19693
-Modifying velocities, factor is  3.35518
-Modifying velocities, factor is  3.02988
-Modifying velocities, factor is  2.89301
-Modifying velocities, factor is  2.93170
-Modifying velocities, factor is  2.98903
-Modifying velocities, factor is  2.87818
-Modifying velocities, factor is  2.95869
-Modifying velocities, factor is  3.17088
-Modifying velocities, factor is  3.08460
-Modifying velocities, factor is  3.31448
-Modifying velocities, factor is  3.46862
-there were  49205 particles; currently  49691 particles
-there were  47002 nbonh bonds, now there are  47254
-there were   2175 nbona bonds, now there are   2436
+ Making           20  copies
+there were   4691 particles; currently   5717 particles
+there were   2569 nbonh bonds, now there are   3101
+there were   2175 nbona bonds, now there are   2726
 there were      0 nbper bonds, now there are      0
-there were   4869 ntheth angles, now there are   5472
-there were   2950 ntheta angles, now there are   3364
+there were   4869 ntheth angles, now there are   6142
+there were   2950 ntheta angles, now there are   3824
 there were      0 ngper angles, now there are      0
-there were   9759 nphih torsions, now there are  10974
-there were   9416 nphia torsions, now there are  10730
+there were   9759 nphih torsions, now there are  12324
+there were   9416 nphia torsions, now there are  12190
 there were      0 ndper torsions, now there are      0
 processing exclusion list 
 finished creating LES subspace 
@@ -615,15 +74,15 @@ add_les> ~ use the *EOD to end the input
 add_les> *EOD
  Finished reading subspace definitions. 
  Looking for unique atom and covalent types
-           1           1  0.97299999999999998        56.350000000000001     
+           1           1  0.97299999999999998        28.175000000000001     
            2  0.97299999999999998        563.50000000000000     
-           2           3   1.0970000000000000        37.589999999999996     
+           2           3   1.0970000000000000        18.794999999999998     
            4   1.0970000000000000        375.89999999999998     
-           5           5   1.0970000000000000        37.589999999999996     
+           5           5   1.0970000000000000        18.794999999999998     
            6   1.0970000000000000        375.89999999999998     
-           8           7   1.0880000000000001        39.140000000000001     
+           8           7   1.0880000000000001        19.570000000000000     
            8   1.0880000000000001        391.39999999999998     
-          12           9   1.1120000000000001        35.019999999999996     
+          12           9   1.1120000000000001        17.509999999999998     
           10   1.1120000000000001        350.19999999999999     
           13          11   1.0100000000000000        434.00000000000000     
           15          12   1.0900000000000001        340.00000000000000     
@@ -652,10 +111,8 @@ add_les> *EOD
 There were    83 bond types, now there are    95
 There were   186 angle types, now there are   211
 There were   219 dihedral types, now there are   247
-There were    27 atom typesNow there are    27
-MAX # ATOMS IN A SINGLE RESIDUE =     540
+There were    25 atom typesNow there are    25
+MAX # ATOMS IN A SINGLE RESIDUE =    1080
   ATOM  origpt
  Writing coordinates to output file
- Writing velocities to output file
- Writing box coords and angles to output file
  Successful completion of ADDLES

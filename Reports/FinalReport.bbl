@@ -59,12 +59,6 @@ Milton~T. Sonoda, Leandro Martínez, Paul Webb, Munir~S. Skaf, and Igor
   dimerization: Evidence from molecular dynamics simulations.
 \newblock {\em Molecular Endocrinology}, 22(7):1565--1578, 07 2008.
 
-\bibitem{libela}
-Heloisa dos Santos~Muniz and Alessandro~S. Nascimento.
-\newblock Ligand- and receptor-based docking with libela.
-\newblock {\em Journal of Computer-Aided Molecular Design}, 29(8):713--723, Aug
-  2015.
-
 \bibitem{amber}
 K.~Belfon I.Y. Ben-Shalom J.T. Berryman S.R. Brozell D.S. Cerutti T.E. Cheatham
   III G.A. Cisneros V.W.D. Cruzeiro T.A. Darden R.E. Duke G. Giambasu M.K.
@@ -93,6 +87,17 @@ Yinglong Miao, Apurba Bhattarai, and Jinan Wang.
   2020.
 \newblock PMID: 32692556.
 
+\bibitem{making_it_rain}
+Pablo~R. Arantes, Marcelo~D. PolÃªto, Conrado Pedebos, and Rodrigo
+  Ligabue-Braun.
+\newblock Making-it-rain, August 2021.
+
+\bibitem{libela}
+Heloisa dos Santos~Muniz and Alessandro~S. Nascimento.
+\newblock Ligand- and receptor-based docking with libela.
+\newblock {\em Journal of Computer-Aided Molecular Design}, 29(8):713--723, Aug
+  2015.
+
 \bibitem{pyemma}
 Martin~K. Scherer, Benjamin Trendelkamp-Schroer, Fabian Paul, Guillermo
   Pérez-Hernández, Moritz Hoffmann, Nuria Plattner, Christoph Wehmeyer,
@@ -101,10 +106,5 @@ Martin~K. Scherer, Benjamin Trendelkamp-Schroer, Fabian Paul, Guillermo
   and {Analysis} of {Markov} {Models}.
 \newblock {\em Journal of Chemical Theory and Computation}, 11:5525--5542,
   October 2015.
-
-\bibitem{making_it_rain}
-Pablo~R. Arantes, Marcelo~D. PolÃªto, Conrado Pedebos, and Rodrigo
-  Ligabue-Braun.
-\newblock Making-it-rain, August 2021.
 
 \end{thebibliography}
