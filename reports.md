@@ -212,7 +212,6 @@ mask = 225 -> 1 # (residue number)
 
 - Calculation of energies in different residues
 
-<div align="center">
 
 | **Residue** | **Atom #** | **MR-AS4** | **MR-COL** | **MR-STR** | **MR_S810-AS4** | **MR_S810L-COL** | **MR_S810L-STR** |
 |:-----------:|:----------:|:----------:|:----------:|:----------:|:---------------:|:----------------:|:----------------:|
@@ -223,8 +222,7 @@ mask = 225 -> 1 # (residue number)
 |     THR     |     222    |            |            |            |                 |                  |                  |
 |      HH     |     22     |            |            |            |                 |                  |                  |
 |     SER     |     118    |            |            |            |                 |                  |                  |
-	
-</div>
+
 
 where:
 
