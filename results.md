@@ -219,6 +219,8 @@ MC_states_examples:
 {% include gallery id="MC_images" caption="MC energies" %}
 
 
+#### MC Table
+
 | **ligand** | **temperature** | **unbinding** | **binding** | **Samples** | **unbiding_prob** | **biding_prob** |
 |:----------:|:---------------:|:-----------:|:-------------:|:-----------:|:---------------:|:-----------------:|
 |     AS4    |      5000K      |      0      |       1       |      51     |       0.00      |        1.96       |
