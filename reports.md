@@ -1,6 +1,22 @@
-# **Reports**
+---
+permalink: /reports/
+layout: single
+search: true
+author_profile: false
+toc_sticky: false
+toc: false
+classes: wide
 
-## Weekly Reports 
+sidebar:
+  nav: "reports"
+---
+
+<h1 id='reports'> Reports </h1>
+
+Reports made during the summer internship at USP, Brazil.
+
+<h2 id='weekly-reports'> Weekly Reports </h2> 
+
 
 ### Week 1
 
