@@ -284,7 +284,7 @@ To execute several MC simulations a basch script is made, it create and submit s
 <div class="notice">
   <h4>Note:</h4>
   <p>A good exercise is to set up and run the same process (AC, leap, MD and LiGaMD) for other ligand as Progesterone (STR).</p>
-  <p>Making-it-rain has a little issue related to Collab-conda python version, to fix it use fallba in command palette, [making-it-rain/issues/57](https://github.com/pablo-arantes/making-it-rain/issues/57) to execute the notebook with the previous version of collab environment.</p>
+  <p>Making-it-rain has a little issue related to Collab-conda python version, to fix it use fallba in command palette, <a href="https://github.com/pablo-arantes/making-it-rain/issues/57">making-it-rain/issues/57</a> to execute the notebook with the previous version of collab environment.</p>
 </div>
 
 
