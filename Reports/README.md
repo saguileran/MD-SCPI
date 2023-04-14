@@ -99,8 +99,8 @@ qstat -xml | tr '\n' ' ' | sed 's#<job_list[^>]*>#\n#g' \
 - Display .nc files with chimera, Tools/MD/Ensemble Analysis/MD Movie, it generates a movie of the system
 
 ```
-scp user_name@server_name:path_to_files/files ./    # copy from server to local
-scp ./files_to_copy user_name@server_name:path_to/  # copy from local to server
+scp user_name@server_name:path_files_from/files ./path_files to    # copy from server to local
+scp ./path_from_files_to_copy user_name@server_name:path_to_copy/  # copy from local to server
 ```
 
 - Run minimization process with amber (min, heat, and density input files)
@@ -399,9 +399,9 @@ qsub amber.cpu.sub
 ```
 
 <div class="notice">
-  <h4>Message</h4>
-  <p>**LEaP**: it combines the functionality of  *prep*, *link*, *edit* and *parm* of older versions of amber. <br>
-  **AMBER** means Assisted Model Building with Energy Refinement </p>
+  <h4>Note</h4>
+  <p><b>LEaP</b>: it combines the functionality of <i>prep</i>, <i>link</i>, <i>edit</i>, and <i>parm</i> of older versions of amber. <br>
+  <b>AMBER</b> means Assisted Model Building with Energy Refinement </p>
 </div>
 
 
@@ -563,15 +563,27 @@ me cen #0 level 0.15 mark true radius 0.5 color red model 2
 
 Center of mass: Aldo C3, Col C5, STR C8.
 
-To execute the bash scripts to create the input files and jobs use
+To create the input files and jobs two bash scripts are used:
 
 ```
-./create_ASMDinputs.sh 50 100000         # ./*sh {NUM of trajectories} {NUM of MDsteps}
-./create_job.sh 50 ../MD/prod.rst 1      # ./*sh {NUM of trajectories} {Coord/RST7} {Stage Num}
-qsub job.1.sh				 # submit job
+./create_ASMDinputs.sh 50 100000         		# ./*sh {NUM of trajectories} {NUM of MDsteps}
+./create_job.sh 50 ../MD/prod.rst 1      		# ./*sh {NUM of trajectories} {Coord/RST7} {Stage Num}
+qsub job.1.sh				 		# submit first job
+```
+
+Since the most of simulation diverge it is necessary to take the mean simulation, to do that a python script is used to fund the mean pathway and the a new job is created and submitted:
+
+```
+./ASMD.py -i asmd*.work.dat.1 -o jar.stage1.dat		# Execute python code to find the "mean path"
+./create_job.sh 50 ASMD_25/ASMD_25.1.rst7 2             # create the following job using the previous result
+qsub jon.2.sh						# submit second job
 ```
 
 The bash scripts used are taken and adapted from [6.4 Adaptive Steered Molecular Dynamics](http://ambermd.org/tutorials/advanced/tutorial26/index.php).
+
+Some references for the state of art of the final report:
+- [Running Molecular Dynamics Simulations with AMBER](https://computecanada.github.io/molmodsim-amber-md-lesson/13-Running_Simulations/index.html)
+- [3.3 Running MD with pmemd](https://ambermd.org/tutorials/basic/tutorial14/index.php), [An overview of the Amber biomolecular simulation package](https://wires.onlinelibrary.wiley.com/doi/full/10.1002/wcms.1121)
 
 ## Final Report
 

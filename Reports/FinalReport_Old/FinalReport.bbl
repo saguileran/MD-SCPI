@@ -1,0 +1,110 @@
+\begin{thebibliography}{10}
+
+\bibitem{book-MR_AS4}
+Brian Harvey and Frederic Jaisser.
+\newblock {\em Aldosterone-Mineralocorticoid Receptor}.
+\newblock IntechOpen, Rijeka, Sep 2019.
+
+\bibitem{MR-as4_importance}
+Leonardo Liccardo Daniela Elia Andrea Marzano Federica Gambino Giuseppina
+  D'Amico Maria Loreta Perna Claudia Ferrara Nicola Rengo Giuseppe
+  Paolocci~Nazareno Cannavo, Alessandro.~Bencivenga.
+\newblock Aldosterone and mineralocorticoid receptor system in cardiovascular
+  physiology and pathophysiology.
+\newblock {\em Oxidative Medicine and Cellular Longevity}, 2018:1204598, Sep
+  2018.
+
+\bibitem{discovery}
+Jeffrey~L. Arriza, Cary Weinberger, Gail Cerelli, Tom~M. Glaser, Barbara~L.
+  Handelin, David~E. Housman, and Ronald~M. Evans.
+\newblock Cloning of human mineralocorticoid receptor complementary dna:
+  Structural and functional kinship with the glucocorticoid receptor.
+\newblock {\em Science}, 237(4812):268--275, 1987.
+
+\bibitem{HELLALLEVY20001250}
+Chantal Hellal-Levy, Jérôme Fagart, Anny Souque, and Marie-Edith
+  Rafestin-Oblin.
+\newblock Mechanistic aspects of mineralocorticoid receptor activation.
+\newblock {\em Kidney International}, 57(4):1250--1255, 2000.
+
+\bibitem{Severe}
+Marie-Edith Rafestin-Oblin, Anny Souque, Brigitte Bocchi, Gregory Pinon, Jerome
+  Fagart, and Alain Vandewalle.
+\newblock {The Severe Form of Hypertension Caused by the Activating S810L
+  Mutation in the Mineralocorticoid Receptor Is Cortisone Related}.
+\newblock {\em Endocrinology}, 144(2):528--533, 02 2003.
+
+\bibitem{Activating_Mineralocorticoid}
+David~S. Geller, Anita Farhi, Nikki Pinkerton, Michael Fradley, Michael Moritz,
+  Adrian Spitzer, Gretchen Meinke, Francis T.~F. Tsai, Paul~B. Sigler, and
+  Richard~P. Lifton.
+\newblock Activating mineralocorticoid receptor mutation in hypertension
+  exacerbated by pregnancy.
+\newblock {\em Science}, 289(5476):119--123, 2000.
+
+\bibitem{dimer}
+Carina A. Johansson Anders Gunnarsson Euan Gordon Barry Collins Marie Castaldo
+  Christian Köhler David Öling Patrik Johansson Linda Fröderberg Roth Brice
+  Beinsteiner Ian Dainty Stephen Delaney Bruno P. Klaholz Isabelle M. L.~Billas
+  Sandra~Postel, Lisa~Wissler and Karl Edman.
+\newblock Quaternary glucocorticoid receptor structure highlights allosteric
+  interdomain communication.
+\newblock {\em Nature Structural {\&} Molecular Biology}, 30(3):286--295, Mar
+  2023.
+
+\bibitem{md_evidence}
+Milton~T. Sonoda, Leandro Martínez, Paul Webb, Munir~S. Skaf, and Igor
+  Polikarpov.
+\newblock Ligand dissociation from estrogen receptor is mediated by receptor
+  dimerization: Evidence from molecular dynamics simulations.
+\newblock {\em Molecular Endocrinology}, 22(7):1565--1578, 07 2008.
+
+\bibitem{amber}
+K.~Belfon I.Y. Ben-Shalom J.T. Berryman S.R. Brozell D.S. Cerutti T.E. Cheatham
+  III G.A. Cisneros V.W.D. Cruzeiro T.A. Darden R.E. Duke G. Giambasu M.K.
+  Gilson H. Gohlke A.W. Goetz R. Harris S. Izadi S.A. Izmailov K. Kasavajhala
+  M.C. Kaymak E. King A. Ko-valenko T. Kurtzman T.S. Lee S. LeGrand P. Li C.
+  Lin J. Liu T. Luchko R. Luo M. Machado V. Man M. Manathunga K.M. Merz Y. Miao
+  O. Mikhailovskii G. Monard H. Nguyen K.A. O’Hearn A. Onufriev F. Pan S.
+  Pantano R. Qi A. Rahnamoun D.R. Roe A. Roitberg C. Sagui S. Schott-Verdugo A.
+  Shajan J. Shen C.L. Simmerling N.R. Skrynnikov J. Smith J. Swails R.C. Walker
+  J. Wang J. Wang H. Wei R.M. Wolf X. Wu Y. Xiong Y. Xue D.M. York S.~Zhao
+  D.A.~Case, H.M.~Aktulga and P.A.~Kollman (2022).
+\newblock {\em Amber 2022}.
+\newblock University of California, San Francisco.
+
+\bibitem{ligamd_Miao}
+Yinglong Miao, Apurba Bhattarai, and Jinan Wang.
+\newblock Ligand gaussian accelerated molecular dynamics (ligamd):
+  Characterization of ligand binding thermodynamics and kinetics.
+\newblock {\em bioRxiv}, 2020.
+
+\bibitem{ligamd2}
+Yinglong Miao, Apurba Bhattarai, and Jinan Wang.
+\newblock Ligand gaussian accelerated molecular dynamics (ligamd):
+  Characterization of ligand binding thermodynamics and kinetics.
+\newblock {\em Journal of Chemical Theory and Computation}, 16(9):5526--5547,
+  2020.
+\newblock PMID: 32692556.
+
+\bibitem{making_it_rain}
+Pablo~R. Arantes, Marcelo~D. PolÃªto, Conrado Pedebos, and Rodrigo
+  Ligabue-Braun.
+\newblock Making-it-rain, August 2021.
+
+\bibitem{libela}
+Heloisa dos Santos~Muniz and Alessandro~S. Nascimento.
+\newblock Ligand- and receptor-based docking with libela.
+\newblock {\em Journal of Computer-Aided Molecular Design}, 29(8):713--723, Aug
+  2015.
+
+\bibitem{pyemma}
+Martin~K. Scherer, Benjamin Trendelkamp-Schroer, Fabian Paul, Guillermo
+  Pérez-Hernández, Moritz Hoffmann, Nuria Plattner, Christoph Wehmeyer,
+  Jan-Hendrik Prinz, and Frank Noé.
+\newblock {PyEMMA} 2: {A} {Software} {Package} for {Estimation}, {Validation},
+  and {Analysis} of {Markov} {Models}.
+\newblock {\em Journal of Chemical Theory and Computation}, 11:5525--5542,
+  October 2015.
+
+\end{thebibliography}
