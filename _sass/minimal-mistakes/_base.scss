@@ -209,11 +209,15 @@ figure {
     -webkit-transition: $global-transition;
     transition: $global-transition;
   }
-
+   figcaption {
+      width: 100%;
+      text-align: center;
+    }
+   
   > a {
     display: block;
   }
-
+  
   &.half {
     > a,
     > img {
