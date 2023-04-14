@@ -111,7 +111,11 @@ MC_states_examples:
     image_path: "https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/States_7000K_STR_mut.png"
     alt: 'Example of the states found using MC simulation and PyEMMA in the MR_mut-STR system at 7000K'
     title: 'Example of the states found using MC simulation and PyEMMA in the MR_mut-STR system at 7000K'
-    
+PyEMMA_MFTPs:
+  - url: "https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/pyemma_table.png"
+    image_path: "https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/pyemma_table.png"
+    alt: 'Mean First Passage Times (MFPTs) analysis found for all the system at 7000 using PyEMMA'
+    title: 'Mean First Passage Times (MFPTs) analysis found for all the system at 7000 using PyEMMA'   
 ---
 
 <h1 id='results'> Results </h1>
@@ -251,3 +255,5 @@ A better aproach to analyse these data is using [PyEMMA](http://www.emma-project
 
 #### Mean First Passage Times (MFPTs) 
 
+
+{% include gallery id="PyEMMA_MFTPs" caption="Mean First Passage Times (MFPTs) analysis found for all the system at 7000 K using PyEMMA" %}
