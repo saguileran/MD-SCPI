@@ -35,6 +35,22 @@ reports:
       - title: "References"
         url: /#references
 
+
+  - title: Results
+    children:
+      - title: "Movies - MD"
+        url: /results/#molecular-dynamics
+      - title: "Movies - MC"
+        url: /results/#monte-carlo
+      - title: "Images - MD"
+        url: /results/#molecular-dynamics-1
+      - title: "Images - MC"
+        url: /results/#monte-carlo-1
+      - title: "MC States - PyEMMA"
+        url: /results/#pyemma
+      - title: "MFPTs - PyEMMA"
+        url: /results/#mean-first-passage-times-mfpts
+
   - title: Reports
     children:
       - title: "Weekly Reports"
@@ -57,20 +73,6 @@ reports:
         url: /reports/#week-8
       - title: "Final Report"
         url: /reports/#final-report
-
-  - title: Results
-    children:
-      - title: "Movies - MD"
-        url: /results/#molecular-dynamics
-      - title: "Movies - MC"
-        url: /results/#monte-carlo
-      - title: "Images - MD"
-        url: /results/#molecular-dynamics-1
-      - title: "Images - MC"
-        url: /results/#monte-carlo-1
-      - title: "MC - PyEMMA"
-        url: /results/#pyemma
-
     
   - title: GitHub
     children:
