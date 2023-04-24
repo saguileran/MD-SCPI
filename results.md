@@ -136,7 +136,7 @@ PyEMMA_MFTPs:
         <source src="https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/MR_S810L-AS4.mp4" type="video/mp4">
     </video>
     <div class="overlay">
-        <p align="center">Mineralocorticoid (MR-wt/S810L) protein interaction with Aldosteron (AS4) ligand</p>
+        <p align="center">Mineralocorticoid (MR-wt/MR<sub>S810</sub>) protein interaction with Aldosteron (AS4) ligand</p>
     </div>
   </center>
 </div>
@@ -153,7 +153,7 @@ PyEMMA_MFTPs:
         <source src="https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/MR_S810L-COL.mp4" type="video/mp4">
     </video>
     <div class="overlay">
-        <p align="center">Mineralocorticoid (MR-wt/S810L) protein interaction with Cortisol (COL) ligand</p>
+        <p align="center">Mineralocorticoid (MR-wt/MR<sub>S810L</sub>) protein interaction with Cortisol (COL) ligand</p>
     </div>
   </center>
 </div>
@@ -170,13 +170,13 @@ PyEMMA_MFTPs:
         <source src="https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/MR_S810L-STR.mp4" type="video/mp4">
     </video>
     <div class="overlay">
-        <p align="center">Mineralocorticoid (MR-wt/S810L) protein interaction with progesterone (STR) ligand</p>
+        <p align="center">Mineralocorticoid (MR-wt/MR<sub>S810L</sub>) protein interaction with progesterone (STR) ligand</p>
     </div>
   </center>
 </div>
 
 
-<h3 align="center" margin-bottom=0>MR_dimer-AS4 MD simulation</h3>
+<h3 align="center" margin-bottom=0>MR<sub>dimer</sub>-AS4 MD simulation</h3>
 
 <div class="container">
   <center>
@@ -184,7 +184,7 @@ PyEMMA_MFTPs:
         <source src="https://raw.githubusercontent.com/saguileran/MD-SCPI/main/Results/MR_dimer-AS4.mp4" type="video/mp4">
     </video>
     <div class="overlay">
-        <p align="center">Mineralocorticoid dimer (MR_dimer) protein interaction with Aldosterone (AS4) ligand</p>
+        <p align="center">Mineralocorticoid dimer (MR<sub>diemr</sub>) protein interaction with Aldosterone (AS4) ligand</p>
     </div>
   </center>
 </div>
@@ -233,14 +233,14 @@ PyEMMA_MFTPs:
 |     COL    |      7000K      |      0      |       28      |       0.00      |       54.90       |
 |     STR    |      5000K      |      0      |       0       |       0.00      |        0.00       |
 |     STR    |      7000K      |      4      |       30      |       7.84      |       58.82       |
-|   AS4_mut  |      5000K      |      0      |       3       |       0.00      |        5.88       |
-|   AS4_mut  |      7000K      |      2      |       30      |       3.92      |       58.82       |
-|   COL_mut  |      5000K      |      0      |       3       |       0.00      |        5.88       |
-|   COL_mut  |      7000K      |      0      |       14      |       0.00      |       27.45       |
-|   STR_mut  |      5000K      |      0      |       0       |       0.00      |        0.00       |
-|   STR_mut  |      7000K      |      5      |       19      |       11.76     |       37.25       |
-|  AS4_dimer |    	5000K    	 |      6      | 	     19      |     	11.76      |     	37.25        |
-|  AS4_dimer |    	7000K    	 |     92      | 	     124     |     	180.39     |     	243.14       |
+|   AS4<sub>mut</sub>  |      5000K      |      0      |       3       |       0.00      |        5.88       |
+|   AS4<sub>mut</sub>  |      7000K      |      2      |       30      |       3.92      |       58.82       |
+|   COL<sub>mut</sub>  |      5000K      |      0      |       3       |       0.00      |        5.88       |
+|   COL<sub>mut</sub>  |      7000K      |      0      |       14      |       0.00      |       27.45       |
+|   STR<sub>mut</sub>  |      5000K      |      0      |       0       |       0.00      |        0.00       |
+|   STR<sub>mut</sub>  |      7000K      |      5      |       19      |       11.76     |       37.25       |
+|  AS4<sub>dimer</sub> |    	5000K    	 |      6      | 	     19      |     	11.76      |     	37.25        |
+|  AS4<sub>dimer</sub> |    	7000K    	 |     92      | 	     124     |     	180.39     |     	243.14       |
 
 All simulation have 51 samples.
 
@@ -255,5 +255,17 @@ A better aproach to analyse these data is using [PyEMMA](http://www.emma-project
 
 #### Mean First Passage Times (MFPTs) 
 
+##### All Sytems, All States
 
 {% include gallery id="PyEMMA_MFTPs" caption="Mean First Passage Times (MFPTs) analysis found for all the system at 7000 K using PyEMMA" %}
+
+##### Bound State - Others
+
+|     **Ligand**     | **MFPT bound → other** | **MFPT other → bound** |
+|:------------------:|:----------------------:|:----------------------:|
+|        Aldo        |       511.8 ± 8.3      |    34229.1 ± 5028.2    |
+|         Col        |       512.9 ± 8.9      |   163482.9 ± 31149.2   |
+|         Str        |       267.7 ± 3.3      |    57136.8 ± 8330.1    |
+| Aldo<sub>mut</sub> |      797.7 ± 16.4      |    38229.3 ± 5514.4    |
+|  Col<sub>mut</sub> |      968.2 ± 21.5      |    53617.9 ± 5090.8    |
+|  Str<sub>mut</sub> |       446.2 ± 5.5      |     9677.0 ± 1095.6    |
