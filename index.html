@@ -196,14 +196,38 @@ sidebar:
 </tbody>
 </table>
 
+<b> MFPT MR/MR<sub>mut</sub>-Aldo system </b>
+
+<table>
+<thead>
+  <tr>
+    <th>Ligand</th>
+    <th>MFPT bound → other</th>
+    <th>MFPT other → bound</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Aldo</td>
+    <td>511.8 ± 8.3</td>
+    <td>34229.1 ± 5028.2</td>
+  </tr>
+  <tr>
+    <td>Aldo<sub>mut</sub></td>
+    <td>797.7 ± 16.4</td>
+    <td>38229.3 ± 5514.4</td>
+  </tr>
+</tbody>
+</table>
 
 
 <h2 id="conclusions">Conclusions</h2>
 
 <ul>
-<li>LiGaMD is not eble to reproduce ligand un/binding events, while or nether LiGaMD2</li>
-<li>LiBELa software is abel to emulate the ligand un/binding events when a high temperature is used, above of 5000K</li>
-<li>Analyzing MC simulations with PyEMMA shows that in the tal sysmtem the ligand scape easier than in the other systems, talk also about mutations.</li>
+<li>Although LiGaMD-1/2 has demonstrated a tremendous ability to reproduce un/binding process for the systems of interest, MR-MRmut/Aldo-Col-Str, the algorithm does not reproduce un/binding events, no matter how long the simulation is or how high the boost parameters are. This is because the ligand is inside a pocket with a high barrier, the electrical potential between the ligand and protein is very strong and the boost is not enough.</li>
+<li>LiBELa is able to reproduce un/binding in MR-MRmut/Aldo-Col-Str systems, even when it simulates only the dynamics of the ligand and considers the protein as fixed. This shows how powerful the software is even in systems where the binding pocket is buried, which makes dissociation difficult.</li>
+<li>The MC simulations reveal that the mutation of MR (MRS810L) makes the unbinding longer, i.e., for the ligand to escape more LiBELa steps are required. The easiest escaping ligand is the Str, which can be explained because it does not have the same oxygens molecules as the others and make the interaction with the protein weaker; while Col and Aldo need a similar number of LiBELa steps to escape from the MR protein as can be seen in Table</li>
+<li>PyEMMA package shows a great solution for analyzing MC simulation since using it in the generated data it is possible to find different states of the system: inside the pocket (bound state), inside the pocket but flipped, and an unbound state (where the ligand is outside the protein); the software even shows the different existing pathways for the ligand to escape by classify them into two different microstates.</li>
 </ul>
 
 
