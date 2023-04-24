@@ -569,6 +569,8 @@ The bash scripts used are taken and adapted from [6.4 Adaptive Steered Molecular
 
 ## Final Report
 
+The final report is write in latex as an article. The PDF file is stored in Github at [MD-SCPI/Reports/Final Report/FinalReport.pdf](https://github.com/saguileran/MD-SCPI/blob/8a3b7722526fa41f53adaa21f2e3fc6da7eac52e/Reports/Final%20Report/FinalReport.pdf).
+
 ## Conclusions
 
 # [MD-SCPI project](https://saguileran.github.io/MD-SCPI/)
